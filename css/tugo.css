@@ -1,0 +1,43 @@
+* {
+  --inline: #374fc6;
+  --stats: #c4e3ed;
+  --accent: #39c4e3;
+  --highlight-one: #aae7ed;
+  --highlight-two: #cdeaed;
+}
+
+.company {
+  text-align: center;
+  font-weight: 500;
+}
+#competitive-analysis:hover,
+#competitive-anaylsis:focus {
+  transform: scale(1.05);
+  transition: var(--ease-slow);
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.table-title th {
+  font-weight: 500;
+}
+/* table:hover,
+table:focus {
+  transition: var(--ease-slow);
+} */
+th,
+td {
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 8px;
+  border: 0.1em solid var(--accent);
+}
+tr:nth-child(even) {
+  background-color: var(--highlight-one);
+}
+tr:nth-child(odd) {
+  background-color: var(--highlight-two);
+}

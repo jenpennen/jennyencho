@@ -1,0 +1,180 @@
+* {
+  font-family: Poppins, Geneva, Verdana, sans-serif;
+}
+h1,
+h1 span {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: left;
+  line-height: 1.25em;
+  margin: 0.25em 0 0.25em 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: left;
+  line-height: 1.25em;
+  margin: 1em 0 0.5em 0;
+}
+h3 {
+  font-style: bold;
+  font-size: 2rem;
+}
+/* .container,
+a {
+  border: 1px black solid;
+} */
+.work-link {
+  margin-top: 0rem;
+}
+.work-caption {
+  text-align: center;
+  color: var(--text);
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.work-subcontainer {
+  text-align: center;
+}
+.work-subcontainer .work-desc {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.about .bio {
+  width: calc(100% - 3rem);
+  margin: auto;
+  max-width: 100rem;
+}
+
+.about p {
+  margin-bottom: 1.5em;
+}
+
+.about .links {
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.about .links .info a {
+  line-height: 2em;
+  font-size: 1rem;
+}
+.container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 50%;
+}
+
+.info a,
+.info i {
+  font-size: 1.25rem;
+  transition: var(--bouncy);
+}
+
+.about .links .info i {
+  margin-right: 0.25em;
+}
+
+/* images */
+img {
+  display: block;
+}
+
+.about img {
+  height: 30rem;
+  width: 20rem;
+  max-width: 90%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: var(--inline) -15px 15px;
+  transition: var(--bouncy);
+}
+.about .work-link img {
+  height: fit-content;
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  object-fit: fit-content;
+  transition: var(--bouncy);
+}
+
+/* structure */
+.about {
+  margin-top: 10em;
+  padding: 0 0 4em 0;
+  position: relative;
+}
+
+.about .container .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#personal-link {
+  color: var(--accent);
+}
+
+/* media queries */
+@media (hover: hover) {
+  img:hover,
+  img:focus {
+    transform: scale(1.1);
+  }
+
+  .info a:hover i,
+  .info a:focus i {
+    color: var(--accent);
+  }
+}
+
+@media screen and (max-width: 55em) {
+  /* small-width devices: collapse about grid */
+  .about h1,
+  .about h1 span {
+    text-align: left;
+    margin: 0 0 0.5em 0;
+    width: 100%;
+  }
+
+  .about img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+  }
+
+  .about .bio {
+    width: 100%;
+    max-width: none;
+    /* order: 2; */
+  }
+  .about .links .info a {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-height: 46em) {
+  /* short devices: decrease whitespace*/
+  .about {
+    margin-top: 8em;
+  }
+
+  .about .container .flex {
+    gap: 2.25em;
+  }
+}
+
+@media screen and (min-height: 57em) {
+  /* tall devices: increase whitespace */
+  .about {
+    margin-top: 11em;
+  }
+}

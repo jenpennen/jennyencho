@@ -1,0 +1,10 @@
+* {
+  --accent: #fbb1c7;
+  --shadow: #dee8f4;
+  --stats: #dae5f2;
+  --inline: #f52c68;
+  /* --highlight-one: #f0ccd3;
+  --highlight-two: #feeaf0; */
+  --highlight-one: #d1d3ff;
+  --highlight-two: #dedff8;
+}

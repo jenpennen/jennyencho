@@ -82,18 +82,18 @@ a {
 }
 
 /* images */
+
 img {
   display: block;
-}
-
-.about img {
-  height: 30rem;
-  width: 20rem;
-  max-width: 90%;
+  max-width: 30%;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: var(--inline) -15px 15px;
   transition: var(--bouncy);
+}
+.about .desktop img {
+  height: 30rem;
+  width: 20rem;
 }
 .about .work-link img {
   height: fit-content;

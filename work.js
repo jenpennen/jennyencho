@@ -73,8 +73,13 @@ const navItems = [
     duration: 1500,
   },
   {
-    selector: ".nav-process",
-    target: ".scroll-process",
+    selector: ".nav-design-process",
+    target: ".scroll-design-process",
+    duration: 1500,
+  },
+  {
+    selector: ".nav-tech-process",
+    target: ".scroll-tech-process",
     duration: 1500,
   },
   {

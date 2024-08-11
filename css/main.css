@@ -114,7 +114,7 @@ nav ul {
 }
 
 nav li {
-  display: inline;
+  display: inline-block;
   margin-left: 2.5rem;
 }
 .inline,
@@ -236,7 +236,7 @@ nav input {
 }
 
 section {
-  padding: 4.5em 0 5.5em 0;
+  margin: 4em 0 4em 0;
   padding: 4.5em;
 }
 
@@ -353,6 +353,7 @@ section .container {
     min-height: 100vh;
     top: 0;
     left: 0;
+    right: auto;
     background: var(--background-blur);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -470,7 +471,7 @@ section .container {
 /* increase whitespace for tall devices */
 @media screen and (min-height: 60em) {
   section {
-    padding: 5em 0 4em 0;
+    padding: 3.5em 0 3.5em 0;
   }
 
   .headline {
@@ -494,7 +495,7 @@ section .container {
 /* short devices: decrease whitespace */
 @media screen and (max-height: 45em) {
   section {
-    padding: 3em 0 4em 0;
+    padding: 3.5em 0 3.5em 0;
     font-size: 1.25em;
   }
 
@@ -516,7 +517,8 @@ section .container {
 .scroll-work,
 .scroll-context,
 .scroll-research,
-.scroll-process,
+.scroll-design-process,
+.scroll-tech-process,
 .scroll-final,
 .scroll-impact {
   height: 4.9em;

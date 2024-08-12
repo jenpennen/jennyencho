@@ -92,8 +92,8 @@ img {
   transition: var(--bouncy);
 }
 .about .desktop img {
-  height: 30rem;
-  width: 20rem;
+  height: 30em;
+  width: 20em;
 }
 .about .work-link img {
   height: fit-content;
@@ -169,6 +169,9 @@ img {
 
   .about .container .flex {
     gap: 2.25em;
+  }
+  .about .desktop img {
+    height: 10rem;
   }
 }
 

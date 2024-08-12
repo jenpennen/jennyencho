@@ -1,8 +1,11 @@
 * {
+  --secondary: #363535;
   --background: #efefef;
   --background-blur: #efefef5;
   font-family: Poppins, Geneva, Tahoma, sans-serif;
 }
+/* TODO: fix this up */
+
 /* HEADINGS */
 h1 {
   font-size: 5rem;
@@ -113,7 +116,7 @@ a {
 }
 
 .stats p {
-  color: var(--text);
+  color: var(--accent);
   text-align: center;
   max-width: 45ch;
   margin: 0 auto;
@@ -121,7 +124,7 @@ a {
 
 .stats .think-cloud {
   font-size: 1.5rem;
-  color: var(--text);
+  color: var(--accent);
   text-align: center;
   margin: 0.25em auto 0 auto;
   padding: 0;
@@ -130,12 +133,17 @@ a {
 }
 
 .stats i {
-  color: var(--text);
-  font-size: 1.5rem;
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
   display: block;
   text-align: center;
 }
-
+.stats h4,
+.stats p {
+  color: var(--background);
+  font-size: 0.75rem;
+}
 /* CLOSE BUTTON */
 
 .close {
@@ -229,7 +237,7 @@ a {
 /* STATS SECTION */
 .stats {
   margin: 0 auto;
-  background: var(--stats);
+  background: var(--secondary);
   border-radius: 20px;
   width: 100%;
   padding: 3em 0em;
@@ -375,9 +383,9 @@ h2.shown {
   gap: 1em;
 }
 
-.button-container a {
+/* .button-container a {
   margin: 1em 0.5em 1em 0.5em;
-}
+} */
 
 .columns {
   display: flex;

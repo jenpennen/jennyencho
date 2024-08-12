@@ -114,6 +114,11 @@ const navItems = [
       }
     },
   },
+  {
+    selector: ".button",
+    target: ".scroll-context",
+    duration: 1500,
+  },
 ];
 
 navItems.forEach((item) => {

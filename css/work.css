@@ -1,5 +1,5 @@
 * {
-  --secondary: #363535;
+  --secondary: #1f1f1a;
   --background: #efefef;
   --background-blur: #efefef5;
   font-family: Poppins, Geneva, Tahoma, sans-serif;
@@ -485,7 +485,7 @@ h2.shown {
 
   section .container {
     width: 85%;
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
 }
 
@@ -503,7 +503,8 @@ h2.shown {
 }
 /* smallest screen size on computer */
 @media screen and (max-width: 50em) {
-  /* .headline .specs {
+  /* .headline .specs,
+  .specs p {
     flex-wrap: wrap;
     font-size: 0.75rem;
   } */
@@ -561,12 +562,19 @@ h2.shown {
     bottom: 1.5em;
     right: 1.5em;
   }
+  section .container {
+    width: 85%;
+    font-size: 0.75em;
+  }
 }
 
 @media screen and (max-width: 30em) {
   .headline .specs p,
   .headline .specs p span {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
+  }
+  .subsubcontainer h4 {
+    font-size: 1rem;
   }
 
   .stats .think-cloud {

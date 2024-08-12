@@ -59,7 +59,7 @@ function smoothScroll(target, duration) {
 
   requestAnimationFrame(animation);
 }
-
+/* TODO: Fix Scrolling for Impact Section */
 const navItems = [
   { selector: ".left", target: ".scroll-top", duration: 2000 },
   {

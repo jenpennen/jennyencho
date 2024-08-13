@@ -18,23 +18,20 @@ h2 {
   margin: 1em 0 0.5em 0;
 }
 h3 {
-  font-style: bold;
+  font-weight: 600;
   font-size: 2rem;
 }
-/* .container,
-a {
+.container {
   border: 1px black solid;
-} */
+}
 .work-link {
   margin-top: 0rem;
 }
-.work-caption {
+.caption {
   text-align: center;
   color: var(--text);
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-style: italic;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .work-subcontainer {
   text-align: center;
@@ -43,14 +40,15 @@ a {
   font-size: 1rem;
   font-weight: 400;
 }
-.about .bio {
-  width: calc(100% - 3rem);
+.about .bio,
+.card-text {
+  width: calc(100% - 4rem);
   margin: auto;
   max-width: 100rem;
 }
 
-.about p {
-  margin-bottom: 1.5em;
+.container p {
+  margin-bottom: 1.15em;
 }
 
 .about .links {
@@ -67,8 +65,11 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
   width: auto;
+}
+.card-text img {
+  margin-bottom: 0.5rem;
 }
 
 .info a,
@@ -82,26 +83,26 @@ a {
 }
 
 /* images */
-
 img {
+  max-width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  transition: var(--bouncy);
+  object-fit: fit-content;
+}
+#headshot-img {
   display: block;
   max-width: 30%;
-  border-radius: 10px;
   object-fit: cover;
   box-shadow: var(--inline) -15px 15px;
-  transition: var(--bouncy);
 }
-.about .desktop img {
-  height: 30em;
-  width: 20em;
+.card-text {
+  border: 1px red solid;
+  text-align: center;
 }
-.about .work-link img {
-  height: fit-content;
-  width: 50%;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  object-fit: fit-content;
-  transition: var(--bouncy);
+.card-text .work-desc {
+  font-style: italic;
+  font-size: 1rem;
 }
 
 /* structure */
@@ -118,15 +119,12 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#personal-link {
-  color: var(--accent);
-}
 
 /* media queries */
 @media (hover: hover) {
   img:hover,
   img:focus {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   .info a:hover i,

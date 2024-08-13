@@ -85,16 +85,21 @@ h3 {
 /* images */
 img {
   max-width: 50%;
-  height: 50%;
+  box-shadow: var(--large-shadow);
+  border-radius: 0.5ch;
+  transition: var(--bouncy);
+  object-fit: cover;
+  /* height: 50%;
   border-radius: 10px;
   transition: var(--bouncy);
-  object-fit: fit-content;
+  object-fit: fit-content; */
 }
 #headshot-img {
-  display: block;
-  max-width: 30%;
-  object-fit: cover;
-  box-shadow: var(--inline) -15px 15px;
+  height: 25rem;
+  width: 18rem;
+  max-width: 50%;
+  max-height: 50%;
+  box-shadow: var(--inline) -5px 5px;
 }
 .card-text {
   text-align: center;

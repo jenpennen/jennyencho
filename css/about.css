@@ -21,9 +21,9 @@ h3 {
   font-weight: 600;
   font-size: 2rem;
 }
-.container {
+/* .container {
   border: 1px black solid;
-}
+} */
 .work-link {
   margin-top: 0rem;
 }
@@ -97,7 +97,6 @@ img {
   box-shadow: var(--inline) -15px 15px;
 }
 .card-text {
-  border: 1px red solid;
   text-align: center;
 }
 .card-text .work-desc {

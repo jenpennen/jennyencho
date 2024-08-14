@@ -345,7 +345,6 @@ section .container {
   section .container,
   nav .container {
     width: 85%;
-    /* margin-left: 4em; */
   }
   .nav-links {
     position: absolute;
@@ -354,7 +353,6 @@ section .container {
     top: 0;
     left: 0;
     right: auto;
-    background: var(--background-blur);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     background: rgba(255, 255, 255, 0.6);
@@ -370,7 +368,7 @@ section .container {
 
   .container #nav-menu:checked {
     width: 100%;
-    background-color: red;
+    background-color: var(--accent);
   }
 
   .nav-links ul {
@@ -468,10 +466,20 @@ section .container {
   }
 }
 
-/* increase whitespace for tall devices */
-@media screen and (min-height: 60em) {
+/* collapse grid for small screens and mobile */
+@media screen and (max-width: 55em) {
+  .work {
+    margin-top: 7.5em;
+  }
+
+  .pitch p {
+    width: 90%;
+  }
+}
+/* tall devices: increase whitespace */
+@media screen and (min-height: 57em) {
   section {
-    padding: 3.5em 0 3.5em 0;
+    padding: 5em 0 4em 0;
   }
 
   .headline {
@@ -482,30 +490,14 @@ section .container {
     padding-bottom: 7em;
   }
 }
-/* small-width devices: collapse about grid */
-@media screen and (max-width: 55em) {
-  .work {
-    margin-top: 7.5em;
-  }
-
-  .pitch p {
-    width: 90%;
-  }
-}
-/* short devices: decrease whitespace */
-@media screen and (max-height: 45em) {
+/* smaller devices have smaller whitespace*/
+@media screen and (max-height: 46em) {
   section {
-    padding: 3.5em 0 3.5em 0;
-    font-size: 1.25em;
-  }
-
-  section p,
-  .highlight {
-    line-height: 2em;
+    padding: 3.5em 0 4.5em 0;
   }
 
   .work {
-    margin-top: 5em;
+    margin-top: 5.9em;
     padding-bottom: 4em;
   }
 

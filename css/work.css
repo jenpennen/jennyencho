@@ -252,7 +252,7 @@ a {
   display: flex;
   gap: 4em;
   flex-wrap: wrap;
-  padding: 4em 4em;
+  padding: 4em;
   width: calc(100% - 8em);
 }
 
@@ -305,10 +305,10 @@ img {
   margin-top: 1em;
 }
 
-.small {
+/* .small {
   width: 75%;
   display: block;
-}
+} */
 
 /* FUNDAMENTAL */
 section {
@@ -503,12 +503,6 @@ h2.shown {
 }
 /* smallest screen size on computer */
 @media screen and (max-width: 50em) {
-  /* .headline .specs,
-  .specs p {
-    flex-wrap: wrap;
-    font-size: 0.75rem;
-  } */
-
   .headline .specs p {
     width: 50%;
     margin: 0 auto;

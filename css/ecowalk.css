@@ -6,6 +6,6 @@
   --highlight-two: #d0e3ff;
 }
 
-.stats i {
+.stats.two-column .grid-item i {
   color: #94dca0;
 }

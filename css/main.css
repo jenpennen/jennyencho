@@ -292,7 +292,8 @@ section .container {
   .left:focus,
   nav li a:hover,
   nav li a:focus {
-    background: linear-gradient(to right, var(--text), var(--text));
+    /* background: linear-gradient(to right, var(--text), var(--text)); */
+    background: linear-gradient(to right, var(--secondary), var(--secondary));
     background-position: 0 100%;
     background-repeat: no-repeat;
   }
@@ -363,7 +364,7 @@ section .container {
     right: auto;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    background: rgba(255, 255, 255, 0.6);
+    background: #282626e4;
     z-index: 2;
     opacity: 0;
     transition: var(--ease-slow);

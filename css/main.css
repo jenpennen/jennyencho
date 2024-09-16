@@ -101,7 +101,7 @@ h1 {
 
 .highlight.shown {
   background-size: 100% 100%;
-  color: var(--highlight-text);
+  color: var(--accent);
 }
 
 /* LINKS */

@@ -3,8 +3,10 @@
   --text: #f6f6f6;
   --shadow: #0e2f3924;
   --inline: #d54477;
-  --highlight-one: #edccef;
-  --highlight-two: #ffe6f7;
+  --highlight-one: #3d3939;
+  --highlight-two: #3d3939;
+  /* --highlight-one: #edccef;
+  --highlight-two: #ffe6f7; */
   --yellow: rgb(238, 238, 184);
   --gray: #7d7b7b;
   --light-gray: #b7b7b7;
@@ -90,6 +92,8 @@ h1 {
     var(--highlight-one),
     var(--highlight-two)
   );
+  /* color: var(--gray); */
+  font-weight: 500;
   background-size: 0% 100%;
   background-repeat: no-repeat;
   transition: background-size 0.75s var(--ease-slow);
@@ -97,8 +101,7 @@ h1 {
 
 .highlight.shown {
   background-size: 100% 100%;
-  font-weight: 500;
-  color: black;
+  color: var(--highlight-text);
 }
 
 /* LINKS */

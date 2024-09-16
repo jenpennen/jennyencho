@@ -188,7 +188,7 @@ a {
   margin: 1em 1em 0 0;
   display: inline-block;
   transition: var(--bouncy);
-  box-shadow: var(--small-shadow);
+  /* box-shadow: var(--small-shadow); */
   overflow: hidden;
 }
 
@@ -238,6 +238,7 @@ a {
   top: 0;
   right: -20px;
   transition: var(--bouncy);
+  color: var(--background);
 }
 
 /* STATS SECTION */

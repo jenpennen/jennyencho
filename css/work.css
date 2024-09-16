@@ -1,7 +1,7 @@
 * {
-  --secondary: #1f1f1a;
-  --background: #efefef;
-  --background-blur: #efefefd6;
+  --secondary: #292926a4;
+  /* --background: #efefef; */
+  /* --background-blur: #efefefd6; */
   --accent: #eda5d6;
   font-family: Poppins, Geneva, Tahoma, sans-serif;
 }
@@ -43,6 +43,11 @@ h4 i {
   margin-right: 0.5em;
 }
 
+/* work tab */
+/* .work-tab {
+  background-color: var(--secondary);
+  border-radius: 3px;
+} */
 /* PARAGRAPHS */
 p.main-subtitle {
   font-size: 1rem;
@@ -109,7 +114,7 @@ a {
 
 /* STATS */
 .stats h4 {
-  color: var(--text);
+  /* color: var(--text); */
   margin: 0.5em auto 0em auto;
   text-align: center;
   max-width: 30ch;
@@ -142,7 +147,7 @@ a {
 }
 .stats h4,
 .stats p {
-  color: var(--background);
+  color: var(--text);
   font-size: 0.75rem;
 }
 /* CLOSE BUTTON */
@@ -151,9 +156,9 @@ a {
   position: fixed;
   left: 2.5em;
   bottom: 2.5em;
-  box-shadow: var(--small-shadow);
+  /* box-shadow: var(--small-shadow); */
   border-radius: 100%;
-  background-color: var(--text);
+  background-color: var(--accent);
   z-index: 1;
   height: 3em;
   width: 3em;
@@ -183,12 +188,12 @@ a {
   margin: 1em 1em 0 0;
   display: inline-block;
   transition: var(--bouncy);
-  box-shadow: var(--small-shadow);
+  /* box-shadow: var(--small-shadow); */
   overflow: hidden;
 }
 
 .button.secondary {
-  background-color: var(--background);
+  background-color: var(--gray);
 }
 
 .button p,
@@ -233,6 +238,7 @@ a {
   top: 0;
   right: -20px;
   transition: var(--bouncy);
+  color: var(--background);
 }
 
 /* STATS SECTION */

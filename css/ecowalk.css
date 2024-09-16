@@ -1,11 +1,9 @@
 * {
-  --text: #1d1d1a;
-  --inline: #334eac;
-  --accent: #bad6eb;
-  --highlight-one: #d0e3ff;
-  --highlight-two: #d0e3ff;
+  /* --text: #1d1d1a; */
+  --accent: #76a8f4;
+  --inline: #bad6eb;
 }
 
-.stats.two-column .grid-item i {
+/* .stats.two-column .grid-item i {
   color: #94dca0;
-}
+} */

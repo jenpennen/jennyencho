@@ -1,10 +1,9 @@
 * {
-  --accent: #d1d3ff;
-  --shadow: #dee8f4;
-  --stats: #dae5f2;
+  --accent: #a2a6e8;
+  /* --shadow: #dee8f4;
+  --stats: #dae5f2; */
   --inline: #f52c68;
-  /* --highlight-one: #f0ccd3;
-  --highlight-two: #feeaf0; */
-  --highlight-one: #d1d3ff;
-  --highlight-two: #dedff8;
+  --highlight-text: #fbb1c7;
+  --highlight-one: #3d3939;
+  --highlight-two: #3d3939;
 }

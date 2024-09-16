@@ -1,0 +1,14 @@
+.heading {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2.heading {
+  font-size: 2rem;
+  font-weight: 1.5rem;
+  text-align: left;
+  color: var(--gray);
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}

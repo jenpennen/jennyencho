@@ -1,10 +1,8 @@
 * {
-  --text: #1d1d1a;
+  /* --text: #1d1d1a; */
   --inline: #cba71a;
   --stats: #ebe899;
   --accent: #fbd85d;
-  --highlight-one: #f2e09f;
-  --highlight-two: #f1e5b9;
 }
 
 /* .container {

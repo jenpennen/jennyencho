@@ -169,7 +169,7 @@ nav .left:hover,
   background-color: var(--secondary);
   border-radius: 3px;
   padding: 2em;
-  border: pink 1px solid;
+  /* border: pink 1px solid; */
 }
 .work-desc {
   font-size: 1rem;

@@ -1,6 +1,6 @@
 * {
   /* --text: #131618; */
-  --text: #f6f6f6;
+  --text: #d2cfd1;
   --shadow: #0e2f3924;
   --inline: #d54477;
   --highlight-one: #2b2b28;
@@ -257,7 +257,7 @@ section {
 .work {
   margin-top: 7em;
   padding: 0 0 4em 0;
-  position: relative;
+  /* position: relative; */
 }
 
 section .container {

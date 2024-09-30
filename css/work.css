@@ -418,7 +418,7 @@ h2.shown {
 
   .close:hover,
   .close:focus {
-    background-color: var(--accent);
+    background-color: var(--close);
     transition: var(--bouncy);
     transform: scale(1.1);
   }
@@ -453,7 +453,7 @@ h2.shown {
   .button:focus p,
   .button:hover i,
   .button:focus i {
-    color: var(--text);
+    color: var(--background);
   }
 
   .graphic:hover,

@@ -141,8 +141,8 @@
             is
             <span class="highlight"
               >a 501(c)(3) nonprofit organization that empowers underserved and
-              underrepresented college students by engaging them in real-world
-              technical projects for nonprofit clients.</span
+              underrepresented college students by providing opportunities to
+              work on real-world technical projects for nonprofits.</span
             >
             Founded in March 2020 by Stanford students
             <a
@@ -159,38 +159,18 @@
               >Amay Aggarwal</a
             >, DFG was established to support nonprofits struggling with digital
             access during the COVID-19 pandemic, and to provide opportunities
-            for students to engage in meaningful volunteer work in the tech
-            sector by helping nonprofits with their digital needs.
+            for students to engage in meaningful tech-focused volunteer work.
           </p>
         </div>
+        <!--my work and team-->
         <!-- <div class="subcontainer">
-          <h3>My Work</h3>
-          <p>
-            I joined Develop For Good as a software engineer in April 2023.
-            During this time, I was part of
-            <a
-              href="https://developforgood.notion.site/NeighborShare-Preventing-crises-through-a-real-time-data-reporting-system-234829a53e3c4034b5ac0ebcc13589bd"
-              target="_blank"
-              class="inline"
-              >Neighborshare's Analytics team</a
-            >, where I built frontend data interfaces to enable Neighborshare's
-            core team to run monthly KPI reports and handle data analytics and
-            visualization tasks efficiently.
-          </p>
+          <h3>My Work & Team</h3>
           <p class="subsubcontainer">
-            Additionally, I collaborated with product lead Anish Sinha to
-            <span class="highlight"
-              >address a critical gap we identified within Develop For Good's
-              infrastructure: the absence of a designated cloud for DFG-specific
-              services.</span
-            >
-            Recognizing the importance of safeguarding volunteer and client
-            data, Anish and I
-            <span class="highlight"
-              >proposed the establishment of a dedicated DFG cloud</span
-            >
-            to Mary and returned to DFG as a staff software engineer to focus on
-            these tech intiatives.
+            In August 2023, I collaborated with fellow software engineer Anish
+            Sinha to propose multiple Cloud and AI initiatives to DFG Founder
+            Mary Zhu. Following DFG's admission to Stanford Startup accelerator
+            StartX, Anish and I became founding software engineers at DFG,
+            focusing on internal management services.
           </p>
           <div class="gallery subsubcontainer">
             <img
@@ -206,6 +186,7 @@
           </div>
         </div> -->
 
+        <!--observations-->
         <div class="subcontainer">
           <h3>Observation</h3>
           <div class="subsubcontainer">
@@ -227,39 +208,42 @@
               opportunities and services.
             </h4>
             <p>
-              Develop For Good is unable to scale its organization with its
-              current infrastructure.
+              An increasing number of students and nonprofits are seeking
+              technical opportunities and services from DFG. Despite this rising
+              demand, DFG can currently support around 35 nonprofit clients per
+              cycle.
             </p>
           </div>
         </div>
 
+        <!--problem-->
         <div class="subcontainer">
           <h3>Problem</h3>
           <div class="subsubcontainer">
             <h4>
-              <i class="fa-solid fa-arrow-trend-up"></i>Develop For Good lacks a
-              dedicated cloud environment for organization-specific services.
+              <i class="fa-solid fa-cloud"></i>Develop For Good needs a
+              dedicated cloud environment.
             </h4>
             <p>
-              The lack of a dedicated cloud environment for DFG's volunteers and
-              clients makes it difficult to secure private information and
-              results in user fragmentation.
+              Develop For Good currently operates without a dedicated cloud
+              environment for its services, resulting in user fragmentation.
+              This limitation makes it difficult to securely manage and store
+              data specific to both volunteers and nonprofit clients,
+              highlighting the need for a more robust, centralized system.
             </p>
           </div>
 
           <div class="subsubcontainer">
             <h4>
-              <i class="fa-solid fa-clock"></i>The onboarding/offboarding
-              process is time-consuming.
+              <i class="fa-solid fa-clock"></i>DFG's onboarding/offboarding
+              processes limits scalability.
             </h4>
             <p>
-              Managed by Amanda, the onboarding and offboarding processes
-              involve the
-              <span class="highlight"
-                >manual addition of 400+ volunteers and clients</span
-              >
-              individually onto our platforms. This makes it difficult for DFG
-              to scale its organization with its current infrastructure.
+              The onboarding and offboarding processes at Develop For Good is
+              labor-intensive, with Program Director Amanda Lo manually managing
+              over 400 volunteers and clients each project cycle on DFG's social
+              platforms. This time-consuming task limits DFG's ability to scale
+              efficiently with its current infrastructure.
             </p>
           </div>
 
@@ -286,6 +270,7 @@
           </div>
         </div>
 
+        <!--goals-->
         <div class="subcontainer">
           <h3>Goals</h3>
           <div class="subsubcontainer">
@@ -521,16 +506,13 @@
           <div class="subsubcontainer">
             <h4><i class="fa-solid fa-robot"></i>Rate Limits</h4>
             <p>
-              Airtable’s API imposes a
+              Airtable’s API imposes a maximum of 5 requests per second and
+              returns only 100 records per request when fetching data.
               <span class="highlight"
-                >maximum of 5 requests per second and returns only 100 records
-                per request when fetching data.</span
+                >To circumvent these limitations without causing our API
+                endpoint to block, we did three things.</span
               >
-              To circumvent these limitations without causing our API endpoint
-              to block, we did three things. Firstly, we
-              <span class="highlight"
-                >built a framework for asynchronous, cancellable tasks.</span
-              >
+              Firstly, we built a framework for asynchronous, cancellable tasks.
               Upon receiving a request, we return and initiate an asynchronous
               job. Job metadata is stored in PostgreSQL, and in the Pantheon UI,
               a window displays information about jobs associated with the view,
@@ -538,18 +520,18 @@
             </p>
 
             <p>
-              This approach was
               <span class="highlight"
-                >powered by Tokio’s task functionality.</span
+                >This approach was powered by Tokio’s task functionality.</span
               >
               Tokio is the asynchronous runtime we chose for our API and has the
               capability to run blocking tasks on a separate thread pool so as
               to not block the API. This solution
               <span class="highlight"
-                >ensures our API remains non-blocking</span
+                >ensures our API remains non-blocking while managing rate
+                limits</span
               >
-              while managing rate limits by launching tasks with artificial
-              delays and retry mechanisms as needed.
+              by launching tasks with artificial delays and retry mechanisms as
+              needed.
             </p>
 
             <p>
@@ -568,13 +550,10 @@
           <div class="subsubcontainer">
             <h4><i class="fa-solid fa-robot"></i>Caching</h4>
             <p>
-              <span class="highlight"
-                >Requests to Airtable often took considerable time (5 - 15
-                seconds), causing the UI to feel sluggish.</span
-              >
-              Moreover, concerns about stale data persisted as new volunteers
-              were added and accepted at DFG over time, which would invalidate
-              the cache.
+              Requests to Airtable often took considerable time (5 - 15
+              seconds), causing the UI to feel sluggish. Moreover, concerns
+              about stale data persisted as new volunteers were added and
+              accepted at DFG over time, which would invalidate the cache.
               <span class="highlight"
                 >To address this, we used our asynchronous job framework to
                 schedule periodic data refreshes every few hours, with a manual
@@ -585,12 +564,9 @@
             <p>
               This solution, although not perfect, allows our management team to
               ensure data accuracy by triggering a refetch when necessary, with
-              a cooldown mechanism in place to prevent hitting rate limits.
-              <span class="highlight"
-                >Thus far, this approach has proven effective, given our modest
-                management team size and infrequent data synchronization
-                issues.</span
-              >
+              a cooldown mechanism in place to prevent hitting rate limits. Thus
+              far, this approach has proven effective, given our modest
+              management team size and infrequent data synchronization issues.
             </p>
           </div>
           <!-- subcontainer end -->

@@ -145,22 +145,18 @@
         <div class="subcontainer">
           <h3>Background</h3>
           <p>
+            Have you ever walked through a beach or park and wondered what
+            people are listening to in their earbuds?
             <span class="highlight"
-              >Have you ever walked through a beach or park and wondered what
-              people are listening to in their earbuds?</span
-            >
-            Whether you're in a cafe, on public transportation, or just taking a
-            walk, many of us are curious about the music around us.
-            <span class="highlight"
-              >Tugo is the mobile platform designed to answer that
+              >Tugo is the mobile application designed to answer that
               curiosity</span
             >
-            by making music-sharing more transparent and social.
+            by making music-sharing with others more transparent and social.
           </p>
         </div>
         <!-- team -->
         <div class="subcontainer">
-          <h3>Brief Team History</h3>
+          <h3>Team</h3>
           <div class="subsubcontainer">
             <p>
               This project began in October 2021 as part of UCLA DevX's 2021
@@ -174,11 +170,9 @@
               and product manager (Jake).
             </p>
             <p>
-              <span class="highlight"
-                >Ultimately, as Retune came to an end, I decided to continue
-                working on this project, renaming it Tugo.</span
-              >
-              I formed a new team of two alongside fellow developer and friend
+              Ultimately, as Retune came to an end, I decided to continue
+              working on this project, renaming it Tugo. I formed a new team of
+              two alongside fellow developer and friend
               <a
                 href="https://www.linkedin.com/in/nastazia-coronado/"
                 target="_blank"
@@ -188,7 +182,7 @@
             </p>
           </div>
         </div>
-
+        <!--observation-->
         <div class="subcontainer">
           <h3>Observations</h3>
 
@@ -221,6 +215,9 @@
               about other peoples' whereabouts.
             </p>
           </div>
+        </div>
+        <div class="subcontainer">
+          <h3>Proposal</h3>
           <p>
             Based on these observations, my team and I envisioned Tugo (formerly
             Retune) as an app that would
@@ -418,6 +415,7 @@
     <section class="design-process">
       <div class="container">
         <h2 class="reveal">Process</h2>
+        <!--usability testing-->
         <div class="subcontainer">
           <h3>Usability Testing</h3>
           <p class="subsubcontainer">
@@ -430,13 +428,16 @@
               >I recieved valuable feedback on our current designs.</span
             >
           </p>
-          <img
-            src="https://storage.googleapis.com/jennyencho-website/tugo-img/old-retune-designs.png"
-            class="subsubcontainer graphic"
-            alt="old retune design"
-          />
-          <p class="caption">Old Retune Designs</p>
+          <div class="subsubcontainer">
+            <img
+              src="https://storage.googleapis.com/jennyencho-website/tugo-img/old-retune-designs.png"
+              class="subsubcontainer diagram"
+              alt="old retune design"
+            />
+            <p class="caption">Old Retune Designs</p>
+          </div>
         </div>
+        <!--feedback-->
         <div class="subcontainer">
           <h3>Feedback</h3>
           <div class="subsubcontainer">
@@ -456,21 +457,23 @@
                 >60% of the participants chose the close friends map over the
                 public one, and nearly half expressed no preference.</span
               >
+            </p>
+            <img
+              src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-remove-closefriends.png"
+              alt="privacy-viewing-change"
+              class="diagram"
+            />
+          </div>
+          <div class="subsubcontainer">
+            <p>
               Instead of two maps, I introduced a feature in the settings portal
               that allows users to selectively share personal information with
               the public.
             </p>
-          </div>
-          <div class="gallery subsubcontainer">
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-remove-closefriends.png"
-              class="photo"
-              alt="retune-close-friends"
-            />
             <img
               src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-remove-closefriends.png"
-              class="photo"
-              alt="tugo-remove-close-friends"
+              alt="privacy-viewing-change"
+              class="diagram"
             />
           </div>
           <div class="extra-spacing"></div>
@@ -483,33 +486,25 @@
               Many participants noted that the follow button
               <span class="highlight"
                 >felt out of place, making the app feel more like a social
-                network than a music discovery platform.</span
-              >
-              This led me to conclude that
-              <span class="highlight"
-                >it is better to keep all users' information hidden</span
-              >
-              during the song shuffling process to
-              <span class="highlight"
-                >preserve the focus on music exploration and discovery</span
-              >
-              as much as possible.
+                network than a music discovery platform.
+              </span>
+              Moreover, the profile view of other Tugo users, along with their
+              profile handles, were distracting them from music exploration.
             </p>
+
+            <div class="gallery subsubcontainer graphic">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-remove-follower.png"
+                alt="removed-follower-feature"
+                class="graphic"
+              />
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-remove-follower.png"
+                alt="removed-follower-feature"
+                class="graphic"
+              />
+            </div>
           </div>
-          <div class="gallery subsubcontainer">
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-remove-follower.png"
-              alt="retune remove follower"
-              class="photo"
-            />
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-remove-follower.png"
-              alt=""
-              class="photo"
-              alt="tugo remove follower"
-            />
-          </div>
-          <div class="extra-spacing"></div>
 
           <div class="subsubcontainer">
             <h4>
@@ -529,12 +524,31 @@
               >
               and added a profile view for detailed music activity.
             </p>
+
+            <p class="extra-spacing">
+              This led me to conclude that
+              <span class="highlight"
+                >it is better to keep all users' information hidden</span
+              >
+              during the song shuffling process to
+              <span class="highlight"
+                >preserve the focus on music exploration and discovery</span
+              >
+              as much as possible.
+            </p>
           </div>
-          <img
-            src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-less-songs.png"
-            alt="retune-tugo less songs"
-            class="subsubcontainer graphic"
-          />
+          <div class="gallery graphic subsubcontainer">
+            <img
+              src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-clutter.png"
+              alt="retune-clutter"
+              class="photo"
+            />
+            <img
+              src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-clutter.png"
+              alt="tugo-clutter"
+              class="photo"
+            />
+          </div>
         </div>
         <div class="subcontainer">
           <h3>Flow Chart</h3>

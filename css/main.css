@@ -9,7 +9,8 @@
   --yellow: #47473b;
   --gray: #7d7b7b;
   --light-gray: #b7b7b7;
-  --background: #211f1f;
+  /* --background: #211f1f; */
+  --background: #1d1d1a;
   --background-blur: #211f1fa4;
 
   --small-shadow: 0px 0px 5px var(--shadow), 0px 10px 20px var(--shadow);

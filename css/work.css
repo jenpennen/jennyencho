@@ -160,7 +160,7 @@ a {
   bottom: 2.5em;
   /* box-shadow: var(--small-shadow); */
   border-radius: 100%;
-  background-color: var(--accent);
+  background-color: var(--text);
   z-index: 1;
   height: 3em;
   width: 3em;
@@ -420,7 +420,7 @@ h2.shown {
 
   .close:hover,
   .close:focus {
-    background-color: var(--close);
+    background-color: var(--accent);
     transition: var(--bouncy);
     transform: scale(1.1);
   }
@@ -440,7 +440,7 @@ h2.shown {
 
   .close:hover i,
   .close:focus i {
-    color: var(--text);
+    color: var(--background);
   }
 
   .button:hover p {

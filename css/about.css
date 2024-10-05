@@ -23,6 +23,11 @@ h3 {
   font-weight: 600;
   font-size: 2rem;
 }
+section {
+  margin: 0;
+  border: blue solid 2px;
+  /* padding: 4.5em; */
+}
 .about-liner {
   color: var(--accent);
 }
@@ -34,6 +39,15 @@ h3 {
   color: var(--text);
   font-size: 0.75rem;
   font-style: italic;
+}
+.container {
+  border: red 1px solid;
+}
+.subcontainer {
+  border: blue 1px solid;
+}
+.gallery-works {
+  display: flex;
 }
 .work-subcontainer {
   text-align: center;
@@ -67,8 +81,7 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2.5rem;
-  width: auto;
+  width: 100%;
 }
 .card-text img {
   margin-bottom: 0.5rem;
@@ -86,16 +99,13 @@ h3 {
 
 /* images */
 img {
-  max-width: 50%;
-  max-height: 50%;
+  /* max-width: 50%;
+  max-height: 50%; */
+  width: 100%;
   box-shadow: var(--large-shadow);
-  border-radius: 0.5ch;
+  /* border-radius: 0.5ch; */
   transition: var(--bouncy);
   object-fit: cover;
-  /* height: 50%;
-  border-radius: 10px;
-  transition: var(--bouncy);
-  object-fit: fit-content; */
 }
 #headshot-img {
   /* height: 25rem;

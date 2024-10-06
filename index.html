@@ -5,8 +5,14 @@
     <title>Jenny Cho</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fafcfc" />
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/fav-icon-32x32.svg" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/fav-icon-32x32.png"
+    />
+
     <!-- thumbnail -->
     <meta
       name="description"
@@ -18,9 +24,12 @@
       property="og:image"
       content="https://storage.googleapis.com/jennyencho-website/landing-img/thumbnail.png"
     />
+
     <!-- styles and fonts -->
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/about.css" />
+
+    <link rel="stylesheet" href="../css/work.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,15 +44,17 @@
   </head>
 
   <body>
+    <div class="scroll-top"></div>
+
     <!-- NAVIGATION BAR -->
     <nav class="nav" id="nav">
       <div class="container">
         <!-- left -->
-        <a class="left" href="index.html"
+        <a href="../index.html" class="left"
           ><i class="fa-solid fa-cloud"></i> Jenny Cho
         </a>
 
-        <!-- hmaburger menu -->
+        <!-- hamburger menu -->
         <input type="checkbox" id="nav-menu" />
         <label for="nav-menu" class="nav-btn">
           <i class="bar-one"></i>
@@ -51,14 +62,14 @@
           <i class="bar-three"></i>
         </label>
 
-        <!-- right nav-links -->
+        <!-- RIGHT SIDE NAV BAR -->
         <div class="nav-links">
           <ul>
             <li>
-              <a href="index.html">About</a>
+              <a href="../index.html">Work</a>
             </li>
             <li>
-              <a href="work-gallery/">Work</a>
+              <a href="about/">About</a>
             </li>
             <li>
               <a href="mailto: jennycho35@gmail.com">Contact</a>
@@ -74,65 +85,165 @@
         </div>
       </div>
     </nav>
-
-    <section class="about">
+    <!-- WORK EXPERIENCE -->
+    <section class="work">
       <div class="container">
-        <div class="subsubcontainer">
-          <!-- <img
-            src="https://storage.googleapis.com/jennyencho-website/landing-img/headshot.jpg"
-            alt="headshot"
-            id="headshot-img"
-          /> -->
-        </div>
-        <!-- bio -->
-        <div class="subsubcontainer">
-          <h1 class="about-liner">Hi! I'm Jenny.</h1>
-          <h2 class="about-liner">
-            Product Designer. Software Engineer. Coffee Enthusiast.
-          </h2>
+        <div class="pitch">
+          <div class="scroll-work"></div>
+          <br />
+          <h1>Jenny Cho</h1>
           <p>
-            Currently designing and building internal Cloud and AI services at
-            Develop for Good.
-          </p>
-          <p>
-            I'm passionate about crafting impactful digital experiences. Whether
-            leading the design strategy for an AI service or scaling nonprofit
-            data systems, I believe in engineering with a user-first mindset to
-            deliver high performance solutions and seamless, stress-free user
-            experiences.
-          </p>
-          <p>
-            Feel free to check out
-            <a href="./work-gallery/" class="inline">some of my works</a>!
+            <!-- <br /> -->
+            Los Angeles-based software engineer and product designer. Feel free
+            to check out some of my works below!
           </p>
         </div>
-        <!-- links -->
-        <div class="links">
-          <div class="info">
-            <a
-              href="https://storage.googleapis.com/jennyencho-website/jenny-cho-resume-gh.pdf"
-              target="_blank"
-              class="inline"
-              ><i class="fa-solid fa-file-pdf"></i> Resume <br
-            /></a>
-            <a href="./work-gallery/" class="inline"
-              ><i class="fa-solid fa-folder"></i> Work Gallery <br
-            /></a>
 
-            <a
-              href="https://www.linkedin.com/in/jennyecho/"
-              target="_blank"
-              class="inline"
-              ><i class="fa-brands fa-linkedin"></i> LinkedIn <br
-            /></a>
-            <a href="mailto: jennycho35@gmail.com" class="inline"
-              ><i class="fa-solid fa-envelope"></i> Email:
-              jennycho35@gmail.com</a
-            >
+        <!-- work gallery -->
+        <h2 class="heading">Design & Engineering</h2>
+        <div class="grid">
+          <!-- pantheon -->
+          <div class="container">
+            <a href="../work/pantheon/">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
+              />
+              <div class="work-tab">
+                <h1>Pantheon</h1>
+                <div class="label">
+                  <p>Data Management Tool</p>
+                </div>
+
+                <p class="work-desc">
+                  Powering nonprofit volunteer management with seamless tech
+                  integration.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- pantheon-ui -->
+          <!-- <div class="container">
+            <div class="in-progress">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
+                alt="image"
+              />
+              <div class="work-tab">
+                <h1>Pantheon UI</h1>
+                <i class="fa-solid fa-lock"></i>
+                <div class="label">
+                  <p>Data Management Tool UI</p>
+                  <p>Design Kit - Figma</p>
+                </div>
+                <p class="work-desc">
+                  Powering nonprofit volunteer management with seamless tech
+                  integration. Stay tuned!
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- tugo -->
+          <div class="container">
+            <a href="../work/tugo/">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/landing-img/tugo-landing.png"
+                alt="image"
+              />
+              <div class="work-tab">
+                <h1>Tugo</h1>
+                <div class="label">
+                  <p>Mobile App</p>
+                </div>
+                <p class="work-desc">
+                  Transforming music discovery by connecting you to the beats of
+                  those around you.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- perspective -->
+          <!-- <div class="container">
+            <div class="in-progress">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/landing-img/perspective-landing.png"
+                alt="image"
+              />
+              <div class="work-tab">
+                <h1>Perspective</h1>
+                <i class="fa-solid fa-lock"></i>
+                <div class="label">
+                  <p>Website</p>
+                  <p>Tech Stack - React, Bootstrap</p>
+                  <p>Design Kit - Figma</p>
+                </div>
+                <p class="work-desc">
+                  Discover your community anytime, anywhere. Stay tuned!!
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <!-- scootly -->
+          <div class="container">
+            <a href="../work/scootly">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/landing-img/scootly-landing.png"
+                alt="image"
+              />
+              <div class="work-tab">
+                <h1>Scootly</h1>
+                <div class="label">
+                  <p>Mobile App</p>
+                </div>
+                <p class="work-desc">
+                  Reimagining urban mobility by turning personal scooters into a
+                  shared resource for everyone.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- ecowalk -->
+          <div class="container">
+            <a href="../work/ecowalk/">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/landing-img/ecowalk_landing.png"
+                alt="ecowalk image"
+              />
+              <div class="work-tab">
+                <h1>EcoWalk</h1>
+                <div class="label">
+                  <p>Mobile App</p>
+                </div>
+                <p class="work-desc">
+                  Taking steps - both big and small - towards a sustainable and
+                  greener future.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
-
-        <!-- end of container    -->
+        <h2 class="heading">Other</h2>
+        <div class="grid">
+          <!-- pantheon prototype -->
+          <div class="container">
+            <a href="../work/pantheon-prototype/">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-prototype.png"
+                alt="image"
+              />
+              <div class="work-tab">
+                <h1>Pantheon Prototyping</h1>
+                <div class="label">
+                  <p>Identity Platform and Integrations Demo</p>
+                </div>
+                <p class="work-desc">
+                  Securing and scaling identity management with Keycloak and
+                  Kubernetes.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -157,10 +268,11 @@
           >
             <i class="fa-brands fa-github"></i>
           </a>
+          <p>Made With Love, Jenny Cho</p>
         </div>
-        <p>Made With Love, Jenny Cho</p>
       </div>
     </section>
+
     <script src="work.js"></script>
   </body>
 </html>

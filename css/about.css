@@ -24,34 +24,30 @@ h3 {
   font-size: 2rem;
 }
 section {
-  margin: 0;
-  border: blue solid 2px;
+  margin: 0rem;
+  padding: 0rem;
   /* padding: 4.5em; */
 }
-.about-liner {
-  color: var(--accent);
-}
-.work-link {
-  margin-top: 0rem;
-}
+
 .caption {
   text-align: center;
   color: var(--text);
   font-size: 0.75rem;
   font-style: italic;
 }
-.container {
+/* .container {
   border: red 1px solid;
 }
 .subcontainer {
   border: blue 1px solid;
-}
+} */
 .gallery-works {
   display: flex;
 }
 .work-subcontainer {
   text-align: center;
 }
+
 .work-subcontainer .work-desc {
   font-size: 1rem;
   font-weight: 400;

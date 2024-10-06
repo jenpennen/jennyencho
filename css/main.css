@@ -161,42 +161,6 @@ nav .left:hover,
   letter-spacing: 0.1rem;
 }
 
-/* WORK GALLERY TABS */
-
-.work img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.work .work-tab {
-  background-color: var(--secondary);
-  border-radius: 3px;
-  padding: 2em;
-  /* border: pink 1px solid; */
-}
-.work-desc {
-  font-size: 1rem;
-  /* font-style: italic; */
-}
-
-.work .grid .container {
-  position: relative;
-  width: calc(50% - 3em);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--medium-shadow);
-  transition: var(--bouncy);
-}
-.work .grid .container:hover {
-  transform: scale(1.05);
-  box-shadow: var(--medium-shadow);
-  transition: var(--bouncy);
-}
-
-.work .grid .in-progress {
-  cursor: not-allowed;
-}
-
 /* FUNDAMENTAL */
 
 nav {

@@ -1,5 +1,4 @@
 * {
-  /* --text: #131618; */
   --text: #d2cfd1;
   --shadow: #0e2f3924;
   --inline: #d54477;
@@ -34,12 +33,60 @@
   color: var(--text);
   line-height: 1.5;
 }
-
 html,
 body {
-  background-color: var(--background);
   position: relative;
   overflow-x: hidden;
+}
+body.dark {
+  background-color: var(--background);
+  color: var(--text);
+}
+body.light {
+  background-color: var(--text);
+  color: var(--background);
+}
+i {
+  font-size: 1.05rem;
+}
+body.light h1,
+body.light .support a,
+body.light p {
+  color: black;
+}
+body.dark h1,
+body.dark .support a,
+p {
+  color: var(--text);
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.light-dark-toggle {
+  background-color: #111;
+  width: 50px;
+  height: fit-content;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.light-dark-toggle .ball {
+  background-color: var(--text);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .light-dark-toggle .ball {
+  transform: translateX(35px);
 }
 
 ::selection {

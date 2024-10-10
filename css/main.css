@@ -52,7 +52,7 @@ i {
 body.light h1,
 body.light .support a,
 body.light p {
-  color: black;
+  color: var(--background);
 }
 body.dark h1,
 body.dark .support a,

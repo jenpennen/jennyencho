@@ -1,17 +1,13 @@
 * {
-  /* --text: #131618; */
-  --text: #d2cfd1;
+  --text: #131618;
   --shadow: #0e2f3924;
   --inline: #d54477;
   --close: #d54477;
-  --highlight-one: #2b2b28;
-  --highlight-two: #272720;
-  --yellow: #47473b;
+  --yellow: #dada7d;
   --gray: #7d7b7b;
   --light-gray: #b7b7b7;
-  /* --background: #211f1f; */
-  --background: #1d1d1a;
-  --background-blur: #211f1fa4;
+  --background: #ebf0ff;
+  --background-blur: #ebf0ffa4;
 
   --small-shadow: 0px 0px 5px var(--shadow), 0px 10px 20px var(--shadow);
   --medium-shadow: 0px 5px 20px -5px var(--shadow);
@@ -29,8 +25,9 @@
 
 * {
   margin: 0;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
   color: var(--text);
   line-height: 1.5;
 }
@@ -44,18 +41,19 @@ body {
 
 ::selection {
   background: var(--yellow);
-  color: var(--accent);
 }
 
 /* HEADINGS */
 
 h1 {
-  font-family: Poppins, sans-serif;
-  font-size: 1.75rem;
+  font-family: PT Serif, serif;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 2rem;
 }
-
+.title {
+  padding-bottom: 1rem;
+}
 /* PARAGRAPHS */
 
 .label p,
@@ -78,31 +76,14 @@ h1 {
   margin-bottom: 0.5em;
 }
 .left {
+  padding-left: 10%;
   font-size: 1.15rem;
   font-weight: 400;
 }
 
 .pitch p {
-  max-width: 100%;
-  font-size: 1rem;
-}
-
-.highlight {
-  background: linear-gradient(
-    to right,
-    var(--highlight-one),
-    var(--highlight-two)
-  );
-  /* color: var(--gray); */
-  font-weight: 500;
-  background-size: 0% 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.75s var(--ease-slow);
-}
-
-.highlight.shown {
-  background-size: 100% 100%;
-  color: var(--accent);
+  padding-top: 1rem;
+  font-size: 1.25rem;
 }
 
 /* LINKS */
@@ -169,14 +150,13 @@ nav .left:hover,
 }
 
 .work .work-tab {
-  background-color: var(--secondary);
   border-radius: 3px;
-  padding: 2em;
+  padding: 1em 2em 2em 2em;
   /* border: pink 1px solid; */
 }
-.work-desc {
-  font-size: 1rem;
-  /* font-style: italic; */
+.work .work-tab h1 {
+  font-family: PT Serif, "Times New Roman", Times, serif;
+  font-size: 2rem;
 }
 
 .work .grid .container {
@@ -347,13 +327,16 @@ section .container {
   }
 }
 /* introduce the hamburger menu */
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 80em) {
   .work .grid .container {
     width: 100%;
   }
 
   .work .grid {
     gap: 7.5vw;
+  }
+  .left {
+    padding-left: 0%;
   }
   section .container,
   nav .container {
@@ -368,7 +351,7 @@ section .container {
     right: auto;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    background: #282626e4;
+    background: var(--background-blur);
     z-index: 2;
     opacity: 0;
     transition: var(--ease-slow);

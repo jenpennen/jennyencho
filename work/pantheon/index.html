@@ -6,19 +6,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- favicon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../../assets/fav-icon-32x32.svg"
-    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg" />
+
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="../../css/work.css" />
-    <link rel="stylesheet" href="../../css/dfg.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -34,7 +37,7 @@
     <nav class="nav" id="nav">
       <div class="container">
         <!-- left -->
-        <a class="left"><i class="fa-solid fa-cloud"></i> Develop For Good </a>
+        <a class="left"><img src="../../assets/favicon.svg" /></a>
         <!-- hamburger menu -->
         <input type="checkbox" id="nav-menu" />
         <label for="nav-menu" class="nav-btn">
@@ -91,11 +94,11 @@
           >
           <span
             >Role -
-            <p>Founding Designer & Software Engineer</p></span
+            <p>UX Designer & Frontend Engineer</p></span
           >
           <span
             >Project -
-            <p>Unified Data Managamenet Platform</p></span
+            <p>Data Managamenet Tool</p></span
           >
           <span
             >Timeline -
@@ -138,12 +141,10 @@
             <a href="https://www.developforgood.org/" class="inline"
               >Develop For Good (DFG)</a
             >
-            is
-            <span class="highlight"
-              >a 501(c)(3) nonprofit organization that provides underserved and
-              underrepresented college students with technical opportunities through real-world nonprofit client projects.</span
-            >
-            Founded in March 2020 by Stanford students
+            is a 501(c)(3) nonprofit organization that provides underserved and
+            underrepresented college students with technical opportunities
+            through real-world nonprofit client projects. Founded in March 2020
+            by Stanford students
             <a
               href="https://www.linkedin.com/in/maryyzhu/"
               target="_blank"
@@ -163,43 +164,18 @@
         </div>
         <!--my work and team-->
         <div class="subcontainer">
-          <h3>My Work & Team</h3>
-          <p>
-            I joined Develop For Good as a software engineer in March 2023,
-            working with the nonprofit Neighborshare's Analytics team. During
-            this time,
-            <span class="highlight"
-              >I and fellow DFG engineer Anish Sinha identified a critical gap
-              in DFG's infrastructure: there was no dedicated cloud for
-              DFG-specific services.</span
-            >
-          </p>
+          <h3>My Work</h3>
           <p class="extra-spacing">
-            In August 2023, Anish and I proposed multiple Cloud and AI
-            initiatives to DFG Founder Mary Zhu, which led to the creation of
-            Pantheon. Following DFG's admission to Stanford startup accelerator
-            StartX,
-            <span class="highlight"
-              >I became a founding software engineer at DFG, leading the design
-              strategy and frontend engineering on DFG's internal
-              services.</span
-            >
+            I joined Develop For Good as a software engineer in March 2023.
+            Alongside fellow engineer Anish Sinha, we identified a critical need
+            for a dedicated cloud infrastructure to support DFG’s growing demand
+            among students and nonprofits. In August 2023, we proposed a series
+            of Cloud and AI initiatives to DFG Founder Mary Zhu, which
+            ultimately led to the creation of Pantheon. As a founding designer
+            and engineer, I spearheaded the design strategy and frontend
+            engineering for DFG’s internal services, and continue to work on
+            Pantheon to this date.
           </p>
-          <div class="subsubcontainer">
-            <div class="gallery subsubcontainer">
-              <img
-                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/nbshare-1.png"
-                alt="nbshare-1"
-                class="photo"
-              />
-              <img
-                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/nbshare-2.png"
-                alt="nbshare-2"
-                class="photo"
-              />
-            </div>
-            <p class="caption">Neighborshare Analytics</p>
-          </div>
         </div>
 
         <!--observations-->
@@ -241,14 +217,12 @@
           <h3>Problem</h3>
           <div class="subsubcontainer">
             <h4>
-              <i class="fa-solid fa-cloud"></i>Develop For Good does not have the tech infrastructure to protect volunteer and client data. 
+              <i class="fa-solid fa-cloud"></i>Develop For Good does not have
+              the tech infrastructure to protect volunteer and client data.
             </h4>
             <p>
-              <span class="highlight"
-                >Develop For Good currently operates without a dedicated cloud
-                environment for its services, resulting in user
-                fragmentation.</span
-              >
+              Develop For Good currently operates without a dedicated cloud
+              environment for its services, resulting in user fragmentation.
               This limitation makes it difficult to securely manage and protect
               data specific to both volunteers and nonprofit clients.
             </p>
@@ -679,11 +653,16 @@
         <div class="subcontainer">
           <h3>Outcomes</h3>
           <p class="alert">
-            Since the inception of this project, Develop For Good has recieved over $1 million in funding in support of Pantheon's development through key partnerships with Stanford's StartX and Okta.
-            In November of 2023, Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX,
-            with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good. 
-            As of October 2024, Pantheon's work is featured on Okta's tech blog community and has officially launched for every team in the Winter 2025 cycle and beyond. 
-                    </p>
+            Since the inception of this project, Develop For Good has recieved
+            over $1 million in funding in support of Pantheon's development
+            through key partnerships with Stanford's StartX and Okta. In
+            November of 2023, Develop For Good became the first nonprofit to be
+            accepted to Stanford's startup accelerator StartX, with Pantheon
+            highlighting DFG as a tech nonprofit startup and partnered with Okta
+            For Good. As of October 2024, Pantheon's work is featured on Okta's
+            tech blog community and has officially launched for every team in
+            the Winter 2025 cycle and beyond.
+          </p>
         </div>
 
         <div class="subcontainer">

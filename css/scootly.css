@@ -1,8 +1,8 @@
 * {
   /* --text: #1d1d1a; */
-  --inline: #cba71a;
+  --accent: #cba71a;
   --stats: #ebe899;
-  --accent: #fbd85d;
+  /* --accent: #fbd85d; */
 }
 
 /* .container {

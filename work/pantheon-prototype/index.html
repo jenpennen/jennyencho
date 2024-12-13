@@ -2,15 +2,12 @@
 <html lang="en">
   <head>
     <!-- metadata -->
-    <title>Dichromatic</title>
+    <title>Pantheon Prototype</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- favicon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../../assets/fav-icon-32x32.svg"
-    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg" />
+
     <!-- thumbnail -->
     <meta
       name="description"
@@ -24,12 +21,18 @@
     />
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="../../css/work.css" />
-    <link rel="stylesheet" href="../../css/dfg.css" />
+    <link rel="stylesheet" href="../../css/blog.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -44,8 +47,8 @@
     <nav class="nav" id="nav">
       <div class="container">
         <!-- left -->
-        <a class="left"
-          ><i class="fa-solid fa-cloud"></i> Pantheon Prototype
+        <a class="left" href="/"
+          ><i class="fa-solid fa-cloud"></i> Jenny Cho 
         </a>
 
         <!-- hamburger menu -->
@@ -57,7 +60,7 @@
         </label>
 
         <!-- right navigation bar -->
-        <div class="nav-links">
+        <!-- <div class="nav-links">
           <ul>
             <li>
               <a class="nav-context">Context</a>
@@ -69,244 +72,150 @@
               <a class="nav-impact">Impact</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </nav>
 
     <!-- CLOSE BUTTON -->
-    <a href="../../work-gallery/" class="close">
+    <a href="../../work/" class="close">
       <i class="fa-solid fa-arrow-left"></i>
     </a>
 
     <!-- HEADLINE -->
-    <section class="headline">
-      <div class="headline-img-container">
+    <section>
+      <!-- <div class="headline-img-container">
         <img
           src="https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-prototype.png"
         />
-      </div>
-      <div class="headline container">
-        <h1>Pantheon Prototype</h1>
-        <p class="main-subtitle">
-          Securing and scaling identity management with Keycloak and Kubernetes.
+      </div> -->
+      <div class="container">
+        <h1 class="title">Securing and Scaling Identity Management with Keycloak and Kubernetes</h1>
+        <p class="description">
+         A written report on the first Pantheon prototype
         </p>
-
-        <div class="long-spec specs">
-          <span
-            >Company -
-            <p>Develop For Good</p></span
-          >
-          <span
-            >Role -
-            <p>Staff Software Engineer</p></span
-          >
-          <span
-            >Project -
-            <p>Integrations Demo</p></span
-          >
-          <span
-            >Timeline -
-            <p>October - November 2023</p></span
-          >
-          <span
-            >Technology -
-            <p>Keycloak, Penpot, Kubernetes</p></span
-          >
-        </div>
-
-        <div class="button-container">
-          <div class="button">
-            <p>Read Demo</p>
-          </div>
-        </div>
+        <p>By Anish Sinha and Jenny Cho</p>
       </div>
-      <div id="scroll-context" class="scroll-context"></div>
-    </section>
-
-    <!-- CONTEXT -->
-    <section class="context">
       <div class="container">
-        <h2>Context</h2>
-
         <div class="subcontainer">
-          <h3>Background</h3>
+          <!-- background --> 
+          <p>In recent years, Develop For Good (DFG),
+            has faced a growing interest from many students and nonprofit partners seeking
+            technical opportunities and digital services. However, the possibility of
+            scaling the organization was nonexistent. Since DFG was first established, the
+            organization has relied on a manual onboarding/offboarding process, where DFG
+            Program Director Amanda Lo personally invites each accepted volunteer and
+            nonprofit to the organization’s social platforms. This is a labor-intensive
+            process that takes hours to complete, with each project cycle consisting of over
+            250 volunteers and roughly 40 nonprofit partners. In addition to this
+            time-consuming process, there were other technical issues within DFG that had to
+            be considered at scale.</p>
+        </div>
+
+         <!-- User Frag + Data Confidentiality -->
+        <div class="subcontainer">
+          <h2 class="subheading">User Fragmentation and Data Confidentiality</h3>
           <p>
-            At <span class="inline">Develop For Good (DFG)</span>,
-            <span class="highlight"
-              >the need for robust, scalable, and secure identity management
-              solutions became paramount</span
-            >
-            as more and more nonprofit clients and students were seeking DFG for
-            technical opportunities and services. Unlike most non-profit
-            organizations, DFG focuses on new technology that allows for novel
-            ways to serve their clients and student volunteers. With this comes
-            with a demand to upgrade their internal infrastructure as well.
+            Ensuring the secure removal of volunteers
+            from DFG's social platforms after each project cycle is nearly impossible. Many
+            student volunteers use personal or university email accounts to work on client
+            projects, leaving any private client data shared during the cycle stored in
+            those personal accounts. This creates significant risks for nonprofit partners,
+            as such sensitive information could remain accessible to volunteers long after
+            their involvement with them ends. Consequently, all DFG-specific project files
+            are vulnerable to unauthorized access and sharing, jeopardizing the
+            confidentiality of client and organization data. Combined with the current
+            onboarding and offboarding process, which already takes hours to manage at DFG's
+            existing scale, makes it virtually impossible for the organization to expand its
+            services.        
           </p>
         </div>
-
+        
+         <!-- Solution Proposal -->
         <div class="subcontainer">
-          <h3>Purpose</h3>
-          <p class="subsubcontainer">
-            This demo illustrates how
-            <span class="highlight"
-              >modern identity and access management solutions can be seamlessly
-              integrated with many services used by DFG.</span
-            >
-            Specifically, it showcases:
-            <li>
-              The integration capabilities of Keycloak with other applications
-              using the OpenID Connect protocol.
-            </li>
-            <li>
-              The advantages of using Kubernetes for managing and scaling
-              application infrastructure.
-            </li>
-          </p>
+          <h2 class=subheading>Solution Proposal</h2>
+          <div class="subsubcontainer">
+            <p>To combat these existng issues, Anish and I provided a demo to DFG founder Mary
+                Zhu on the promising potential of a modern identity and access management
+                solution that can be integrated with many services used at DFG. In this demo, we
+                used Penpot as an example application that can be integrated with Keycloak. The
+                purpose of the demo was twofold:
+            </p>
+            <li>Highlight integration capabilities of Keycloak with other applications using
+                the OpenID Connect protocol.</li>
+            <li>The advantages of using Kubernetes for managing and scaling application
+                infrastructure.</li>
+          </div>
+          <div class="subsubcontainer">
+            <h3>Keycloak</h3>
+            <p>Keycloak is an open-source identity and access management platform developed by
+                Red Hat. It provides robust security features that seamlessly integrates
+                authentication and authorization mechanisms into applications and services. Used
+                widely by many companies, such as Bosch and Deloitte, some key features of
+                Keycloak include single sign-on (SSO), user federation, centralized management,
+                and the admin console. All of these features will be essential for DFG's
+                infrastructure as it scales.</p>
+          </div>
+          <div class="subsubcontainer">
+            <h3>Penpot</h3>
+            <p>Penpot, developed by Kaleidos Open Source, is an open-source design and
+                prototyping tool, similar to Figma. Unlike other design tools, Penpot is
+                web-based and platform-independent, and thus can be used on any operating
+                system. Penpot is an excellent design tool for designers, making it a great
+                example of an application that can be integrated with Keycloak in the future.</p>
+          </div>
+           <!-- end of subcontainer -->
         </div>
-      </div>
-      <div class="scroll-research"></div>
-    </section>
 
-    <!-- DEMO -->
-    <section class="research">
-      <div class="container">
-        <h2>Demo</h2>
-        <!-- keycloak -->
         <div class="subcontainer">
-          <h3>Keycloak</h3>
-
+          <h2>Key Takeaways</h2>
           <div class="subsubcontainer">
+            <h3>Identity Management</h3>
             <p>
-              Keycloak is an open-source identity and access management platform
-              developed by Red Hat.
-              <span class="highlight"
-                >It provides robust security features that seamlessly integrates
-                authentication and authorization mechanisms into applications
-                and services.</span
-              >
-              Used widely by many companies, such as Bosch and Deloitte,
-              <span class="highlight"
-                >some key features of Keycloak include single sign-on (SSO),
-                user federation, centralized management, and the admin
-                console.</span
-              >
-              All of these features will be essential for DFG's infrastructure
-              as it scales.
+              Keycloak manages user identities, roles, and permissions. This would allow for
+              secure access to applications and restrictions based on users' roles. Permisions
+              can be placed to restrict access to applications exclusive to DFG's management
+              members, volunteers, and clients.
+            </p>
+          </div>
+          <div class="subsubcontainer">
+            <h3>Scalability</h3>
+            <p>
+              The scalability and flexibility of using Kubernetes to deploy and manage
+              applications makes it possible to horizontally scale and seamlessly adapt to
+              changing organizational needs.
+            </p>
+
+          </div>
+          <div class="subsubcontainer">
+            <h3>Future Proofing Infrastructure</h3>
+            <p>
+              This setup can be future-proofed, making it easier for DFG to adapt and scale
+              their infrastructure in response to envolving demands.
             </p>
           </div>
 
-          <div class="gallery">
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/dichromatic-img/keycloak-logo.png"
-              class="graphic"
-              alt="keycloak logo"
-            />
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/dichromatic-img/screen-admin.png"
-              class="graphic"
-              alt="keycloak admin"
-            />
-          </div>
+           <!-- end of subcontainer --> 
         </div>
-        <!-- penpot -->
-        <div class="subcontainer">
-          <h3>Penpot</h3>
-
-          <div class="subsubcontainer">
-            <p>
-              Penpot, developed by Kaleidos Open Source, is an open-source
-              design and prototyping tool, similar to Figma. Unlike other design
-              tools,
-              <span class="highlight"
-                >Penpot is web-based and platform-independent</span
-              >, and thus can be used on any operating system.
-              <span class="highlight"
-                >Penpot is an excellent design tool for designers, making it a
-                great example of an application that can be integrated with
-                Keycloak in the future.</span
-              >
-            </p>
-          </div>
-
-          <div class="gallery">
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/dichromatic-img/penpot-logo.png"
-              class="graphic"
-              alt="penpot logo"
-            />
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/dichromatic-img/penpotui.png"
-              class="graphic"
-              alt="penpot ui"
-            />
-          </div>
-        </div>
-        <!-- key takeaways -->
-        <div class="subcontainer">
-          <h3>Key Takeaways</h3>
-          <div class="subsubcontainer">
-            <h4><i class="fa-solid fa-desktop"></i>Identity Management</h4>
-            <p>
-              Keycloak manages user identities, roles, and permissions,
-              <span class="highlight">ensuring secure access</span> to
-              applications.
-            </p>
-          </div>
-          <div class="subsubcontainer">
-            <h4><i class="fa-solid fa-desktop"></i>Scalability</h4>
-            <p>
-              The <span class="highlight">scalability and flexibility</span> of
-              using Kubernetes to deploy and manage applications makes it
-              possible to horizontally scale and seamlessly adapt to changing
-              organizational needs.
-            </p>
-          </div>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-scale-balanced"></i>Future-Proofing
-              Infrastructure
-            </h4>
-            <p>
-              This setup can be
-              <span class="highlight"
-                >future-proofed, making it easier for DFG to adapt and scale
-                their infrastructure</span
-              >
-              in response to envolving demands.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-impact"></div>
-    </section>
-
-    <!-- IMPACT -->
-    <section class="impact">
-      <div class="container">
-        <h2>Impact</h2>
 
         <div class="subcontainer">
-          <h3>Outcomes</h3>
+          <h2>Next Steps</h2>
           <p>
-            I was excited to learn that this demo was well-received during
-            Mary’s meetings with funders and technology pioneers. In August
-            2023, I, along with fellow DFG engineer Anish Sinha, proposed new
-            tech initiatives for Develop For Good directly to founder Mary Zhu.
-            <span class="highlight"
-              >Since then, Anish and I have joined Develop For Good as staff
-              software engineers, focusing on internal cloud and AI
-              technologies.</span
-            >
-            Most recently, we developed a unified data management tool called
-            <a href="../pantheon" class="inline">Pantheon</a>, designed to
-            streamline key lifecycle tasks at DFG, and published a paper with
-            Okta during the process.
+            DFG is a nonprofit organization that focuses on building new technology that
+            allows for novel ways to serve their clients and student volunteers.
+            Accordingly, it makes the most sense for DFG to provide these services with the
+            most optimal environment possible.
+
+            Following this demo, Anish and I joined Develop For Good as founding software
+            engineers focusing on internal tools, notably Pantheon and PantheonAI. DFG has
+            since evolved into a nonprofit tech startup, being the first nonprofit
+            organization to be accepted to Stanford's startup accelerator StartX.
           </p>
         </div>
-      </div>
-      <div class="scroll-bottom"></div>
-    </section>
 
+         <!-- end of container -->
+      </div>
+     
+    </section>
     <!-- FOOTER -->
     <section class="footer">
       <div class="container">

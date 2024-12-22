@@ -25,7 +25,7 @@
 
 * {
   margin: 0;
-  font-family: Nunito, Arial, Helvetica, sans-serif;
+  font-family: Urbanist, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.15rem;
   color: var(--text);
@@ -60,9 +60,9 @@ h1 {
 .label p,
 .footer p {
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--gray);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.025rem;
   margin: 0.3em 0 0 0;
 }
@@ -156,8 +156,9 @@ nav .left:hover,
   /* border: pink 1px solid; */
 }
 .work .work-tab h1 {
-  font-family: PT Serif, "Times New Roman", Times, serif;
-  font-size: 2rem;
+  font-family: Libre Bodoni, serif;
+  font-size: 2.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .work .grid .container {
@@ -229,7 +230,7 @@ nav input {
 }
 
 section {
-  margin: 4em 0 4em 0;
+  margin: 5em 0 5em 0;
   padding: 4.5em;
 }
 
@@ -245,7 +246,7 @@ section {
 
 section .container {
   width: 80%;
-  max-width: 65em;
+  max-width: 65ch;
   margin: 0 auto;
 }
 

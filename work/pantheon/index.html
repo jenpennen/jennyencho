@@ -11,19 +11,9 @@
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="../../css/work.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
 
     <script
       src="https://kit.fontawesome.com/6b4fd4dffa.js"
@@ -56,6 +46,9 @@
             </li>
             <li>
               <a class="nav-tech-process">Tech Process</a>
+            </li>
+            <li>
+              <a class="nav-design-process">Design Process</a>
             </li>
             <li>
               <a class="nav-final">Final Work</a>
@@ -98,7 +91,7 @@
           >
           <span
             >Project -
-            <p>Data Managamenet Tool</p></span
+            <p>Data Management Tool</p></span
           >
           <span
             >Timeline -
@@ -139,83 +132,33 @@
         <div class="subcontainer">
           <h3>Background</h3>
           <p>
-            <a href="https://www.developforgood.org/" class="inline"
-              >Develop For Good (DFG)</a
-            >
-            is a 501(c)(3) nonprofit organization that provides underserved and
-            underrepresented college students with technical opportunities
-            through real-world nonprofit client projects. Founded in March 2020
-            by Stanford students
-            <a
-              href="https://www.linkedin.com/in/maryyzhu/"
-              target="_blank"
-              class="inline"
-              >Mary Zhu</a
-            >
-            and
-            <a
-              href="https://www.linkedin.com/in/amayaggarwal/"
-              target="_blank"
-              class="inline"
-              >Amay Aggarwal</a
-            >, DFG was established to support nonprofits struggling with digital
-            access during the COVID-19 pandemic, and to provide opportunities
-            for students to engage in meaningful tech-focused volunteer work.
+            <span class="highlight">Develop For Good (DFG)</span> is a 501(c)(3)
+            nonprofit focused on closing the digital divide in the nonprofit
+            sector and volunteerism. They offer opportunities for underserved
+            and underrepresented college students to build real-world technical
+            products for nonprofits.
           </p>
         </div>
-        <!--my work and team-->
-        <div class="subcontainer">
-          <h3>My Work</h3>
-          <p class="extra-spacing">
-            I joined Develop For Good as a software engineer in March 2023.
-            Alongside fellow engineer Anish Sinha, we identified a critical need
-            for a dedicated cloud infrastructure to support DFG’s growing demand
-            among students and nonprofits. In August 2023, we proposed a series
-            of Cloud and AI initiatives to DFG Founder Mary Zhu, which
-            ultimately led to the creation of Pantheon. As a founding designer
-            and engineer, I spearheaded the design strategy and frontend
-            engineering for DFG’s internal services, and continue to work on
-            Pantheon to this date.
-          </p>
-        </div>
-
-        <!--observations-->
-        <div class="subcontainer">
-          <h3>Observation</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-arrows-spin"></i>Develop For Good operates
-              in four-month project cycles twice a year.
-            </h4>
-
-            <p>
-              Volunteers are placed in teams focusing on technical projects in
-              <span class="highlight"
-                >web/mobile development, data engineering, and UI/UX
-                design</span
-              >, with each team consisting of at least 8 volunteers.
-            </p>
-          </div>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-arrow-trend-up"></i>An increasing number of
-              students and nonprofits are turning to DFG for technical
-              opportunities and services.
-            </h4>
-            <p>
-              More and more students and nonprofits apply to DFG per project
-              cycle.
-              <span class="highlight"
-                >Despite this rising demand, DFG can currently support around 35
-                nonprofit clients per cycle.</span
-              >
-            </p>
-          </div>
-        </div>
-
         <!--problem-->
         <div class="subcontainer">
           <h3>Problem</h3>
+          <p>
+            Since its establishment, DFG has experienced increasing interest
+            from students and organizations seeking technical opportunities and
+            digital services. However, the organization has struggled to scale
+            its offerings due to a reliance on manual lifecycle tasks. To
+            address this growing demand and improve technical infrastructure,
+            <span class="highlight"
+              >I spearheaded the UX strategy and frontend development for
+              Pantheon— Develop For Good’s first internal data management
+              system.</span
+            >
+          </p>
+        </div>
+
+        <!--Understanding the Problem-->
+        <div class="subcontainer">
+          <h3>Understanding the Problem</h3>
           <div class="subsubcontainer">
             <h4>
               <i class="fa-solid fa-cloud"></i>Develop For Good does not have
@@ -313,10 +256,11 @@
 
         <!-- dfg approach-->
         <div class="subcontainer">
-          <h3>DFG's Approach</h3>
+          <h3>My Approach</h3>
           <p class="subsubcontainer">
-            Pantheon is a tool we conceptualized a year ago and initiated in
-            January of 2024. Our vision was clear.
+            Working alonside fellow engineer Anish Sinha, Pantheon is a tool we
+            conceptualized a year ago and initiated in January of 2024. Our
+            vision was clear.
           </p>
           <div class="columns">
             <div class="subsubcontainer">
@@ -337,38 +281,25 @@
               </p>
             </div>
           </div>
-
-          <p>
-            As a starting tool,
-            <span class="highlight"
-              >our top priority, as of now, is functionality.</span
-            >
-          </p>
         </div>
 
         <!-- Okta Single Sign On (SSO)-->
         <div class="subcontainer">
           <h3>Okta Single Sign-On (SSO)</h3>
           <p>
-            Enter Okta. Our partnership with Okta for Good was instrumental in
-            facilitating access to a potent tool:
-            <span class="highlight">Okta Workforce Federation.</span> This
-            workflow was straightforward.
+            DFG’s partnership with Okta for Good provided access to a powerful
+            tool: <span class="highlight">Okta Workforce Federation.</span> The
+            workflow was simple—volunteers accepted into a project cycle were
+            added to an Airtable sheet, triggering a Lambda function to create
+            their profiles in Okta’s universal directory.
             <span class="highlight"
-              >Upon a volunteer’s acceptance to a project cycle, they are added
-              to an Airtable sheet. Afterwards, a lambda is triggered to create
-              all volunteers in our Okta tenant’s universal directory.</span
+              >However, this approach hit a roadblock when we discovered that
+              Single Sign-On (SSO) integration required enterprise-level
+              subscriptions for platforms like Slack, Figma, and Notion.</span
             >
-          </p>
-          <p>
-            However, this plan fell short when we discovered that
-            <span class="highlight"
-              >Single Sign-On (SSO) integration was an enterprise feature in
-              platforms like Slack, Figma, and Notion.</span
-            >
-            Despite our paid business and pro plans, we lack the resources for
-            enterprise-level subscriptions, rendering our Okta-based solutions
-            unviable. We were back at square one.
+            Despite having paid business and pro plans, we lacked the resources
+            for enterprise subscriptions, making our Okta-based solution
+            unfeasible and forcing us back to the drawing board.
           </p>
         </div>
 
@@ -376,36 +307,20 @@
         <div class="subcontainer">
           <h3>Square One: Google For Nonprofits</h3>
           <p>
-            Currently, the only volunteers issued Develop for Good handles
-            (@developforgood.org) are product leads and management team members.
-          </p>
-          <p>
-            However, the
+            Only product leads and management members are issued Develop for
+            Good handles (@developforgood.org). However, the Google for
+            Nonprofits plan allows up to 2,000 users. While this capacity isn’t
+            unlimited, we’re hardly using a fifth of its limit. When we do reach
+            this limit, paying for SSO capabilities for essential services may
+            become feasible. In the meantime, we chose to build Pantheon around
+            Google Workspace.
             <span class="highlight"
-              >Google for Nonprofits plan allows up to 2,000 users.</span
+              >The process is straightforward: accept students, upload their
+              information to Workspace (issuing them @developforgood.org
+              emails), monitor allocations, and delete accounts at the end of
+              each cycle to free up space.</span
             >
-            Although it can’t scale forever, we are hardly using a fifth of its
-            total capacity. When we eventually reach this threshold, we could
-            potentially pay for SSO capabilities for the essential services we
-            rely on. Until then, we decided to build Pantheon around Google
-            Workspace.
-            <span class="highlight"
-              >This concept is simple: accept students, upload their information
-              to Workspace (and issue them @developforgood.org emails), monitor
-              the email allocations, and delete them at the end of each cycle to
-              free up space in Workspace.</span
-            >
-          </p>
-          <p>
-            This streamlined approach not only
-            <span class="highlight"
-              >manages user accounts and their life cycles</span
-            >, but
-            <span class="highlight"
-              >also ensures controlled access to services since every service we
-              rely on has complimentary SSO for Google.
-            </span>
-            With this plan in motion, we started building.
+            With this approach defined, we began development.
           </p>
         </div>
       </div>
@@ -420,17 +335,10 @@
         <div class="subcontainer">
           <h3>Airtable</h3>
           <p class="subsubcontainer">
-            Our foundation was Airtable. To facilitate executive access and data
-            management, we
-            <span class="highlight"
-              >needed a solution to bridge Airtable and Google Workspace
-              seamlessly.</span
-            >
-            Although no first-party integration met our requirements, this
-            wasn’t a setback, as
-            <span class="highlight"
-              >we were prepared to build everything from scratch.</span
-            >
+            Our foundation was built on Airtable. To streamline executive acess
+            and data management, we needed a seamless connection between
+            Airtable and Google Workspace. Since no existing solutions fit our
+            needs, we designed a custom solution that tailored to our workflow.
           </p>
           <div class="subsubcontainer diagram">
             <img
@@ -440,125 +348,52 @@
             <p class="caption">Pantheon's Architecture</p>
           </div>
           <p>
-            We constructed an
-            <span class="highlight"
-              >adapter mechanism which would recognize valid base structures in
-              Airtable, and a frontend capable of creating and presenting
-              read-only views from these bases.</span
-            >
-            We then integrated various functionalities into different view
-            types, each tailored to specific internal classifications. For
-            instance, user views enable the export of users to Workspace. With
-            this dashboard,
-            <span class="highlight">crafted with TypeScript and React</span>,
-            our executives can log in, generate custom views pulling data from
-            Airtable, and export users. We also utilized
-            <span class="highlight">ShadCN/UI and TailwindCSS</span> to craft an
-            aesthetically pleasing UI that prioritizes user-friendliness,
-            intuitiveness, and accessibility.
-            <span class="highlight"
-              >Authentication was seamlessly managed through Auth0</span
-            >, an Okta product, bringing our project full circle.
+            We developed a dashboard with Typescript and React that allows
+            executives to log in, create custom views of Airtable data, and
+            export user information to Workspace. Designed with ShadCN/UI and
+            TailwindCSS, this interface ensures a clean, user-friendly, and
+            accessible experience. Authentication was implemented using an
+            Auth0, an Okta product, to secure and simplify access.
           </p>
         </div>
-        <!-- backend -->
+        <!-- Technical Design Constraints -->
         <div class="subcontainer">
-          <h3>Backend</h3>
-          <p>
-            We used Rust for our backend.
-            <span class="highlight"
-              >Our goal was to build a maintainable codebase</span
-            >
-            which would compile to a small binary that could be easily deployed
-            on a server or Kubernetes cluster, and horizontally scaled. Drawing
-            from past experiences, we ruled out Go (over Rust) due to previous
-            challenges. We used
-            <span class="highlight">Axum as our backend web framework</span>
-            because it is lightweight and had excellent mechanisms for
-            dependency injection.
-            <span class="highlight"
-              >In selecting our database and cache solutions, we settled on
-              PostgreSQL and Redis respectively</span
-            >
-            as they are battle-tested technologies that were well-suited for our
-            requirements. PostgreSQL is used to store views, keep track of
-            exported users, and manage data regarding asynchronous jobs, such as
-            export and import tasks.
-            <span class="highlight"
-              >During development, we utilize Docker to spin up a database,
-              while for production, we use an RDS t1.medium instance on AWS that
-              fits our needs nicely.</span
-            >
-          </p>
-        </div>
-        <!-- challenges -->
-        <div class="subcontainer">
-          <h3>Challenges</h3>
+          <h3>Technical Design Constraints</h3>
           <!-- rate limits -->
           <div class="subsubcontainer">
-            <h4><i class="fa-solid fa-robot"></i>Rate Limits</h4>
+            <h4>
+              <i class="fa-solid fa-robot"></i>Handling Airtable API Limits
+            </h4>
             <p>
-              Airtable’s API imposes a maximum of 5 requests per second and
-              returns only 100 records per request when fetching data.
+              Airtable’s API enforces a maximum of 5 requests per second and
+              returns only 100 records per request, which posed challenges when
+              fetching large datasets.
               <span class="highlight"
-                >To circumvent these limitations without causing our API
-                endpoint to block, we did three things.</span
-              >
-              Firstly, we built a framework for asynchronous, cancellable tasks.
-              Upon receiving a request, we return and initiate an asynchronous
-              job. Job metadata is stored in PostgreSQL, and in the Pantheon UI,
-              a window displays information about jobs associated with the view,
-              categorized as complete, pending, error, or canceled.
-            </p>
-
-            <p>
-              <span class="highlight"
-                >This approach was powered by Tokio’s task functionality.</span
-              >
-              Tokio is the asynchronous runtime we chose for our API and has the
-              capability to run blocking tasks on a separate thread pool so as
-              to not block the API. This solution
-              <span class="highlight"
-                >ensures our API remains non-blocking while managing rate
-                limits</span
-              >
-              by launching tasks with artificial delays and retry mechanisms as
-              needed.
-            </p>
-
-            <p>
-              <span class="highlight">Second, we lazily loaded the views.</span>
-              Rather than loading all the data at once, we waited until it was
-              requested by a team member.
-              <span class="highlight"
-                >Lastly, (and most importantly), we created a server-less
-                function on AWS Lambda</span
-              >
-              which is called by an Airtable automation we set up as a
-              JavaScript script.
+                >To address these limitations without blocking our API, we
+                implemented a four-pronged solution:
+              </span>
+              an asynchronous task framework powered by Tokio to handle
+              non-blocking, cancellable tasks displayed on the UI; lazy loading
+              to fetch data only when requested; and a serverless AWS Lambda
+              function triggered by an Airtable automation script to streamline
+              processing.
             </p>
           </div>
           <!-- caching -->
           <div class="subsubcontainer">
             <h4><i class="fa-solid fa-robot"></i>Caching</h4>
             <p>
-              Requests to Airtable often took considerable time (5 - 15
-              seconds), causing the UI to feel sluggish. Moreover, concerns
-              about stale data persisted as new volunteers were added and
-              accepted at DFG over time, which would invalidate the cache.
+              Requests to Airtable often took 5–15 seconds, causing sluggish UI
+              performance and raising concerns about stale data as new
+              volunteers joined.
               <span class="highlight"
                 >To address this, we used our asynchronous job framework to
-                schedule periodic data refreshes every few hours, with a manual
-                refresh button in the UI for immediate updates.</span
+                schedule periodic data refreshes every few hours and added a
+                manual refresh button in the UI for immediate updates.</span
               >
-            </p>
-
-            <p>
-              This solution, although not perfect, allows our management team to
-              ensure data accuracy by triggering a refetch when necessary, with
-              a cooldown mechanism in place to prevent hitting rate limits. Thus
-              far, this approach has proven effective, given our modest
-              management team size and infrequent data synchronization issues.
+              This approach, combined with a cooldown mechanism to avoid rate
+              limits has proven effective, given our modest management team size
+              and infrequent data synchronization issues.
             </p>
           </div>
           <!-- subcontainer end -->
@@ -568,6 +403,185 @@
       <div class="scroll-final"></div>
     </section>
 
+    <!--DESIGN PROCESS-->
+    <section class="design-process">
+      <div class="container">
+        <h2>Design Process</h2>
+
+        <!--Understanding the target audience-->
+        <div class="subcontainer">
+          <h3>Understanding the Target Audience</h3>
+          <p>
+            The primary end users for Pantheon are DFG’s management and
+            executive members. Both groups share the same goal:
+            <span class="highlight"
+              >automate and visualize the onboarding/offboarding process for
+              volunteers for all project cycles.</span
+            >
+          </p>
+        </div>
+        <!--user journey-->
+        <div class="subcontainer">
+          <h3>User Journey</h3>
+          <p>
+            Focusing on Pantheon’s management interface, I mapped out the user
+            journey. With every iteration, I incorporated feedback from DFG’s
+            executive team and my team to improve the user experience, creating
+            new features along the way.
+          </p>
+          <div class="subsubcontainer diagram">
+            <img
+              src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-user-flow.png"
+              alt="pantheon user journey"
+            />
+          </div>
+        </div>
+
+        <!--Wireframing-->
+        <div class="subcontainer">
+          <h3>Wireframing</h3>
+          <p>
+            Considering the technical specifications, I began sketching
+            wireframes to visualize the extensive volunteer and client data for
+            Mary and DFG’s manage.
+          </p>
+          <!--lowfi brainstorming-->
+          <div class="subsubcontainer">
+            <h4>Low-Fi Brainstorming</h4>
+            <p>
+              I sketched the initial wireframes by hand and explored different
+              layout configurations to optimize user experience and information
+              accessibility.
+            </p>
+            <div class="subsubcontainer diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-wireframe-1.png"
+                alt="lowfi wireframing"
+              />
+            </div>
+          </div>
+
+          <div class="subsubcontainer">
+            <h4>Mid Fidelity Wireframes</h4>
+            <p>
+              Next, I created mid-fidelity wireframes to visualize the overall
+              look of Pantheon. These wireframes served as crucial points for
+              design iterations. During these iterations, I incorporated
+              feedback from Mary, DFG’s management needs, and any engineering
+              constraints.
+            </p>
+            <div class="subsubcontainer diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/midfi-db-creation-v1.png"
+                alt="mid-fi wireframing"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--Initial MVP-->
+        <div class="subcontainer">
+          <h3>Initial MVP</h3>
+          <p>
+            The first Pantheon MVP was unveiled at Okta For Good’s fellowship
+            convention in April 2024. Presented to an audience of hundreds, this
+            showcase provided a valuable opportunity to gather feedback, explore
+            potential improvements to Pantheon’s technical infrastructure, and
+            refine our designs accordingly.
+          </p>
+          <div class="subsubcontainer">
+            <h4>Dashboard View</h4>
+            <p>
+              DFG management members can create dashboard views extracted from
+              DFG’s Airtable bases. Each dashboard view is tailored to a
+              specific internal classification.
+            </p>
+            <div class="subsubcontainer diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/dashboard-creation.jpg"
+                alt="dashboard view"
+              />
+            </div>
+          </div>
+          <div class="subsubcontainer">
+            <h4>Job Management</h4>
+            <p>
+              In each dashboard view, DFG management members can export and
+              import volunteer data between Airtable and Pantheon seamlessly.
+              These exports and imports are displayed to the right of the
+              dashboard, categorized by status: complete, pending, error, or
+              cancelled.
+            </p>
+            <div class="subsubcontainer diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-view.jpg"
+                alt="volunteer dashboard"
+              />
+            </div>
+          </div>
+          <div class="subsubcontainer">
+            <h4>Airtable Automation</h4>
+            <p>
+              We created a server-less function on AWS Lambda which is called by
+              an Airtable automation we set up as a Javascript script. Whenever
+              a record is created, edited, or deleted, that lambda is triggered
+              and notifies our system.
+            </p>
+            <div class="subsubcontainer diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-airtable.png"
+                alt="Airtable automation"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--Iteration-->
+        <div class="subcontainer">
+          <h3>Iteration</h3>
+          <div class="subsubcontainer">
+            <h4>Multi-Classification Approach</h4>
+            <p>
+              As Pantheon’s tech architecture and constraints evolved, so did
+              the design. One notable change was in how Airtable data was
+              extracted to Pantheon. With these changes, we were back to square
+              one, starting with new dashboard layout sketches.
+            </p>
+            <div class="subsubcontainer">
+              <h4>Wireframing</h4>
+              <p>
+                The initial wireframe sketches assumed that dashboards would
+                display a single internal classification. To optimize efficiency
+                and functionality, I sketched out a multi-classification
+                approach for a comprehensive look within a single dashboard.
+              </p>
+              <div class="subsubcontainer diagram">
+                <img
+                  src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-wireframe-2.png"
+                  alt="lowfi wireframing 2"
+                />
+              </div>
+            </div>
+            <div class="subsubcontainer">
+              <h4>Mid-Fi Wireframe</h4>
+              <p>
+                I created mid-fidelity wireframes based on the
+                multi-classification approach, working closely with engineers
+                and management to refine the design and ensure optimal
+                functionality.
+              </p>
+              <div class="subsubcontainer diagram">
+                <img
+                  src="https://storage.googleapis.com/jennyencho-website/pantheon-img/midfi-db-creation-v3.png"
+                  alt="midfi wireframing 3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FINAL WORK -->
     <section class="final">
       <div class="container">
@@ -575,76 +589,64 @@
         <!-- <p class="subcontainer">Pantheon continues to go through changes as Develop For Good scales and needs more features.</p> -->
 
         <div class="subcontainer">
-          <h3>Dashboard View</h3>
+          <h3>Dashboard Creation</h3>
           <p class="extra-spacing">
-            DFG management members can
-            <span class="highlight"
-              >create dashboard views extracted from DFG's Airtable bases.</span
-            >
-            Each dashboard view contains information, specifically lists of
-            volunteers, clients, and mentors, pertaining to a specific project
-            cycle.
+            DFG management can create dashboards that provide a comprehensive
+            overview of individual project cycles. These dashboards, powered by
+            Airtable, offer insights into volunteer and client data, data
+            fetching status, and key performance metrics.
           </p>
           <img
-            src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-spec-project.jpg"
+            src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-overview.png"
             class="subsubcontainer diagram"
-          />
-          <!-- <img src="pantheon-img/dashboard-creation-2.jpg" class="subsubcontainer diagram"> -->
-
-          <p class="extra-spacing">
-            Each dashboard view is tailored to specific internal
-            classifications. With this dashboard below, crafted with TypeScript
-            and React, our
-            <span class="highlight"
-              >executives can log in, generate custom views pulling data from
-              Airtable, and export users.</span
-            >
-          </p>
-          <img
-            src="https://storage.googleapis.com/jennyencho-website/pantheon-img/dashboard-creation.jpg"
-            class="subsubcontainer diagram"
-            alt="dashboard view"
           />
         </div>
+        <div class="subcontainer">
+          <h3>Smartviews</h3>
+          <p>
+            Each smartview is tailored to specific internal classifications -
+            volunteers, mentors, and nonprofit partners. With these smartviews,
+            built with TypeScript and React, DFG executives can generate custom
+            views pulling data from Airtable, export and import users, analyze
+            key metrics, and seamlessly manage volunteer and client information.
+          </p>
+          <img
+            src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-volunteer.png"
+            class="subsubcontainer diagram"
+            alt="volunteer smartview"
+          />
+        </div>
+
+        <!--analytics tools-->
+        <div class="subcontainer">
+          <h3>Analytics Tools</h3>
+          <p class="extra-spacing">
+            The Analytics Tools section provides detailed insights into the
+            demographics of DFG’s volunteer base, including their university,
+            ethnicity, academic year, age group, and socioeconomic background.
+            This data is crucial for DFG’s mission of expanding opportunities to
+            underrepresented and underserved students.
+          </p>
+          <img
+            src="https://storage.googleapis.com/jennyencho-website/pantheon-img/tools.png"
+            class="subsubcontainer diagram"
+            alt="analytics"
+          />
+        </div>
+
         <div class="subcontainer">
           <h3>Job Management</h3>
-          <p class="extra-spacing">
-            DFG management members can
-            <span class="highlight"
-              >export and import user data between Airtable and Pantheon
-              seamlessly.</span
-            >
-            They can also manage individual user information directly from the
-            dashboard view, including adding and removing details. These
-            dashboard displays these tasks in the UI,
-            <span class="highlight"
-              >categorized by status: complete, pending, error, or
-              canceled.</span
-            >
-            This categorization helps streamlines updates and organization of
-            DFG member data, ensuring accurate and efficient data management.
+          <p>
+            The dashboard provides a clear overview of data transfer tasks
+            (exports and imports) between Airtable and Pantheon. These tasks are
+            categorized by status: complete, pending, error, or canceled. This
+            categorization helps streamlines updates and organization of DFG
+            member data.
           </p>
           <img
-            src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-view.jpg"
+            src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-status.png"
             class="subsubcontainer diagram"
             alt="job management"
-          />
-        </div>
-
-        <div class="subcontainer">
-          <h3>Airtable Automation</h3>
-          <p class="extra-spacing">
-            <span class="highlight"
-              >We created a server-less function on AWS Lambda which is called
-              by an Airtable automation we set up as a Javascript script.</span
-            >
-            Whenever a record is created, edited, or deleted, that lambda is
-            triggered and notifies our system.
-          </p>
-          <img
-            src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-airtable.png"
-            class="subsubcontainer diagram"
-            alt="airtable automation"
           />
         </div>
         <div class="scroll-impact"></div>
@@ -659,16 +661,21 @@
         <div class="subcontainer">
           <h3>Outcomes</h3>
           <p class="alert">
-            Since the inception of this project, Develop For Good has recieved
-            over $1 million in funding in support of Pantheon’s development
+            Since the inception of this project,
+            <span class="highlight"
+              >Develop For Good has recieved over $1 million in funding in
+              support of Pantheon’s development</span
+            >
             through key partnerships with Stanford’s StartX and Okta. In
             November of 2023, Develop For Good became the first nonprofit to be
-            accepted to Stanford’s startup accelerator StartX, with Pantheon
-            highlighting DFG as a tech nonprofit startup and partnered with Okta
-            For Good to further the development of Pantheon. As of October 2024,
-            Pantheon’s work is featured on Okta’s tech blog community and has
-            officially launched for every team in the Winter 2025 cycle and
-            beyond!
+            accepted to Stanford’s startup accelerator StartX in three years,
+            with Pantheon highlighting DFG as a tech nonprofit startup and
+            partnered with Okta For Good to further the development of Pantheon.
+            <span class="highlight"
+              >As of October 2024, Pantheon’s work is featured on Okta’s tech
+              blog and has officially launched for every team in the Winter 2025
+              cycle and beyond!</span
+            >
           </p>
         </div>
 
@@ -681,11 +688,8 @@
             </h4>
             <p>
               We're approaching Pantheon as a central platform to house custom
-              AI models and features to further
-              <span class="highlight"
-                >accelerate and personalize the end-to-end project development
-                experience.</span
-              >
+              AI models and features to further accelerate and personalize the
+              end-to-end project development experience.
             </p>
           </div>
 
@@ -696,12 +700,10 @@
             </h4>
             <p>
               We hope this key piece of software will help make it possible for
-              DFG to scale our capacity indefinitely.
-              <span class="highlight"
-                >As a tech nonprofit and startup that develops digital solutions
-                for other nonprofits, we hope to continue contributing to the
-                nonprofit sector with our learnings and insights.</span
-              >
+              DFG to scale our capacity indefinitely. As a tech nonprofit and
+              startup that develops digital solutions for other nonprofits, we
+              hope to continue contributing to the nonprofit sector with our
+              learnings and insights.
             </p>
           </div>
         </div>
@@ -713,13 +715,13 @@
               <i class="fa-solid fa-heart"></i> Design isn't just aesthetics.
             </h4>
             <p>
-              Pantheon stands out as the most intricate technical architecture
-              I’ve worked on to date (as of October 2024). Its evolution through
+              Pantheon has been the most intricate technical architecture I’ve
+              worked on to date (as of October 2024). Its evolution through
               multiple architectural changes has given me invaluable lessons on
               the importance of functional design to make complex technical
               systems accessible to everyday users. Combining my background in
               both tech and design to bring a scalable product to life has been
-              an excited challenge and reinforced my commitment to continuously
+              an exciting challenge and reinforced my commitment to continuously
               update my technical skills alongside design skills.
             </p>
           </div>
@@ -727,18 +729,18 @@
           <div class="subsubcontainer">
             <h4>
               <i class="fa-solid fa-volume-high"></i>Understand the big picture
-              first. it.
+              first.
             </h4>
             <p>
-              Pantheon required an extensive discussions of abstract concepts
-              and potential tech stacks before initiating the UI design process.
+              Pantheon required extensive discussions of abstract concepts and
+              potential tech stacks before initiating the UX/UI design process.
               Along the way, I gained a deeper understanding of how clean code
               design directly influences effective user interface design. These
-              discussions pushed me thoughtfully conceptualize how data should
-              be presented to users in a clear, uncomplicated manner. Without
-              this comprehensive approach to analyzing the big picture, Pantheon
-              would not have achieved its current level of usability and impact
-              today.
+              discussions pushed me to thoughtfully conceptualize how data
+              should be presented to users in a clear, uncomplicated manner.
+              Without this comprehensive approach to analyzing the big picture,
+              Pantheon would not have achieved its current level of usability
+              and impact today.
             </p>
           </div>
         </div>

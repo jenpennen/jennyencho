@@ -44,7 +44,7 @@ h4 i {
 
 /* PARAGRAPHS */
 p.main-subtitle {
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   text-align: center;
   /* line-height: 1.4em; */
 }
@@ -55,7 +55,9 @@ a {
 .subcontainer p ~ p {
   padding-top: 1.25em;
 }
-
+.subsubcontainer {
+  padding-top: 1rem;
+}
 .shoutout {
   margin: 4em 0 1em 0;
   font-style: italic;
@@ -69,7 +71,7 @@ a {
   );
   /* color: var(--gray); */
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 600;
   background-size: 0% 100%;
   background-repeat: no-repeat;
   transition: background-size 0.75s var(--ease-slow);
@@ -84,7 +86,6 @@ a {
   font-weight: 600;
   color: var(--gray);
   text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 .caption {
   text-align: center;

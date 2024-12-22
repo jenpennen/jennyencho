@@ -23,19 +23,9 @@
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="../../css/work.css" />
     <link rel="stylesheet" href="../../css/scootly.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <script
       src="https://kit.fontawesome.com/6b4fd4dffa.js"
       crossorigin="anonymous"
@@ -48,7 +38,7 @@
       <div class="container">
         <!-- left -->
         <a href="../../index.html" class="left"
-          ><img src="../../assets/favicon.svg"></img>
+          ><img src="../../assets/favicon.svg" />
         </a>
         <!-- hamburger menu -->
         <input type="checkbox" id="nav-menu" />
@@ -270,48 +260,19 @@
               principles.</span
             >
           </p>
-          <div class="subsubcontainer stats two-column">
-            <div class="grid-item">
-              <i class="fa-solid fa-earth"></i>
-              <h4>Environmentalism</h4>
-              <p>Combat climate change by supporting eco-friendly mobility.</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-solid fa-clock"></i>
-              <h4>Convenience</h4>
-              <p>Deliver a fast and seamless experience for on-the-go users.</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-solid fa-earth"></i>
-              <h4>Community</h4>
-              <p>Build a cultural movement, not just a user base.</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-solid fa-user"></i>
-              <h4>Urban</h4>
-              <p>
-                Reflect the hustling and spirited energy of our users with a
-                striking design.
-              </p>
-            </div>
-          </div>
+          <img
+            src="https://storage.googleapis.com/jennyencho-website/scootly-img/scootly-guiding-principles.png"
+            alt="scootly guiding principles"
+            class="subsubcontainer diagram"
+          />
         </div>
         <div class="subcontainer">
           <h3>Proposal</h3>
           <p>
-            At UCLA, one thing is clear:
-            <span class="highlight"
-              >scooters are a campus staple and offer an unbeatable
-              convenience</span
-            >
-            for getting around. For many students, scooters even
-            <span class="highlight"
-              >outshine other eco-friendly transportation options</span
-            >
-            like buses and carpools.
-          </p>
-          <p>
-            This observation begged the question:
+            At UCLA, one thing is clear: scooters are a campus staple and offer
+            an unbeatable convenience for getting around. For many students,
+            scooters even outshine other eco-friendly transportation options
+            like buses and carpools. This observation begged the question:
             <span class="highlight"
               >what if the environmental benefits of personal scooters could
               merge with the convenience of ridesharing?</span
@@ -447,13 +408,11 @@
             API.
           </p>
           <p>
-            Once users were authenticated,
-            <span class="highlight"
-              >we stored their information in Firebase Firestore.</span
-            >
-            We set up a Firestore database, creating a document for each user to
-            record essential details like email, display name, user preferences
-            (vendor or renter), and registration date. We also
+            Once users were authenticated, we stored their information in
+            Firebase Firestore. We set up a Firestore database, creating a
+            document for each user to record essential details like email,
+            display name, user preferences (vendor or renter), and registration
+            date. We also
             <span class="highlight"
               >configured Firebase Security Rules, allowing only authenticated
               users to access their own information.</span

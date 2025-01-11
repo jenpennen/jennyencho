@@ -10,16 +10,11 @@
 
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../../css/main.css" />
-    <!-- <link rel="stylesheet" href="../../css/work.css" /> -->
+    <link rel="stylesheet" href="../../css/work.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-
-    <script
-      src="https://kit.fontawesome.com/6b4fd4dffa.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <div class="scroll-top"></div>
@@ -28,7 +23,9 @@
     <nav class="nav" id="nav">
       <div class="container">
         <!-- left -->
-        <a class="font-brand font-semibold uppercase">Jenny</a>
+        <a class="font-brand font-semibold uppercase" href="../../index.html"
+          >Jenny</a
+        >
         <!-- hamburger menu -->
         <input type="checkbox" id="nav-menu" />
         <label for="nav-menu" class="nav-btn">
@@ -62,49 +59,47 @@
       </div>
     </nav>
 
-    <!-- CLOSE BUTTON -->
-    <a href="../../work-gallery/" class="close">
-      <i class="fa-solid fa-arrow-left"></i>
-    </a>
-
     <!-- HEADLINE -->
-    <section class="m-auto">
-      <!-- heading image -->
-      
-        <img class="relative"
+    <section class="mx-auto my-auto">
+      <div class="container">
+        <!-- heading image -->
+        <img
+          class="pt-10 relative justify-self-center"
           src="https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
         />
-     
-      <!-- title -->
-      <div class="w-4/5 mx-auto text-center">
-        <h1 class="text-center p-4 text-5xl font-bold">Pantheon</h1>
-        <p class="text-lg w-full">
-          Powering nonprofit volunteer management with seamless tech
-          integration.
-        </p>
 
-        <!-- project info -->
-        <div class="grid grid-cols-2 gap-4 text-center mx-auto my-4 py-4 border-t-2 border-gray-700 border-b-2">
-          
-          <span
-            ><p class="font-bold uppercase text-sm">Organization</p>
-            <p>Develop For Good</p></span
+        <!-- title -->
+        <div class="mx-auto">
+          <h1 class="text-center pt-5 pb-3 text-5xl font-bold">Pantheon</h1>
+          <p class="text-center">
+            Powering nonprofit volunteer management with seamless tech
+            integration.
+          </p>
+
+          <!-- project info -->
+          <div
+            class="grid grid-cols-2 gap-4 mx-auto my-4 py-4 border-t-2 border-gray-300 border-b-2"
           >
-          <span 
-            ><p class="font-bold uppercase text-sm">Role</p>
-            <p>UX Designer</p>
-            <p>Frontend Engineer</p>
-            </span
-          >
-          <span 
-            ><p class="font-bold uppercase text-sm">Platform</p>
-            <p>Data Management Tool</p></span
-          >
-          <span 
-            ><p class="font-bold uppercase text-sm">Timeline</p>
-            <p>August 2023-Ongoing</p></span
-          >
-    
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">
+                Organization
+              </p>
+              <p>Develop For Good</p></span
+            >
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Role</p>
+              <p>UX Designer</p>
+              <p>Frontend Engineer</p>
+            </span>
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Platform</p>
+              <p>Data Management Tool</p></span
+            >
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Timeline</p>
+              <p>August 2023-Ongoing</p></span
+            >
+          </div>
         </div>
       </div>
 
@@ -113,11 +108,11 @@
 
     <!-- CONTEXT -->
     <section class="context">
-      <div class="w-4/5 mx-auto">
+      <div class="container">
         <h2 class="font-brand font-bold text-4xl uppercase pb-10">Context</h2>
 
         <!-- background-->
-        <div class="pb-5">
+        <div class="py-5">
           <h3 class="text-2xl font-semibold pb-2">Background</h3>
           <p>
             <span class="font-bold">Develop For Good (DFG)</span> is a 501(c)(3)
@@ -128,15 +123,25 @@
           </p>
         </div>
         <!--problem-->
-        <div class="pb-5">
+        <div class="py-5">
           <h3 class="text-2xl font-semibold pb-2">Problem</h3>
           <p>
-            Since its establishment, DFG has experienced increasing interest
-            from students and organizations seeking technical opportunities and
-            digital services. However, the organization has struggled to scale
-            its offerings due to a reliance on manual lifecycle tasks. To
-            address this growing demand and improve technical infrastructure,
-            <span class="highlight"
+            Over the past two years, DFG has experienced a growing demand from
+            students and nonprofit organizations seeking technical opportunities
+            and digital services. However,
+            <span class="text-pink-600"
+              >the organization has struggled to scale its offerings due to a
+              reliance on manual lifecycle tasks.</span
+            >
+          </p>
+        </div>
+
+        <!-- solution -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Solution</h3>
+          <p>
+            To address this growing demand and improve technical infrastructure,
+            <span class="text-pink-600"
               >I spearheaded the UX strategy and frontend development for
               Pantheon— Develop For Good’s first internal data management
               system.</span
@@ -144,79 +149,15 @@
           </p>
         </div>
 
-        <!--Understanding the Problem-->
-        <div class="pb-5">
-         
-          <div class="subsubcontainer"> 
-            <h3 class="text-2xl font-semibold pb-2">Understanding the Problem</h3>
-            <h4>
-              <i class="fa-solid fa-cloud"></i>Develop For Good does not have
-              the tech infrastructure to protect volunteer and client data.
-            </h4>
-            <p>
-              Develop For Good currently operates without a dedicated cloud
-              environment for its services, resulting in user fragmentation.
-              This limitation makes it difficult to securely manage and protect
-              data specific to both volunteers and nonprofit clients.
-            </p>
-          </div>
+        <!-- problem statement -->
+        <div class="border-spacing-2 py-5">
+          <h3 class="text-2xl font-semibold pb-3">Defining Problem</h3>
 
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-clock"></i>DFG's onboarding/offboarding
-              processes limits scalability.
-            </h4>
-            <p>
-              The onboarding and offboarding processes at Develop For Good is
-              labor-intensive, with Program Director Amanda Lo
-              <span class="highlight"
-                >manually managing over 400 volunteers and clients each project
-                cycle on DFG's social platforms.</span
-              >
-              This time-consuming task limits DFG's ability to scale efficiently
-              with its current infrastructure.
-            </p>
-          </div>
-
-          <div class="stats subcontainer">
-            <i class="fa-solid fa-lightbulb"></i>
-
-            <p class="think-cloud">
-              With the scale of our programs surpassing the manual capacity of
-              our staff, how might we manage program lifecycle tasks seamlessly
-              and securely?
-            </p>
-          </div>
-        </div>
-
-        <!--goals-->
-        <div class="subcontainer">
-          <h3>Goals</h3>
-          <div class="subsubcontainer"> 
-            <h4>
-              <i class="fa-solid fa-robot"></i>Automate the
-              onboarding/offboarding process for all project cycles.
-            </h4>
-            <p>
-              Instead of manually inviting every new volunteer onto DFG's
-              platforms, we can
-              <span class="highlight">invite volunteers in bulk.</span>
-            </p>
-          </div>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-robot"></i>Determine what services the
-              management team needs to handle lifecycle tasks.
-            </h4>
-            <p>
-              The management team also relies on other lifecycle tasks to ensure
-              that each cycle operates seamlessly.
-              <span class="highlight"
-                >Understanding what services are needed to interact with both
-                volunteers and clients were crucial.</span
-              >
-            </p>
-          </div>
+          <p class="font-semibold uppercase text-xl">
+            With the scale of our programs surpassing the manual capacity of our
+            staff, how might we manage program lifecycle tasks seamlessly and
+            securely?
+          </p>
         </div>
       </div>
       <div class="scroll-research"></div>
@@ -225,16 +166,73 @@
     <!-- RESEARCH -->
     <section class="research">
       <div class="container">
-        <h2 class="reveal">Research</h2>
-
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Research</h2>
+        <!-- understanding the problem -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Understanding the Problem</h3>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # Develop For Good does not have the tech infrastructure to
+              protect volunteer and client data.
+            </h4>
+            <p>
+              Develop For Good currently operates without a dedicated cloud
+              environment for its services, resulting in user fragmentation.
+              This limitation makes it difficult to securely manage and protect
+              data specific to both volunteers and nonprofit clients.
+            </p>
+          </div>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # DFG's onboarding/offboarding processes limits scalability.
+            </h4>
+            <p>
+              The onboarding and offboarding processes at Develop For Good is
+              labor-intensive, with Program Director Amanda Lo
+              <span class="text-pink-600"
+                >manually managing over 400 volunteers and clients each project
+                cycle on DFG's social platforms.</span
+              >
+              This time-consuming task limits DFG's ability to scale efficiently
+              with its current infrastructure.
+            </p>
+          </div>
+        </div>
+        <!--goals-->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Goals</h3>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # Automate the onboarding/offboarding process for all project
+              cycles.
+            </h4>
+            <p>
+              Instead of manually inviting every new volunteer onto DFG's
+              platforms, we can
+              <span class="text-pink-600">invite volunteers in bulk.</span>
+            </p>
+          </div>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # Determine what services the management team needs to handle
+              lifecycle tasks.
+            </h4>
+            <p>
+              The management team also relies on other lifecycle tasks to ensure
+              that each cycle operates seamlessly. Understanding what services
+              are needed to interact with both volunteers and clients were
+              crucial.
+            </p>
+          </div>
+        </div>
         <!-- existing solutions-->
-        <div class="subcontainer">
-          <h3>Existing Solutions</h3>
-          <p>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Existing Solutions</h3>
+          <p class="pb-5">
             Nonprofits have already been using a variety of platforms for
             volunteer management, with popular solutions including VolunteerHub,
             Bloomerang, and Point. However,
-            <span class="highlight"
+            <span class="text-pink-600"
               >none of these out-of-the-box products had the specific app
               integrations and project management features we need for our
               unique program</span
@@ -244,25 +242,23 @@
         </div>
 
         <!-- dfg approach-->
-        <div class="subcontainer">
-          <h3>My Approach</h3>
+        <div class="py-5">
+          <h3 class="font-semibold uppercase text-xl">My Approach</h3>
           <p>
             Working alonside fellow engineer Anish Sinha, Pantheon is a tool we
             conceptualized a year ago and initiated in January of 2024. Our
             vision was clear.
           </p>
-          <div class="columns">
-            <div class="subsubcontainer">
-              <h4>
-                <i class="fa-solid fa-pencil"></i>Unified Management Platform
-              </h4>
+          <div class="flex grid-cols-2 text-left">
+            <div class="p-4">
+              <h4 class="font-semibold"># Unified Management Platform</h4>
               <p>
                 Build a unified management platform for DFG capable of handling
                 all client lifecycle tasks seamlessly.
               </p>
             </div>
-            <div class="subsubcontainer">
-              <h4><i class="fa-solid fa-pencil"></i>Central Data Hub</h4>
+            <div class="p-4">
+              <h4 class="font-semibold"># Central Data Hub</h4>
               <p>
                 Establish a central hub for hosting and bridging data between
                 disparate apps and services, from user management to custom AI
@@ -273,15 +269,18 @@
         </div>
 
         <!-- Okta Single Sign On (SSO)-->
-        <div class="subcontainer">
-          <h3>Okta Single Sign-On (SSO)</h3>
+        <div class="py-5">
+          <h3 class="font-semibold uppercase text-xl">
+            Okta Single Sign-On (SSO)
+          </h3>
           <p>
             DFG’s partnership with Okta for Good provided access to a powerful
-            tool: <span class="highlight">Okta Workforce Federation.</span> The
+            tool:
+            <span class="text-pink-600">Okta Workforce Federation.</span> The
             workflow was simple—volunteers accepted into a project cycle were
             added to an Airtable sheet, triggering a Lambda function to create
             their profiles in Okta’s universal directory.
-            <span class="highlight"
+            <span class="text-pink-600"
               >However, this approach hit a roadblock when we discovered that
               Single Sign-On (SSO) integration required enterprise-level
               subscriptions for platforms like Slack, Figma, and Notion.</span
@@ -293,8 +292,8 @@
         </div>
 
         <!--Google for Nonprofits-->
-        <div class="subcontainer">
-          <h3>Square One: Google For Nonprofits</h3>
+        <div class="py-5">
+          <h3 class="font-semibold uppercase text-xl">Google For Nonprofits</h3>
           <p>
             Only product leads and management members are issued Develop for
             Good handles (@developforgood.org). However, the Google for
@@ -303,7 +302,7 @@
             this limit, paying for SSO capabilities for essential services may
             become feasible. In the meantime, we chose to build Pantheon around
             Google Workspace.
-            <span class="highlight"
+            <span class="text-pink-600"
               >The process is straightforward: accept students, upload their
               information to Workspace (issuing them @developforgood.org
               emails), monitor allocations, and delete accounts at the end of
@@ -319,22 +318,26 @@
     <!-- TECH PROCESS -->
     <section class="tech-process">
       <div class="container">
-        <h2 class="reveal">Tech Process</h2>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">
+          Tech Process
+        </h2>
         <!-- airtable -->
-        <div class="subcontainer">
-          <p class="subsubcontainer">
-            <h3>Airtable</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold">Airtable</h3>
+          <p class="py-3">
             Our foundation was built on Airtable. To streamline executive acess
             and data management, we needed a seamless connection between
             Airtable and Google Workspace. Since no existing solutions fit our
             needs, we designed a custom solution that tailored to our workflow.
           </p>
-          <span class="subsubcontainer diagram">
+          <span class="py-3 diagram">
             <img
               src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-architecture.png"
               alt="pantheon architecture"
             />
-            <p class="caption">Pantheon's Architecture</p>
+            <p class="text-sm text-center p-2 pb-5 text-gray-500">
+              Pantheon's Architecture
+            </p>
           </span>
           <p>
             We developed a dashboard with Typescript and React that allows
@@ -346,18 +349,20 @@
           </p>
         </div>
         <!-- Technical Design Constraints -->
-        <div class="subcontainer">
-          <h3>Technical Design Constraints</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">
+            Technical Design Constraints
+          </h3>
           <!-- rate limits -->
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-robot"></i>Handling Airtable API Limits
+          <div class="py-3">
+            <h4 class="font-semibold uppercase pb-2">
+              # Handling Airtable API Limits
             </h4>
             <p>
               Airtable’s API enforces a maximum of 5 requests per second and
               returns only 100 records per request, which posed challenges when
               fetching large datasets.
-              <span class="highlight"
+              <span class="text-pink-600"
                 >To address these limitations without blocking our API, we
                 implemented a four-pronged solution:
               </span>
@@ -369,13 +374,13 @@
             </p>
           </div>
           <!-- caching -->
-          <div class="subsubcontainer">
-            <h4><i class="fa-solid fa-robot"></i>Caching</h4>
+          <div class="py-3">
+            <h4 class="font-semibold uppercase pb-2"># Caching</h4>
             <p>
               Requests to Airtable often took 5–15 seconds, causing sluggish UI
               performance and raising concerns about stale data as new
               volunteers joined.
-              <span class="highlight"
+              <span class="text-pink-600"
                 >To address this, we used our asynchronous job framework to
                 schedule periodic data refreshes every few hours and added a
                 manual refresh button in the UI for immediate updates.</span
@@ -389,60 +394,69 @@
         </div>
         <!-- container end -->
       </div>
-      <div class="scroll-final"></div>
+      <div class="scroll-design-process"></div>
     </section>
 
     <!--DESIGN PROCESS-->
     <section class="design-process">
       <div class="container">
-        <h2>Design Process</h2>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">
+          Design Process
+        </h2>
 
         <!--Understanding the target audience-->
-        <div class="subcontainer">
-          <h3>Understanding the Target Audience</h3>
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">
+            Understanding the Target Audience
+          </h3>
           <p>
             The primary end users for Pantheon are DFG’s management and
             executive members. Both groups share the same goal:
-            <span class="highlight"
+            <span class="text-pink-600"
               >automate and visualize the onboarding/offboarding process for
               volunteers for all project cycles.</span
             >
           </p>
         </div>
         <!--user journey-->
-        <div class="subcontainer">
-          <h3>User Journey</h3>
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">User Journey</h3>
           <p>
             Focusing on Pantheon’s management interface, I mapped out the user
             journey. With every iteration, I incorporated feedback from DFG’s
             executive team and my team to improve the user experience, creating
             new features along the way.
           </p>
-          <div class="subsubcontainer diagram">
+          <div class="py-3 diagram">
             <img
               src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-user-flow.png"
               alt="pantheon user journey"
             />
           </div>
+          <p class="text-sm text-center p-2 pb-5 text-gray-500">
+            User Journey of DFG Management Member
+          </p>
         </div>
 
         <!--Wireframing-->
-        <div class="subcontainer">
-          <h3>Wireframing</h3>
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Wireframing</h3>
           <p>
             Considering the technical specifications, I began sketching
             wireframes to visualize the extensive volunteer and client data for
             Mary and DFG’s manage.
           </p>
           <!--lowfi brainstorming-->
-          <div class="subsubcontainer">
-            <h4>Low-Fi Brainstorming</h4>
+          <div class="py-5">
+            <h4 class="font-semibold pb-2 uppercase">
+              # Low Fidelity Brainstorming
+            </h4>
             <p>
               I sketched the initial wireframes by hand and explored different
               layout configurations to optimize user experience and information
               accessibility.
             </p>
-            <div class="subsubcontainer diagram">
+            <div class="py-5 diagram">
               <img
                 src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-wireframe-1.png"
                 alt="lowfi wireframing"
@@ -450,8 +464,10 @@
             </div>
           </div>
 
-          <div class="subsubcontainer">
-            <h4>Mid Fidelity Wireframes</h4>
+          <div class="py-3">
+            <h4 class="font-semibold pb-2 uppercase">
+              # Mid Fidelity Wireframes
+            </h4>
             <p>
               Next, I created mid-fidelity wireframes to visualize the overall
               look of Pantheon. These wireframes served as crucial points for
@@ -459,7 +475,7 @@
               feedback from Mary, DFG’s management needs, and any engineering
               constraints.
             </p>
-            <div class="subsubcontainer diagram">
+            <div class="py-5 diagram">
               <img
                 src="https://storage.googleapis.com/jennyencho-website/pantheon-img/midfi-db-creation-v1.png"
                 alt="mid-fi wireframing"
@@ -469,8 +485,8 @@
         </div>
 
         <!--Initial MVP-->
-        <div class="subcontainer">
-          <h3>Initial MVP</h3>
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Initial MVP</h3>
           <p>
             The first Pantheon MVP was unveiled at Okta For Good’s fellowship
             convention in April 2024. Presented to an audience of hundreds, this
@@ -478,22 +494,22 @@
             potential improvements to Pantheon’s technical infrastructure, and
             refine our designs accordingly.
           </p>
-          <div class="subsubcontainer">
-            <h4>Dashboard View</h4>
+          <div class="py-5">
+            <h4 class="font-semibold uppercase pb-2"># Dashboard View</h4>
             <p>
               DFG management members can create dashboard views extracted from
               DFG’s Airtable bases. Each dashboard view is tailored to a
               specific internal classification.
             </p>
-            <div class="subsubcontainer diagram">
+            <div class="py-5 diagram">
               <img
                 src="https://storage.googleapis.com/jennyencho-website/pantheon-img/dashboard-creation.jpg"
                 alt="dashboard view"
               />
             </div>
           </div>
-          <div class="subsubcontainer">
-            <h4>Job Management</h4>
+          <div class="pb-5">
+            <h4 class="font-semibold uppercase pb-2"># Job Management</h4>
             <p>
               In each dashboard view, DFG management members can export and
               import volunteer data between Airtable and Pantheon seamlessly.
@@ -501,22 +517,22 @@
               dashboard, categorized by status: complete, pending, error, or
               cancelled.
             </p>
-            <div class="subsubcontainer diagram">
+            <div class="py-5 diagram">
               <img
                 src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-view.jpg"
                 alt="volunteer dashboard"
               />
             </div>
           </div>
-          <div class="subsubcontainer">
-            <h4>Airtable Automation</h4>
+          <div class="pb-5">
+            <h4 class="font-semibold uppercase pb-2"># Airtable Automation</h4>
             <p>
               We created a server-less function on AWS Lambda which is called by
               an Airtable automation we set up as a Javascript script. Whenever
               a record is created, edited, or deleted, that lambda is triggered
               and notifies our system.
             </p>
-            <div class="subsubcontainer diagram">
+            <div class="py-5 diagram">
               <img
                 src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-airtable.png"
                 alt="Airtable automation"
@@ -526,45 +542,50 @@
         </div>
 
         <!--Iteration-->
-        <div class="subcontainer">
-          <h3>Iteration</h3>
-          <div class="subsubcontainer">
-            <h4>Multi-Classification Approach</h4>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">
+            Iteration: Multi-Classification Layout
+          </h3>
+          <p>
+            As Pantheon’s tech architecture and constraints evolved, so did the
+            design.
+            <span class="text-pink-600"
+              >One notable change was in how Airtable data was extracted to
+              Pantheon.</span
+            >
+            With these changes, we were back to square one, starting with new
+            dashboard layout sketches.
+          </p>
+          <div class="py-3">
+            <h4 class="font-semibold">Multi-Classification Brainstorming</h4>
             <p>
-              As Pantheon’s tech architecture and constraints evolved, so did
-              the design. One notable change was in how Airtable data was
-              extracted to Pantheon. With these changes, we were back to square
-              one, starting with new dashboard layout sketches.
+              <span class="text-pink-600"
+                >The initial wireframe sketches assumed that dashboards would
+                display a single internal classification.</span
+              >
+              To optimize efficiency and functionality, I sketched out a
+              multi-classification approach for a comprehensive look within a
+              single dashboard.
             </p>
-            <div class="subsubcontainer">
-              <h4>Wireframing</h4>
-              <p>
-                The initial wireframe sketches assumed that dashboards would
-                display a single internal classification. To optimize efficiency
-                and functionality, I sketched out a multi-classification
-                approach for a comprehensive look within a single dashboard.
-              </p>
-              <div class="subsubcontainer diagram">
-                <img
-                  src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-wireframe-2.png"
-                  alt="lowfi wireframing 2"
-                />
-              </div>
+            <div class="py-5 diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-wireframe-2.png"
+                alt="lowfi wireframing 2"
+              />
             </div>
-            <div class="subsubcontainer">
-              <h4>Mid-Fi Wireframe</h4>
-              <p>
-                I created mid-fidelity wireframes based on the
-                multi-classification approach, working closely with engineers
-                and management to refine the design and ensure optimal
-                functionality.
-              </p>
-              <div class="subsubcontainer diagram">
-                <img
-                  src="https://storage.googleapis.com/jennyencho-website/pantheon-img/midfi-db-creation-v3.png"
-                  alt="midfi wireframing 3"
-                />
-              </div>
+          </div>
+          <div class="py-3">
+            <h4 class="font-semibold">Mid Fidelity Wireframe</h4>
+            <p>
+              I created mid-fidelity wireframes based on the
+              multi-classification approach, working closely with engineers and
+              management to refine the design and ensure optimal functionality.
+            </p>
+            <div class="py-5 diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/pantheon-img/midfi-db-creation-v3.png"
+                alt="midfi wireframing 3"
+              />
             </div>
           </div>
         </div>
@@ -574,11 +595,13 @@
     <!-- FINAL WORK -->
     <section class="final">
       <div class="container">
-        <h2 class="reveal">Final Work</h2>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">
+          Final Work
+        </h2>
         <!-- <p class="subcontainer">Pantheon continues to go through changes as Develop For Good scales and needs more features.</p> -->
 
-        <div class="subcontainer">
-          <h3>Dashboard Creation</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Dashboard Creation</h3>
           <p class="extra-spacing">
             DFG management can create dashboards that provide a comprehensive
             overview of individual project cycles. These dashboards, powered by
@@ -587,11 +610,11 @@
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-overview.png"
-            class="subsubcontainer diagram"
+            class="py-3 diagram"
           />
         </div>
-        <div class="subcontainer">
-          <h3>Smartviews</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Smartviews</h3>
           <p>
             Each smartview is tailored to specific internal classifications -
             volunteers, mentors, and nonprofit partners. With these smartviews,
@@ -601,14 +624,14 @@
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-volunteer.png"
-            class="subsubcontainer diagram"
+            class="py-3 diagram"
             alt="volunteer smartview"
           />
         </div>
 
         <!--analytics tools-->
-        <div class="subcontainer">
-          <h3>Analytics Tools</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Analytics Tools</h3>
           <p class="extra-spacing">
             The Analytics Tools section provides detailed insights into the
             demographics of DFG’s volunteer base, including their university,
@@ -618,13 +641,13 @@
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/pantheon-img/tools.png"
-            class="subsubcontainer diagram"
+            class="py-3 diagram"
             alt="analytics"
           />
         </div>
 
-        <div class="subcontainer">
-          <h3>Job Management</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Job Management</h3>
           <p>
             The dashboard provides a clear overview of data transfer tasks
             (exports and imports) between Airtable and Pantheon. These tasks are
@@ -634,7 +657,7 @@
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-status.png"
-            class="subsubcontainer diagram"
+            class="py-3 diagram"
             alt="job management"
           />
         </div>
@@ -645,22 +668,22 @@
     <!-- IMPACT -->
     <section class="impact">
       <div class="container">
-        <h2 class="reveal">Impact</h2>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Impact</h2>
 
-        <div class="subcontainer">
-          <h3>Outcomes</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Outcomes</h3>
           <p class="alert">
             Since the inception of this project,
-            <span class="highlight"
+            <span class="text-pink-600"
               >Develop For Good has recieved over $1 million in funding in
               support of Pantheon’s development</span
             >
             through key partnerships with Stanford’s StartX and Okta. In
             November of 2023, Develop For Good became the first nonprofit to be
             accepted to Stanford’s startup accelerator StartX in three years,
-            with Pantheon highlighting DFG as a tech nonprofit startup and
-            partnered with Okta For Good to further the development of Pantheon.
-            <span class="highlight"
+            with Pantheon marking Develop For Good as a tech nonprofit startup
+            and partnered with Okta For Good to continue its development.
+            <span class="text-pink-600"
               >As of October 2024, Pantheon’s work is featured on Okta’s tech
               blog and has officially launched for every team in the Winter 2025
               cycle and beyond!</span
@@ -668,13 +691,10 @@
           </p>
         </div>
 
-        <div class="subcontainer">
-          <h3>Next Steps</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-pen-nib"></i>Design additional
-              functionalities.
-            </h4>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Next Steps</h3>
+          <div class="py-3">
+            <h4 class="font-semibold"># Design additional functionalities.</h4>
             <p>
               We're approaching Pantheon as a central platform to house custom
               AI models and features to further accelerate and personalize the
@@ -682,11 +702,8 @@
             </p>
           </div>
 
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-handshake"></i>Streamline beneficiary
-              intake.
-            </h4>
+          <div class="py-3">
+            <h4 class="font-semibold"># Streamline beneficiary intake.</h4>
             <p>
               We hope this key piece of software will help make it possible for
               DFG to scale our capacity indefinitely. As a tech nonprofit and
@@ -697,29 +714,23 @@
           </div>
         </div>
 
-        <div class="subcontainer">
-          <h3>Reflections</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-heart"></i> Design isn't just aesthetics.
-            </h4>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Reflections</h3>
+          <div class="py-3">
+            <h4 class="font-semibold"># Design isn't just aesthetics.</h4>
             <p>
-              Pantheon has been the most intricate technical architecture I’ve
-              worked on to date (as of October 2024). Its evolution through
-              multiple architectural changes has given me invaluable lessons on
-              the importance of functional design to make complex technical
-              systems accessible to everyday users. Combining my background in
-              both tech and design to bring a scalable product to life has been
-              an exciting challenge and reinforced my commitment to continuously
-              update my technical skills alongside design skills.
+              Pantheon's technical architecture changed multiple times across
+              iterations. In each technical iteration, I saw firsthand how
+              crucial good and functional design is to make complex technical
+              systems accessible to everyday users. It was a thrill to translate
+              complex data structures into user-friendly layouts, and it's
+              reinforced my commitment to continue building upon both my design
+              and technical skills.
             </p>
           </div>
 
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-volume-high"></i>Understand the big picture
-              first.
-            </h4>
+          <div class="py-3">
+            <h4 class="font-semibold"># Understand the big picture first.</h4>
             <p>
               Pantheon required extensive discussions of abstract concepts and
               potential tech stacks before initiating the UX/UI design process.
@@ -740,25 +751,27 @@
     <!-- FOOTER -->
     <section class="footer">
       <div class="container">
-        <div class="socials">
+        <div class="text-gray-500 font-brand text-center font-semibold mx-auto">
           <a
-            class="social"
+            class="text-sm hover:text-blue-600"
             id="linkedin"
             href="https://www.linkedin.com/in/jennyecho"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            Linkedin |
           </a>
-          ||
+
           <a
-            class="social"
+            class="text-sm hover:text-blue-600"
             id="github"
             href="https://github.com/jenpennen"
             target="_blank"
           >
-            <i class="fa-brands fa-github"></i>
+            Github
           </a>
-          <p>Made With Love, Jenny Cho</p>
+          <p class="text-center text-md text-gray-500 mx-auto">
+            Built & Designed By Jenny Cho
+          </p>
         </div>
       </div>
     </section>

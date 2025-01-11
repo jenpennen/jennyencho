@@ -105,9 +105,9 @@ const navItems = [
         window.innerHeight || 0
       );
 
-      console.log("Viewport height:", viewportHeight);
+      console.log("Viewport height:", viewportHeight - 300);
 
-      if (impactHeight >= viewportHeight - 100) {
+      if (impactHeight >= viewportHeight) {
         smoothScroll(".scroll-impact", 1500);
       } else {
         smoothScroll(".scroll-bottom", 1500);

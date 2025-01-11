@@ -1,3 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 * {
   --text: #131618;
   --shadow: #0e2f3924;
@@ -25,7 +31,7 @@
 
 * {
   margin: 0;
-  font-family: Urbanist, Arial, Helvetica, sans-serif;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.15rem;
   color: var(--text);
@@ -46,7 +52,7 @@ body {
 /* HEADINGS */
 
 h1 {
-  font-family: Libre Bodoni, serif;
+  font-family: DM Sans, serif;
   font-size: 3rem;
   font-weight: 600;
   line-height: 2rem;
@@ -80,11 +86,6 @@ h1 {
   padding-left: 10%;
   font-size: 1.15rem;
   font-weight: 400;
-}
-
-.pitch p {
-  padding-top: 1rem;
-  font-size: 1.25rem;
 }
 
 /* LINKS */
@@ -156,7 +157,6 @@ nav .left:hover,
   /* border: pink 1px solid; */
 }
 .work .work-tab h1 {
-  font-family: Libre Bodoni, serif;
   font-size: 2.5rem;
   padding-bottom: 0.25rem;
 }
@@ -164,14 +164,14 @@ nav .left:hover,
 .work .grid .container {
   position: relative;
   width: calc(50% - 3em);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
-  box-shadow: var(--medium-shadow);
+  /* box-shadow: var(--medium-shadow);*/
   transition: var(--bouncy);
 }
 .work .grid .container:hover {
   transform: scale(1.05);
-  box-shadow: var(--medium-shadow);
+  /* box-shadow: var(--medium-shadow); */
   transition: var(--bouncy);
 }
 

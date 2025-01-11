@@ -10,9 +10,10 @@
 
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="../../css/work.css" />
+    <!-- <link rel="stylesheet" href="../../css/work.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
 
     <script
@@ -27,7 +28,7 @@
     <nav class="nav" id="nav">
       <div class="container">
         <!-- left -->
-        <a class="left"><img src="../../assets/favicon.svg" /></a>
+        <a class="font-brand font-semibold uppercase">Jenny</a>
         <!-- hamburger menu -->
         <input type="checkbox" id="nav-menu" />
         <label for="nav-menu" class="nav-btn">
@@ -67,36 +68,43 @@
     </a>
 
     <!-- HEADLINE -->
-    <section class="headline">
+    <section class="m-auto">
       <!-- heading image -->
-      <div class="headline-img-container">
-        <img
+      
+        <img class="relative"
           src="https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
         />
-      </div>
-      <div class="container">
-        <h1>Pantheon</h1>
-        <p class="main-subtitle">
+     
+      <!-- title -->
+      <div class="w-4/5 mx-auto text-center">
+        <h1 class="text-center p-4 text-5xl font-bold">Pantheon</h1>
+        <p class="text-lg w-full">
           Powering nonprofit volunteer management with seamless tech
           integration.
         </p>
-        <div class="long-spec specs">
+
+        <!-- project info -->
+        <div class="grid grid-cols-2 gap-4 text-center mx-auto my-4 py-4 border-t-2 border-gray-700 border-b-2">
+          
           <span
-            >Company -
+            ><p class="font-bold uppercase text-sm">Organization</p>
             <p>Develop For Good</p></span
           >
-          <span
-            >Role -
-            <p>UX Designer & Frontend Engineer</p></span
+          <span 
+            ><p class="font-bold uppercase text-sm">Role</p>
+            <p>UX Designer</p>
+            <p>Frontend Engineer</p>
+            </span
           >
-          <span
-            >Project -
+          <span 
+            ><p class="font-bold uppercase text-sm">Platform</p>
             <p>Data Management Tool</p></span
           >
-          <span
-            >Timeline -
+          <span 
+            ><p class="font-bold uppercase text-sm">Timeline</p>
             <p>August 2023-Ongoing</p></span
           >
+    
         </div>
       </div>
 
@@ -105,14 +113,14 @@
 
     <!-- CONTEXT -->
     <section class="context">
-      <div class="container">
-        <h2 class="reveal">Context</h2>
+      <div class="w-4/5 mx-auto">
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Context</h2>
 
         <!-- background-->
-        <div class="subcontainer">
-          <h3>Background</h3>
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Background</h3>
           <p>
-            <span class="highlight">Develop For Good (DFG)</span> is a 501(c)(3)
+            <span class="font-bold">Develop For Good (DFG)</span> is a 501(c)(3)
             nonprofit focused on closing the digital divide in the nonprofit
             sector and volunteerism. They offer opportunities for underserved
             and underrepresented college students to build real-world technical
@@ -120,8 +128,8 @@
           </p>
         </div>
         <!--problem-->
-        <div class="subcontainer">
-          <h3>Problem</h3>
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Problem</h3>
           <p>
             Since its establishment, DFG has experienced increasing interest
             from students and organizations seeking technical opportunities and
@@ -137,10 +145,10 @@
         </div>
 
         <!--Understanding the Problem-->
-        <div class="subcontainer">
+        <div class="pb-5">
          
           <div class="subsubcontainer"> 
-            <h3>Understanding the Problem</h3>
+            <h3 class="text-2xl font-semibold pb-2">Understanding the Problem</h3>
             <h4>
               <i class="fa-solid fa-cloud"></i>Develop For Good does not have
               the tech infrastructure to protect volunteer and client data.

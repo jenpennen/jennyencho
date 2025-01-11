@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- metadata -->
-    <title>Jenny Cho's Work Gallery</title>
+    <title>Jenny Cho's Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#fafcfc" />
@@ -15,16 +15,12 @@
       property="og:description"
       content="Los Angeles-based software engineer and product designer"
     />
-    <meta
-      name="image"
-      property="og:image"
-      content="https://storage.googleapis.com/jennyencho-website/landing-img/thumbnail.png"
-    />
 
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
 
     <script
@@ -40,9 +36,7 @@
     <nav class="nav" id="nav">
       <div class="container">
         <!-- left -->
-        <a href="../index.html" class="left"
-          ><img src="../assets/favicon.svg" />
-        </a>
+        <a class="font-semibold" href="./index.html" class="left">JENNY </a>
 
         <!-- hamburger menu -->
         <input type="checkbox" id="nav-menu" />
@@ -59,7 +53,7 @@
               <a href="../index.html">Work</a>
             </li>
             <li>
-              <a href="../about/">About</a>
+              <a href="about/">About</a>
             </li>
             <li>
               <a href="mailto: jennycho35@gmail.com">Contact</a>
@@ -78,13 +72,13 @@
     <!-- WORK EXPERIENCE -->
     <section class="work">
       <div class="container">
-        <div class="pitch">
+        <div>
           <div class="scroll-work"></div>
           <br />
-          <h1 class="title">Hi, I'm Jenny.</h1>
-          <p>
+          <h1 class="uppercase font-bold text-5xl tracking-wide">Jenny Cho</h1>
+          <p class="uppercase">
             <!-- <br /> -->
-            I'm a UX designer working on internal tools at Develop For Good.
+            Los Angeles-based UX Designer and Frontend Engineer
           </p>
         </div>
 
@@ -94,113 +88,66 @@
           <div class="container">
             <a href="../work/pantheon/">
               <img
+                class="w-1/2"
                 src="https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
               />
-              <div class="work-tab">
-                <h1>Pantheon</h1>
-                <div class="label">
-                  <p>Develop For Good</p>
-                </div>
-                <p>
+              <div class="py-5">
+                <h1 class="font-brand bold tracking-wide text-3xl">Pantheon</h1>
+                <p class="uppercase text-base text-gray-600 bold">
+                  Develop For Good
+                </p>
+                <p class="font-body">
                   Powering nonprofit volunteer management with seamless tech
                   integration.
                 </p>
               </div>
             </a>
           </div>
-          <!-- pantheon-ui -->
-          <!-- <div class="container">
-            <div class="in-progress">
-              <img
-                src="https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
-                alt="image"
-              />
-              <div class="work-tab">
-                <h1>Pantheon UI</h1>
-                <i class="fa-solid fa-lock"></i>
-                <div class="label">
-                  <p>Data Management Tool UI</p>
-                  <p>Design Kit - Figma</p>
-                </div>
-                <p class="work-desc">
-                  Powering nonprofit volunteer management with seamless tech
-                  integration. Stay tuned!
-                </p>
-              </div>
-            </div>
-          </div> -->
 
           <!-- tugo -->
           <div class="container">
             <a href="../work/tugo/">
               <img
+                class="w-1/2"
                 src="https://storage.googleapis.com/jennyencho-website/landing-img/tugo-landing.png"
-                alt="image"
               />
-              <div class="work-tab">
-                <h1>Tugo</h1>
-                <div class="label">
-                  <p>UCLA</p>
-                </div>
-                <p class="work-desc">
-                  Connecting you to the beats that surround you.
-                </p>
+              <div class="py-5">
+                <h1 class="font-brand bold tracking-wide text-3xl">Tugo</h1>
+                <p class="uppercase text-base text-gray-600 bold">UCLA</p>
+                <p class="font-body">Connecting you to the beats around you.</p>
               </div>
             </a>
           </div>
-          <!-- perspective -->
-          <!-- <div class="container">
-            <div class="in-progress">
-              <img
-                src="https://storage.googleapis.com/jennyencho-website/landing-img/perspective-landing.png"
-                alt="image"
-              />
-              <div class="work-tab">
-                <h1>Perspective</h1>
-                <i class="fa-solid fa-lock"></i>
-                <div class="label">
-                  <p>Website</p>
-                  <p>Tech Stack - React, Bootstrap</p>
-                  <p>Design Kit - Figma</p>
-                </div>
-                <p class="work-desc">
-                  Discover your community anytime, anywhere. Stay tuned!!
-                </p>
-              </div>
-            </div>
-          </div> -->
+
           <!-- scootly -->
           <div class="container">
-            <a href="../work/scootly">
+            <a href="../work/scootly/">
               <img
+                class="w-1/2"
                 src="https://storage.googleapis.com/jennyencho-website/landing-img/scootly-landing.png"
-                alt="image"
               />
-              <div class="work-tab">
-                <h1>Scootly</h1>
-                <div class="label">
-                  <p>UCLA</p>
-                </div>
-                <p class="work-desc">
+              <div class="py-5">
+                <h1 class="font-brand bold tracking-wide text-3xl">Scootly</h1>
+                <p class="uppercase text-base text-gray-600 bold">UCLA</p>
+                <p class="font-body">
                   Turning personal scooters into a shared urban mobility
                   resource.
                 </p>
               </div>
             </a>
           </div>
+
           <!-- ecowalk -->
           <div class="container">
             <a href="../work/ecowalk/">
               <img
+                class="w-1/2"
                 src="https://storage.googleapis.com/jennyencho-website/landing-img/ecowalk_landing.png"
-                alt="ecowalk image"
               />
-              <div class="work-tab">
-                <h1>Ecowalk</h1>
-                <div class="label">
-                  <p>Dandilyonn</p>
-                </div>
-                <p class="work-desc">Taking steps toward a green future.</p>
+              <div class="py-5">
+                <h1 class="font-brand bold tracking-wide text-3xl">Ecowalk</h1>
+                <p class="uppercase text-base text-gray-600 bold">Dandilyonn</p>
+                <p class="font-body">Taking steps toward a green future.</p>
               </div>
             </a>
           </div>

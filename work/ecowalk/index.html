@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EcoWalk</title>
+    <!-- metadata -->
+    <title>Ecowalk</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
-
-    <!-- thumbnail -->
-    <meta
-      name="description"
-      property="og:description"
-      content="Fitness and wellness with a greener world"
-    />
-    <meta
-      name="image"
-      property="og:image"
-      content="https://storage.googleapis.com/jennyencho-website/landing-img/ecowalk_landing.png"
-    />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.svg" />
 
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="../../css/work.css" />
-    <link rel="stylesheet" href="../../css/ecowalk.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-
-    <script
-      src="https://kit.fontawesome.com/6b4fd4dffa.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <div class="scroll-top"></div>
-    <!-- NAVIGATION BAR -->
+
+    <!-- NAVBAR -->
     <nav class="nav" id="nav">
       <div class="container">
         <!-- left -->
-        <a href="../../index.html" class="left"
-          ><img src="../../assets/favicon.svg" />
-        </a>
-
+        <a class="font-brand font-semibold uppercase" href="../../index.html"
+          >Jenny</a
+        >
         <!-- hamburger menu -->
         <input type="checkbox" id="nav-menu" />
         <label for="nav-menu" class="nav-btn">
@@ -50,7 +34,6 @@
           <i class="bar-three"></i>
         </label>
 
-        <!-- RIGHT NAV BAR -->
         <div class="nav-links">
           <ul>
             <li>
@@ -62,9 +45,6 @@
             <li>
               <a class="nav-design-process">Design Process</a>
             </li>
-            <!-- <li>
-              <a class="nav-tech-process">Tech Process</a>
-            </li> -->
             <li>
               <a class="nav-final">Final Work</a>
             </li>
@@ -76,79 +56,69 @@
       </div>
     </nav>
 
-    <!-- CLOSE BUTTON -->
-    <a href="../../work-gallery/" class="close">
-      <i class="fa-solid fa-arrow-left"></i>
-    </a>
-
     <!-- HEADLINE -->
-    <section class="headline">
-      <div class="scroll-top"></div>
-
-      <div class="headline-img-container">
-        <img
-          src="https://storage.googleapis.com/jennyencho-website/landing-img/ecowalk_landing.png"
-          alt="scootly landing"
-        />
-      </div>
-      <!-- headline info -->
+    <section class="mx-auto my-auto">
       <div class="container">
-        <h1>EcoWalk</h1>
-        <p class="main-subtitle">Taking steps toward a green future.</p>
-        <div class="long-spec specs">
-          <span>
-            Company -
-            <p>Dandilyonn</p>
-          </span>
-          <span
-            >Role -
-            <p>iOS Developer Intern, UI/UX Designer</p>
-          </span>
-          <span
-            >Project -
-            <p>Mobile App</p>
-          </span>
-          <span
-            >Timeline -
-            <p>June 2021 - August 2021</p>
-          </span>
-          <span
-            >Tech Stack -
-            <p>Swift, Firebase</p>
-          </span>
-          <span
-            >Design Kit -
-            <p>Figma</p>
-          </span>
-        </div>
-        <div class="button-container">
-          <div class="button">
-            <p>Read Case</p>
+        <!-- heading image -->
+        <img
+          class="pt-10 relative justify-self-center"
+          src="https://storage.googleapis.com/jennyencho-website/landing-img/ecowalk_landing.png"
+        />
+
+        <!-- title -->
+        <div class="mx-auto">
+          <h1 class="text-center pt-5 pb-3 text-5xl font-bold">Ecowalk</h1>
+          <p class="text-center mx-auto">Taking steps toward a green future.</p>
+
+          <!-- project info -->
+          <div
+            class="grid grid-cols-2 gap-4 mx-auto my-4 p-4 text-center border-t-2 border-gray-300 border-b-2"
+          >
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">
+                Organization
+              </p>
+              <p>Dandilyonn</p></span
+            >
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Role</p>
+              <p>UX Designer</p>
+              <p>iOS Developer</p>
+            </span>
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Platform</p>
+              <p>Mobile App</p></span
+            >
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Timeline</p>
+              <p>3 months</p></span
+            >
           </div>
-          <!-- <div class="button">
-            <a href="https://github.com/jenpennen/ecowalk"><p>View Code</p></a>
-          </div> -->
         </div>
       </div>
+
       <div class="scroll-context"></div>
     </section>
 
     <!-- CONTEXT -->
     <section class="context">
       <div class="container">
-        <h2 class="reveal">Context</h2>
-        <!-- background -->
-        <div class="subcontainer">
-          <h3>Background</h3>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Context</h2>
+
+        <!-- background-->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Background</h3>
           <p>
-            Ecowalk is a mobile app inspired by the question: how does my choice
-            of transportation impact the environment? EcoWalk encourages people
-            make environmentally conscious decisions through healthy activities.
+            <span class="font-bold">Ecowalk</span> is a mobile app inspired by
+            the question: how does my choice of transportation impact the
+            environment? EcoWalk encourages people make environmentally
+            conscious decisions through healthy activities.
           </p>
         </div>
+
         <!-- team -->
-        <div class="subcontainer">
-          <h3>Team & Objective</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Team</h3>
           <p>
             As part of Dandilyonn’s 2021 SEEDS internship cohort, I worked with
             an iOS team of two other developer interns, Stephanie and Remi. Each
@@ -157,25 +127,25 @@
             a specific sector that contributes to climate change.
           </p>
         </div>
-        <!-- problems -->
-        <div class="subcontainer">
-          <h3>Problems</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-car-side"></i>The hidden cost of
-              convenience.
+
+        <!-- problem -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold">Problem</h3>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # People prioritize convenience above all else.
             </h4>
-            <p class="extra-spacing">
+            <p>
               Many people prioritize convenience in their daily tasks. Whether
               it’s reaching a destination or something as simple as turning on
               the lights, they often overlook the environmental impact of their
               actions, focusing instead on what is easy and efficient.
             </p>
           </div>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-money-bill"></i>Convenience is negatively
-              impacting both health and the climate.
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # People do not know how their convenience is impacting their
+              health and their environment.
             </h4>
             <p>
               America is grappling with a widespread obesity epidemic. With the
@@ -187,10 +157,12 @@
             </p>
           </div>
         </div>
-        <!-- think box -->
-        <div class="stats subcontainer">
-          <i class="fa-solid fa-lightbulb"></i>
-          <p class="think-cloud">
+
+        <!-- problem statement -->
+        <div class="border-spacing-2 py-5">
+          <h3 class="text-2xl font-semibold pb-3">Defining Problem</h3>
+
+          <p class="font-semibold uppercase text-xl">
             How can we foster new, positive habits through our transportation
             choices?
           </p>
@@ -202,116 +174,66 @@
     <!-- RESEARCH -->
     <section class="research">
       <div class="container">
-        <h2 class="reveal">Research</h2>
-        <!-- guiding principles-->
-        <div class="subcontainer">
-          <h3>Guiding Principles</h3>
-          <p class="extra-spacing">
-            <span class="highlight"
-              >Creating a walking-first application wasn't our initial
-              choice.</span
-            >
-            My team and I explored various environmental issues - food waste,
-            deforestation, water pollution - and the challenges posed by daily
-            human activities before settling on EcoWalk.
-            <span class="highlight"
-              >Our decision was guided by the following key principles:</span
-            >
-          </p>
-          <!-- guiding principles stats-->
-          <div class="subsubcontainer stats two-column">
-            <div class="grid-item">
-              <i class="fa-solid fa-earth"></i>
-              <h4>Environmentalism</h4>
-              <p>
-                Reduce environmental impact by advocating for eco-friendly
-                travel.
-              </p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-solid fa-person-walking"></i>
-              <h4>Fitness</h4>
-              <p>
-                Promote daily physical activity to enhance physical and mental
-                health.
-              </p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-solid fa-user-group"></i>
-              <h4>Initiative</h4>
-              <p>
-                Empower people to make proactive choices that better the
-                environment.
-              </p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-solid fa-clock"></i>
-              <h4>Consistency</h4>
-              <p>
-                Reinforce regular healthy habits to build long lasting routines.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- contextual inquiry-->
-        <div class="subcontainer">
-          <h3>Contextual Inquiry</h3>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Research</h2>
+        <!-- guiding principles -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Guiding Principles</h3>
           <p>
-            My next focus was to gather perspectives on transportation needs
-            from those around me.
-            <span class="highlight"
-              >I reached out to my local community to understand how their daily
-              routines are impacted by transportation.</span
-            >
-            Additionally, with the help of my team members, I extended this
-            outreach to major cities beyond Los Angeles to collect a wide range
-            of insights.
+            Creating a walking-first application wasn't our initial choice. My
+            team and I explored various environmental issues - food waste,
+            deforestation, water pollution - and the challenges posed by daily
+            human activities before settling on EcoWalk. Our decision was guided
+            by the following key principles:
+          </p>
+          <img
+            class="py-3 diagram"
+            src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-guiding-principles.png"
+            alt="ecowalk guiding principles"
+          />
+        </div>
+        <!--contextual inquiry-->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Contextual Inquiry</h3>
+          <p>
+            My next priority was to gather some thoughts about our concept from
+            the students around me. I reached out to the UCLA community first to
+            understand students’ music-listening behaviors and frustrations.
+            Additionally, I reached out to students outside of UCLA, as well as
+            non-students, to hear as many diverse perspectives possible.
           </p>
         </div>
-
-        <!-- empathy mapping-->
-        <div class="subcontainer">
-          <h3>Empathy Mapping</h3>
+        <!-- empathy mapping -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Empathy Mapping</h3>
           <p>
             Given the responses of +60 interviewees, I used an empathy map to
             distinguish frustration patterns. This approach revealed several key
-            points of frustration:
-            <span class="highlight"
-              >convenience, time, and personal motivation.</span
-            >
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-empathy-map.png"
-              alt="empathy map"
-              class="subsubcontainer diagram"
-            />
+            points of frustration: convenience, time, and personal motivation.
           </p>
-          <p class="subcontainer">
-            With these new insights, my team and I ultimately decided on
-            EcoWalk, with the mission to accomplish the following goals.
-          </p>
+          <img
+            class="py-3 diagram"
+            src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-empathy-map.png"
+            alt="empathy mapping"
+          />
         </div>
+
         <!-- goals -->
-        <div class="subcontainer">
-          <h3>Goals</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-bolt"></i>Embrace one less convenient
-              activity daily.
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold">Goals</h3>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # Embrace one less convenient activity daily.
             </h4>
             <p>
-              We understand that daily tasks often require convenience, but
-              <span class="highlight"
-                >some activities can be approached with less urgency.</span
-              >
-              By choosing to forgo one convenience-driven habit each day, people
-              can make small and meaningful contributions to the environment.
+              We understand that daily tasks often require convenience, but some
+              activities can be approached with less urgency. By choosing to
+              forgo one convenience-driven habit each day, people can make small
+              and meaningful contributions to the environment.
             </p>
           </div>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-users"></i>Commit to practicing a healthy
-              habit weekly.
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # Commit to practicing a healthy habit weekly.
             </h4>
             <p>
               By setting incremental goals to incorporate a healthy habit into
@@ -320,102 +242,114 @@
             </p>
           </div>
         </div>
-        <!-- end of container -->
       </div>
       <div class="scroll-design-process"></div>
     </section>
 
-    <!-- DESIGN PROCESS -->
+    <!--DESIGN PROCESS-->
     <section class="design-process">
       <div class="container">
-        <h2 class="reveal">Design Process</h2>
-        <!-- style guide-->
-        <div class="subcontainer">
-          <h3>Style Guide</h3>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">
+          Design Process
+        </h2>
+
+        <!--style guide-->
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Usability Testing</h3>
           <p>
             To kick off the design process, I crafted a UI style guide to
             maintain consistent styling across the app. Embracing a modern and
-            unconventional approach to environmentalism,
-            <span class="highlight"
-              >I used shades of blue and green to create a design that is both
-              sleek and serious, yet engaging and playful.</span
-            >
+            unconventional approach to environmentalism, I used shades of blue
+            and green to create a design that is both sleek and serious, yet
+            engaging and playful.
           </p>
-          <img
-            src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-style-guide.png"
-            alt="ecowalk style guide"
-            class="subsubcontainer diagram"
-          />
+          <div class="py-3 diagram">
+            <img
+              src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-style-guide.png"
+              alt="style guide"
+            />
+          </div>
+          <p class="text-sm text-center p-2 pb-5 text-gray-500">
+            Old Retune Designs
+          </p>
         </div>
-        <div class="subcontainer">
-          <h3>Flow Chart</h3>
-          <div class="subsubcontainer">
-            <p class="subsubcontainer">
+
+        <!--flow chart-->
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Flow Chart</h3>
+          <p>
+            My team and I mapped out a simple user flow. This served as a guide
+            for us to refer back to during design iterations and for ideating
+            new, creative solutions to problems we encountered during usability
+            testing.
+          </p>
+          <div class="py-3 diagram">
+            <img
+              src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-flow-chart.png"
+              alt="old retune designs"
+            />
+          </div>
+          <!-- <p class="text-sm text-center p-2 pb-5 text-gray-500"></p> -->
+        </div>
+
+        <!--wireframes-->
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Wireframes</h3>
+
+          <div class="py-3">
+            <h4 class="font-semibold">Low Fidelity Wireframes</h4>
+            <p>
               My team and I mapped out a simple user flow. This served as a
               guide for us to refer back to during design iterations and for
               ideating new, creative solutions to problems we encountered during
               usability testing.
             </p>
             <img
-              src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-flow-chart.png"
-              alt="ecowalk flow chart"
-              class="subsubcontainer diagram"
-            />
-          </div>
-        </div>
-        <div class="subcontainer">
-          <h3>Wireframes</h3>
-          <div class="subsubcontainer">
-            <h4>Low Fidelity Wireframes</h4>
-            <p>
-              Our first priority was to quickly create low-fidelity mockups of
-              the core features. With only two months to develop the app, this
-              step was essential for our team to grasp the application’s flow
-              and functionality.
-            </p>
-            <img
+              class="py-3 diagram"
               src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-lofi.png"
-              alt="low-fi"
-              class="subsubcontainer diagram"
+              alt="old retune designs"
             />
           </div>
-          <div class="subsubcontainer">
-            <h4>High Fidelity Wireframes</h4>
+
+          <div class="py-3">
+            <h4 class="font-semibold">High Fidelity Wireframes</h4>
             <p>
               Next, we developed high-fidelity wireframes to visualize how our
               core features aligned with our style guide, marking the beginning
               of our development process.
             </p>
             <img
+              class="py-3 diagram"
               src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-hifi.png"
-              alt="mid-fi"
-              class="subsubcontainer diagram"
+              alt="high fidelity wireframes"
             />
+            <!-- <p class="text-sm text-center p-2 pb-5 text-gray-500">flow chart</p> -->
           </div>
         </div>
       </div>
-      <div class="scroll-final"></div>
     </section>
 
     <!-- FINAL WORK -->
     <section class="final">
       <div class="container">
-        <h2 class="reveal">Final Work</h2>
-        <div class="subcontainer">
-          <h3>Onboarding</h3>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">
+          Final Work
+        </h2>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Onboarding</h3>
           <p class="extra-spacing">
             Users are initially greeted with a log in/sign in portal when
             opening the app. Users can login and sign with Google.
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-onboarding.png"
-            alt="onboarding"
-            class="subsubcontainer photo"
+            class="py-3 diagram"
+            alt="ecowalk onboarding"
           />
         </div>
-        <div class="subcontainer">
-          <h3>Action Planner</h3>
-          <p class="extra-spacing">
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Action Planner</h3>
+          <p>
             Users can select specific activities from the planner to commit to
             once a week. These activities are designed to encourage walking
             instead of driving to short distances like grocery stores or social
@@ -423,12 +357,14 @@
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-activity-board.png"
-            alt="dashboard"
-            class="subsubcontainer photo"
+            class="py-3 diagram"
+            alt="ecowlak action planner"
           />
         </div>
-        <div class="subcontainer">
-          <h3>Leaderboard & Profile View</h3>
+
+        <!--leaderboard & profile view-->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Playlist Creation</h3>
           <p class="extra-spacing">
             Users can view the activities that others in their community are
             committing to, along with their profile views. This fosters a sense
@@ -438,83 +374,69 @@
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-leaderboard.png"
-            alt="vendor management"
-            class="subsubcontainer photo"
+            class="py-3 diagram"
+            alt="profile view"
           />
         </div>
+
+        <div class="scroll-impact"></div>
       </div>
-      <div class="scroll-impact"></div>
     </section>
 
     <!-- IMPACT -->
     <section class="impact">
       <div class="container">
-        <h2 class="reveal">Impact</h2>
-        <div class="subcontainer">
-          <h3>Outcomes</h3>
-          <p class="extra-spacing">
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Impact</h2>
+
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Outcomes</h3>
+          <p>
             At the end of the 10 weeks, my team and I presented EcoWalk to a
             group of engineers and technology professionals in collaboration
             with Dandilyonn. The idea was met with great enthusiasm, and we also
             received valuable feedback.
           </p>
         </div>
-        <div class="subcontainer">
-          <h3>Feedback</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-map"></i>Account for the geographical
-              constraints of the user's location
-            </h4>
-            <p>
-              During the ideation process, we overlooked the fact that
-              <span class="highlight"
-                >not everyone lives in a walkable area</span
-              >, which significantly influences the reliance on cars. Dandilyonn
-              engineers suggested that, rather than focusing solely on physical
-              activity,
-              <span class="highlight"
-                >we should expand the app to include other eco-friendly
-                transportation options</span
-              >
-              like scooters and trains.
-            </p>
-          </div>
+
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Feedback</h3>
+          <p>
+            During the ideation process, we overlooked the fact that not
+            everyone lives in a walkable area, which significantly influences
+            the reliance on cars. Dandilyonn engineers suggested that, rather
+            than focusing solely on physical activity, we should expand the app
+            to include other eco-friendly transportation options like scooters
+            and trains.
+          </p>
         </div>
-        <div class="subcontainer">
-          <h3>Reflections</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-swatchbook"></i>Embrace new challenges
-            </h4>
+
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Reflections</h3>
+          <div class="py-3">
+            <h4 class="font-semibold"># Embrace new challenges.</h4>
             <p>
               During the ten weeks, my team faced an unexpected setback. Our
               team’s designer left the internship due to unforeseen
               circumstances, leaving us uncertain about how to handle the design
-              work.
-              <span class="highlgiht"
-                >This marked my first exposure to UI/UX design</span
-              >, and I took extra time during the internship to learn about best
-              practices in the field. This experience ignited a passion that
-              shaped the rest of my college years, driving my focus on design
-              and tech-centered products!
+              work. This marked my first exposure to UI/UX design, and I took
+              extra time during the internship to learn about best practices in
+              the field. This experience ignited a passion that shaped the rest
+              of my college years, driving my focus on design and tech-centered
+              products!
             </p>
           </div>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-comments"></i>Communicate consistently with
-              your team
+
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # Communicate consistently with your team.
             </h4>
             <p>
-              When we found ourselves facing a tight deadline,
-              <span class="highlight"
-                >we made it a priority to regularly update each other on our
-                progress in both code and design.</span
-              >
-              This open communication was crucial in bringing EcoWalk to life.
-              This experience taught me that without consistent and clear
-              communication, tasks can stall, and innovative ideas might never
-              come to fruition.
+              When we found ourselves facing a tight deadline, we made it a
+              priority to regularly update each other on our progress in both
+              code and design. This open communication was crucial in bringing
+              EcoWalk to life. This experience taught me that without consistent
+              and clear communication, tasks can stall, and innovative ideas
+              might never come to fruition.
             </p>
           </div>
         </div>
@@ -525,28 +447,32 @@
     <!-- FOOTER -->
     <section class="footer">
       <div class="container">
-        <div class="socials">
+        <div class="text-gray-500 font-brand text-center font-semibold mx-auto">
           <a
-            class="social"
+            class="text-sm hover:text-blue-600"
             id="linkedin"
             href="https://www.linkedin.com/in/jennyecho"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            Linkedin |
           </a>
-          ||
+
           <a
-            class="social"
+            class="text-sm hover:text-blue-600"
             id="github"
             href="https://github.com/jenpennen"
             target="_blank"
           >
-            <i class="fa-brands fa-github"></i>
+            Github
           </a>
-          <p>Made With Love, Jenny Cho</p>
+          <p class="text-center text-md text-gray-500 mx-auto">
+            Built & Designed By Jenny Cho
+          </p>
         </div>
       </div>
     </section>
+
+    <div class="scroll-bottom"></div>
 
     <script src="../../work.js"></script>
   </body>

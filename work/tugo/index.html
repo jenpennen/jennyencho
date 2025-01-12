@@ -3,48 +3,29 @@
   <head>
     <!-- metadata -->
     <title>Tugo</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.svg" />
-
-    <!-- thumbnail -->
-    <meta
-      name="description"
-      property="og:description"
-      content="Transforming music discovery by connecting you to the beats around you"
-    />
-    <meta
-      name="image"
-      property="og:image"
-      content="https://storage.googleapis.com/jennyencho-website/landing-img/tugo-landing.png"
-    />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.svg" />
 
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="../../css/work.css" />
-    <link rel="stylesheet" href="../../css/tugo.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-
-    <script
-      src="https://kit.fontawesome.com/6b4fd4dffa.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
-
   <body>
     <div class="scroll-top"></div>
 
-    <!-- NAVIGATION BAR -->
+    <!-- NAVBAR -->
     <nav class="nav" id="nav">
       <div class="container">
         <!-- left -->
-        <a href="../../index.html" class="left"
-          ><img src="../../assets/favicon.svg" />
-        </a>
-
+        <a class="font-brand font-semibold uppercase" href="../../index.html"
+          >Jenny</a
+        >
         <!-- hamburger menu -->
         <input type="checkbox" id="nav-menu" />
         <label for="nav-menu" class="nav-btn">
@@ -53,7 +34,6 @@
           <i class="bar-three"></i>
         </label>
 
-        <!-- RIGHT NAV BAR -->
         <div class="nav-links">
           <ul>
             <li>
@@ -63,7 +43,7 @@
               <a class="nav-research">Research</a>
             </li>
             <li>
-              <a class="nav-design-process">Process</a>
+              <a class="nav-design-process">Design Process</a>
             </li>
             <li>
               <a class="nav-final">Final Work</a>
@@ -76,589 +56,445 @@
       </div>
     </nav>
 
-    <!-- CLOSE BUTTON -->
-    <a href="../../work-gallery/" class="close">
-      <i class="fa-solid fa-arrow-left"></i>
-    </a>
-
     <!-- HEADLINE -->
-    <section class="headline">
-      <div class="scroll-top"></div>
-
-      <div class="headline-img-container">
-        <img
-          src="https://storage.googleapis.com/jennyencho-website/landing-img/tugo-landing.png"
-          alt="tugo landing"
-        />
-      </div>
-      <!-- headline info -->
+    <section class="mx-auto my-auto">
       <div class="container">
-        <h1>Tugo</h1>
-        <p class="main-subtitle">
-          Connecting you to the beats that surround you.
-        </p>
-        <div class="long-spec specs">
-          <span
-            >Company -
-            <p>UCLA DevX</p>
-          </span>
-          <span
-            >Role -
-            <p>UI/UX Designer, Frontend Engineer</p>
-          </span>
-          <span
-            >Project -
-            <p>Mobile App</p></span
+        <!-- heading image -->
+        <img
+          class="pt-10 relative justify-self-center"
+          src="https://storage.googleapis.com/jennyencho-website/landing-img/tugo-landing.png"
+        />
+
+        <!-- title -->
+        <div class="mx-auto">
+          <h1 class="text-center pt-5 pb-3 text-5xl font-bold">Tugo</h1>
+          <p class="text-center mx-auto">
+            Connecting you to the beats around you
+          </p>
+
+          <!-- project info -->
+          <div
+            class="grid grid-cols-2 text-center gap-4 mx-auto my-4 py-4 border-t-2 border-gray-300 border-b-2"
           >
-          <span
-            >Timeline -
-            <p>October 2021 - Ongoing</p>
-          </span>
-          <span
-            >Design Kit -
-            <p>Figma, Maze</p>
-          </span>
-        </div>
-        <div class="button-container">
-          <div id="read-case" class="button">
-            <p>Read Case</p>
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">
+                Organization
+              </p>
+              <p>UCLA</p></span
+            >
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Role</p>
+              <p>UX Designer</p>
+              <p>Frontend Engineer</p>
+            </span>
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Platform</p>
+              <p>Mobile App</p></span
+            >
+            <span
+              ><p class="font-bold uppercase text-sm text-gray-500">Timeline</p>
+              <p>October 2021 - Ongoing</p></span
+            >
           </div>
         </div>
       </div>
+
       <div class="scroll-context"></div>
     </section>
 
     <!-- CONTEXT -->
     <section class="context">
       <div class="container">
-        <h2 class="reveal">Context</h2>
-        <!-- background -->
-        <div class="subcontainer">
-          <h3>Background</h3>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Context</h2>
+
+        <!-- background-->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Background</h3>
           <p>
-            Have you ever walked through a beach or park and wondered what
-            people are listening to in their earbuds?
-            <span class="highlight"
-              >Tugo is a mobile application designed to answer that
-              curiosity</span
+            <span class="font-bold">Tugo</span> was inspired by a common user
+            curiosity:
+            <span class="text-pink-600"
+              >What songs are the people around me listening to?</span
             >
-            by making music-sharing with others more transparent and social.
+            Tugo (formerly Retune) is a mobile application designed to answer
+            that curiosity by making music-sharing with others more transparent
+            and social.
           </p>
         </div>
+
         <!-- team -->
-        <div class="subcontainer">
-          <h3>Team</h3>
-
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Team</h3>
           <p>
-            This project began in October 2021 as part of UCLA DevX's 2021 Fall
-            Project Cycle. Originially named Retune,
-            <span class="highlight"
-              >I joined the Retune team as a founding UI/UX designer and
-              developer.</span
-            >
-            I collaborated with 1 fellow designer Emily, 3 frontend developers
-            (Angelina, Leslie, Liah), 2 backend developers (Nathan, Sanya), and
-            product manager (Jake).
-          </p>
-          <p>
-            <span class="highlight"
-              >Ultimately, as Retune came to an end, I decided to continue
-              working on this project, renaming it Tugo.</span
-            >
-            I formed a new team of two alongside fellow developer and colleague
-            Nastazia Coronado.
+            This project began in October 2021 as part of UCLA DevX’s 2021 Fall
+            Project Cycle. Formerly named Retune, I joined a team of 6 engineers
+            as UI/UX designer and developer. Ultimately, as Retune came to an
+            end, I decided to continue working on this project, renaming it
+            Tugo. I formed a new team of two alongside fellow developer and
+            colleague Nastazia Coronado.
           </p>
         </div>
-        <!--observation-->
-        <div class="subcontainer">
-          <h3>Discovery</h3>
 
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-user-group"></i>Connecting with people in a
-              large space is hard.
+        <!-- problem -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold">Discovery</h3>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # Connecting with people at UCLA is hard.
             </h4>
             <p>
               Students want to socialize with other students before honing in
-              for the academic year. However,
-              <span class="highlight"
-                >connecting with new people in a large space, like UCLA, can be
-                quite intimidating.</span
-              >
+              for the academic year. However, connecting with new people in a
+              large space, like UCLA, can be quite intimidating.
             </p>
           </div>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-magnifying-glass"></i>People like to be
-              in-the-know.
-            </h4>
+          <div class="py-3">
+            <h4 class="font-semibold"># People like to be in-the-know.</h4>
             <p>
               Inspired by a popular tiktok trend, where influencers ask nearby
-              strollers in an area what song they were listening to,
-              <span class="highlight"
-                >I wondered if people around me were also naturally
-                curious</span
-              >
-              about other peoples' whereabouts.
+              strollers in an area what song they were listening to, I wondered
+              if people around me were also naturally curious about other
+              peoples’
             </p>
           </div>
         </div>
 
-        <div class="stats subcontainer">
-          <i class="fa-solid fa-lightbulb"></i>
+        <!-- problem statement -->
+        <div class="border-spacing-2 py-5">
+          <h3 class="text-2xl font-semibold pb-3">Defining Problem</h3>
 
-          <p class="think-cloud">
-            How might we reimagine social connections through an enaging music
-            discovery experience beyond a simple music feed?
+          <p class="font-semibold uppercase text-xl">
+            How might we reimagine social connectings through an engaging music
+            discovery experience?
           </p>
         </div>
       </div>
-
       <div class="scroll-research"></div>
     </section>
 
     <!-- RESEARCH -->
     <section class="research">
       <div class="container">
-        <h2 class="reveal">Research</h2>
-        <!--competitive analysis-->
-        <div class="subcontainer">
-          <h3>Competitive Analysis</h3>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Research</h2>
+        <!-- competitive analysis -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Competitive Analysis</h3>
           <p>
             First, I conducted an analysis on four existing music platforms —
-            Spotify, Apple Music, SoundCloud, and YouTube Music. This revealed a
-            gap:
-            <span class="highlight"
-              >none of these platforms offered an easy way to share music with
-              people nearby.</span
+            <span class="text-pink-600"
+              >Spotify, Apple Music, SoundCloud, and YouTube Music.</span
             >
+            This revealed a gap: none of these platforms offered an easy way to
+            share music with people nearby.
           </p>
           <img
+            class="py-3 diagram"
             src="https://storage.googleapis.com/jennyencho-website/tugo-img/competitive-analysis.png"
             alt="competitive analysis"
-            class="subsubcontainer diagram"
           />
         </div>
         <!--contextual inquiry-->
-        <div class="subcontainer">
-          <h3>Contextual Inquiry</h3>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Contextual Inquiry</h3>
           <p>
-            My
-            <span class="highlight"
-              >next priority was to gather some thoughts about our concept from
-              the students around me.</span
-            >
-            I reached out to the UCLA community first to understand students'
-            music-listening preferences. Additionally, I reached out to students
-            outside of UCLA, as well as non-students, to hear as many diverse
-            perspectives possible.
+            My next priority was to gather some thoughts about our concept from
+            the students around me. I reached out to the UCLA community first to
+            understand students’ music-listening behaviors and frustrations.
+            Additionally, I reached out to students outside of UCLA, as well as
+            non-students, to hear as many diverse perspectives possible.
           </p>
         </div>
-
-        <!--affinity mapping-->
-        <div class="subcontainer">
-          <h3>Affinity Mapping</h3>
+        <!-- affinity mapping -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Affinity Mapping</h3>
           <p>
-            Given the responses of
-            <span class="highlight">+200 interviewees</span>, I used an affinity
-            map to identify common themes and tackle actionable insights. This
-            approach revealed
-            <span class="highlight"
-              >several distinct categories of feedback.</span
-            >
+            Given the responses of 200+ interviewees, I used an affinity map to
+            identify common themes and tackle actionable insights. This approach
+            revealed several distinct categories of feedback.
           </p>
           <img
+            class="py-3 diagram"
             src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-affinity-map.png"
-            class="subsubcontainer diagram"
-            alt="affinity map"
+            alt="affinity mapping"
           />
+        </div>
 
-          <div class="center-wrapper">
-            <a
-              href="https://www.figma.com/board/vFfCS6srmN2DzgO2i92MPy/Tugo-Curiosity?node-id=20-1413&t=iMCpqnG0LBootrIi-1"
-              target="_blank"
-              class="button secondary"
-            >
-              <p>View</p>
-            </a>
+        <!-- key insights -->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold">Key Insights</h3>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # People worry about public visibility on social platforms.
+            </h4>
+            <p>
+              Although many people were fond of the idea, they were also
+              concerned with how their personal information would be used/shared
+              on Tugo.
+            </p>
           </div>
-          <!--key insights-->
-          <div class="subcontainer">
-            <h3>Key Insights</h3>
-            <div class="subsubcontainer">
-              <h4>
-                <i class="fa-solid fa-lock"></i>People worry about use of
-                personal information when signing up for new social platforms.
-              </h4>
-              <p>
-                Although many people were fond of the idea, they were also
-                <span class="highlight"
-                  >concerned with how their personal information would be used
-                  and displayed with Tugo.</span
-                >
-              </p>
-            </div>
-            <div class="subsubcontainer">
-              <h4>
-                <i class="fa-solid fa-magnifying-glass"></i>People have an
-                innate curiosity about others around them.
-              </h4>
-              <p>
-                People are
-                <span class="highlight"
-                  >curious about what the people around them are doing</span
-                >, including what songs they are listening to.
-              </p>
-            </div>
-            <div class="subsubcontainer">
-              <h4>
-                <i class="fa-solid fa-music"></i>People want to explore new
-                music genres.
-              </h4>
-              <p>
-                <span class="highlight"
-                  >People are open to exploring new music genres</span
-                >
-                regardless of their preferences, but do not know where to look.
-              </p>
-            </div>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # People have an innate curiosity about others around them.
+            </h4>
+            <p>
+              People are curious about what the people around them are doing,
+              including what songs they are listening to.
+            </p>
           </div>
-          <!--key solutions-->
-          <div class="subcontainer">
-            <h3>Key Solutions</h3>
-            <div class="subsubcontainer">
-              <h4>
-                <i class="fa-solid fa-lock"></i>Discover new songs privately or
-                publicly.
-              </h4>
-              <p>
-                Users will have public and private viewing options to
-                <span class="highlight"
-                  >make the music discovery experience accessible for all
-                  users</span
-                >
-                with varying preferences.
-              </p>
-            </div>
-            <div class="subsubcontainer">
-              <h4>
-                <i class="fa-solid fa-share-nodes"></i>Access songs that other
-                Tugo users nearby are listening to.
-              </h4>
-              <p>
-                Users can
-                <span class="highlight"
-                  >see what songs other Tugo users are listening to, as well as
-                  their recent music activity</span
-                >
-                if they want to share it.
-              </p>
-            </div>
-            <div class="subsubcontainer">
-              <h4>
-                <i class="fa-solid fa-clock"></i>Allow users to listen to songs
-                for a few seconds.
-              </h4>
-              <p>
-                <span class="highlight"
-                  >Users can only listen to up to 30 seconds of a song</span
-                >
-                to maximize the music discovery experience as much as possible
-                for people on the move.
-              </p>
-            </div>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # People want to explore new music genres.
+            </h4>
+            <p>
+              People are open to exploring new music genres regardless of their
+              preferences, but do not know where to look.
+            </p>
           </div>
         </div>
       </div>
-
-      <div class="scroll-design-process"></div>
+      <div class="scroll-tech-process"></div>
     </section>
 
-    <!-- PROCESS -->
+    <!--DESIGN PROCESS-->
     <section class="design-process">
       <div class="container">
-        <h2 class="reveal">Design Process</h2>
-        <!--low-fi-wireframes-->
-        <div class="subcontainer">
-          <h3>Low Fidelity Wireframes</h3>
-          <div>
-            <p>
-              To jumpstart the design process, I created low-fidelity wireframes
-              to provide the engineering team with a basic framework while the
-              design team synthesized user insights and refined the visual
-              elements.
-            </p>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">
+          Design Process
+        </h2>
 
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-low-fi-wireframes.png"
-              alt="tugo lofi wireframes"
-              class="subsubcontainer diagram"
-            />
-          </div>
+        <!-- Low-Fi Wireframes-->
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Low Fidelity Wireframes</h3>
+          <p>
+            To kickstart the design process, I created low-fidelity wireframes
+            to provide the engineering team(and myself) with a basic framework
+            while the design team synthesized user insights and refined the
+            visual elements.
+          </p>
+          <img
+            class="py-3 diagram"
+            src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-low-fi-wireframes.png"
+            alt="low-fi wireframes"
+          />
         </div>
         <!--style guide-->
-        <div class="subcontainer">
-          <h3>Style Guide</h3>
-
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Style Guide</h3>
           <p>
             Creating a style guide was a challenging but essential step before
             diving into high-fidelity designs. I identified many inconsistencies
             in key design components from Retune. I developed a UI style guide
             to ensure that components were styled consistently throughout the
-            app.
-            <span class="highlight"
-              >Inspired by the blue summer skies of Los Angeles, this style
-              guide was intended to reflect that aesthetic.</span
-            >
+            app. Inspired by the blue summer skies of Los Angeles, this style
+            guide was intended to reflect that aesthetic.
           </p>
-          <div class="subsubcontainer">
+          <div class="py-3 diagram">
             <img
               src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-style-guide.png"
-              class="subsubcontainer graphic"
               alt="tugo style guide"
             />
           </div>
         </div>
-        <!--usability testing-->
-        <div class="subcontainer">
-          <h3>Usability Testing</h3>
+        <!--usability test-->
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Usability Testing</h3>
           <p>
-            Starting with the old Retune designs, I created a working prototype
-            and <span class="highlight">recruited 20 participants</span> to test
-            it. I decided to use Figma's prototype feature due to the cost of
-            our other option, Maze. While Figma had some limitations compared to
-            Maze,
-            <span class="highlight"
-              >I recieved valuable feedback on our current designs.</span
-            >
+            Using old Retune designs, I created a working prototype and
+            recruited 20 participants for user feedback. I decided to use
+            Figma’s prototype feature due to the cost of our other option, Maze.
+            While Figma had some limitations compared to Maze, I recieved
+            valuable feedback on the existing designs.
           </p>
-          <div class="subsubcontainer diagram">
+          <div class="py-3 diagram">
             <img
               src="https://storage.googleapis.com/jennyencho-website/tugo-img/old-retune-designs.png"
-              alt="old retune design"
+              alt="old retune designs"
             />
-            <p class="caption">Old Retune Designs</p>
           </div>
+          <p class="text-sm text-center p-2 pb-5 text-gray-500">
+            Old Retune Designs
+          </p>
         </div>
         <!--feedback-->
-        <div class="subcontainer">
-          <h3>Feedback</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-trash"></i>Remove the close friends and
-              public viewing maps.
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Feedback</h3>
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # Remove the close friends and public viewing maps.
             </h4>
             <p>
               While participants appreciated the public and private viewing
               options with the close friends and public maps, I identified a
-              significant UX flaw:
-              <span class="highlight"
-                >these options should apply to the user, not the map.</span
-              >
-              A striking 60% of the participants chose the close friends map
-              over the public map, and nearly half expressed no preference.
-              <span class="highlight"
-                >Instead of two maps, I introduced a feature in the user’s
-                profile settings that allows users to selectively share personal
-                information with the public.</span
-              >
+              significant UX flaw: these options should apply to the user, not
+              the map. A striking 60% of the participants chose the close
+              friends map over the public map, and nearly half expressed no
+              preference. There was essentially no functional difference between
+              the two maps. Instead of two maps, I introduced a feature in the
+              user’s profile settings that allows users to selectively share
+              personal information with the public.
             </p>
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-closefriends.png"
-              alt="privacy-viewing-change"
-              class="diagram"
-            />
+            <div class="py-3 diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-closefriends.png"
+                alt="tugo style guide"
+              />
+            </div>
+            <p class="text-sm text-center p-2 pb-5 text-gray-500">
+              Tugo Style Guide
+            </p>
           </div>
 
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-user-minus"></i>Scrap the followers feature.
-            </h4>
+          <div class="py-3">
+            <h4 class="font-semibold"># Scrap the followers feature.</h4>
             <p>
-              Many participants noted that the follow button
-              <span class="highlight"
-                >felt out of place, making the app feel more like a social
-                network than a music discovery platform.
-              </span>
-              Moreover, the profile view of other Tugo users, along with their
-              profile handles, made it difficult to access the play button and
-              gave the cluttered appearance.
+              Many participants noted that the follow button felt out of place,
+              making the app feel more like a social network than a music
+              discovery platform. Moreover, the profile view of other Tugo
+              users, along with their profile handles, made it difficult to
+              access the play button. This led me to conclude that it is better
+              to keep all users’ information hidden during the song shuffling
+              process to preserve the focus on music exploration and discovery.
             </p>
-
-            <div class="subsubcontainer graphic">
+            <div class="py-3 diagram">
               <img
                 src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-follower.png"
-                alt="removed-follower-feature"
-                class="graphic"
+                alt="scrap follow feature"
               />
             </div>
           </div>
 
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-record-vinyl"></i>Share less on the music
-              tab.
-            </h4>
+          <div class="py-3">
+            <h4 class="font-semibold"># Share less on the music tab.</h4>
             <p>
               One key feature my Retune team developed was the user music tab,
               which displays a user’s current song, favorite albums, and
               artists. However, only 20% of participants fully explored it, and
-              <span class="highlight"
-                >80% found it too cluttered and hindered their discovery
-                experience.</span
-              >
-              To address this, I streamlined the music tab to focus on song
-              shuffling and added a profile view for detailed music activity.
+              80% found it too cluttered and hindered their discovery
+              experience. To address this, I streamlined the music tab to focus
+              on song shuffling and added a profile view for detailed music
+              activity.
             </p>
-          </div>
-          <div class="gallery graphic">
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-clutter.png"
-              alt="retune-clutter"
-              class="photo"
-            />
-            <img
-              src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-clutter.png"
-              alt="retune-clutter"
-              class="photo"
-            />
+            <div class="py-3 diagram">
+              <img
+                src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-clutter.png"
+                alt="tugo style guide"
+              />
+            </div>
           </div>
         </div>
-        <!--flow chart-->
-        <div class="subcontainer">
-          <h3>Flow Chart</h3>
 
+        <!--flow chart-->
+        <div class="pb-5">
+          <h3 class="text-2xl font-semibold pb-2">Flow Chart</h3>
           <p>
-            <span class="highlight"
-              >Given our feedback, I revised Tugo's flow chart and took into
-              consideration new features to replace old and obsolete ones.</span
-            >
-            This process further helped to breakdown the essential features and
-            steps of building Tugo, allowing my team and I to set milestones
+            Given our feedback, I revised Tugo’s flow chart and took into
+            consideration new features to replace old and obsolete ones. This
+            process further helped to breakdown the essential features and steps
+            of building Tugo, allowing my team and I to set milestones
             seamlessly.
           </p>
-          <img
-            src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-flow-chart.png"
-            alt="tugo flow chart"
-            class="subsubcontainer diagram"
-          />
+          <div class="py-3 diagram">
+            <img
+              src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-flow-chart.png"
+              alt="flow chart"
+            />
+          </div>
+          <!-- <p class="text-sm text-center p-2 pb-5 text-gray-500">
+            Tugo Flow Chart
+          </p> -->
         </div>
       </div>
-      <div class="scroll-final"></div>
     </section>
 
-    <!-- FINAL -->
+    <!-- FINAL WORK -->
     <section class="final">
       <div class="container">
-        <h2 class="reveal">Final Work</h2>
-
-        <div class="subcontainer">
-          <h3>Onboarding</h3>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">
+          Final Work
+        </h2>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Onboarding</h3>
           <p class="extra-spacing">
             Users are initially greeted with a log in/sign up portal where they
-            can
-            <span class="highlight"
-              >customize their profile from start to finish.</span
-            >
-            Users
-            <span class="highlight">must enable location permissions</span>,
-            unless Tugo cannot work.
+            can customize their profile from start to finish. Users must enable
+            location permissions, unless Tugo cannot work.
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-onboarding.png"
-            class="subsubcontainer graphic"
-            alt="onboarding"
+            class="py-3 diagram"
+            alt="tugo onboarding"
           />
         </div>
-
-        <div class="subcontainer">
-          <h3>Song Shuffle</h3>
-          <p class="extra-spacing">
-            When a user clicks on a vinyl icon on the map, another
-            <span class="highlight"
-              >user's current song appears on the song tab</span
-            >, which can be expanded to show other recently played songs. Users
-            can also shuffle through nearby songs via the shuffle icon, enabling
-            <span class="highlight"
-              >music discovery while maintaining privacy.</span
-            >
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Song Shuggle</h3>
+          <p>
+            When a user clicks on a vinyl icon on the map, another user’s
+            current song appears on the song tab, which can be expanded to show
+            other recently played songs from the user. Users can also shuffle
+            through nearby songs via the shuffle icon, enabling music discovery
+            while maintaining privacy.
           </p>
-
           <img
             src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-song-shuffle.png"
-            alt="tugo song shuffle"
-            class="subsubcontainer graphic"
+            class="py-3 diagram"
+            alt="Tugo Song Shuffle"
           />
         </div>
 
-        <div class="subcontainer">
-          <h3>Playlist Creation</h3>
+        <!--playlist creation-->
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Playlist Creation</h3>
           <p class="extra-spacing">
-            If users like what they find, they can
-            <span class="highlight">add the song to a playlist</span>! Simply
-            press the plus icon on the music tab and follow the playlist
+            If users like what they find, they can add the song to a playlist!
+            Simply press the plus icon on the music tab and follow the playlist
             creation process.
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-playlist-creation.png"
-            alt="tugo playlist creation"
-            class="subsubcontainer graphic"
+            class="py-3 diagram"
+            alt="analytics"
           />
         </div>
 
-        <div class="subcontainer">
-          <h3>Profile Visibility</h3>
-          <p class="extra-spacing">
-            The close friends and public maps are a thing of the past! Now,
-            <span class="highlight"
-              >all users are placed on a public map, but they can choose what to
-              share</span
-            >
-            with other Tugo users – such as profile photo, name, playlists, and
-            song history.
-            <span class="highlight"
-              >In return, everyone must share their currently playing song with
-              the public.</span
-            >
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Profile Visibility</h3>
+          <p>
+            The close friends and public maps are a thing of the past! Now, all
+            users are placed on a public map, but they can choose what to share
+            with other Tugo users – profile photo, name, playlists, and song
+            history. In return, everyone must share their currently playing song
+            with the public.
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-visibility.png"
-            alt="visibility"
-            class="subsubcontainer graphic"
+            class="py-3 diagram"
+            alt="profile visibility"
           />
         </div>
+        <div class="scroll-impact"></div>
       </div>
-      <div class="scroll-impact"></div>
     </section>
 
     <!-- IMPACT -->
     <section class="impact">
       <div class="container">
-        <h2 class="reveal">Impact</h2>
-        <div class="subcontainer">
-          <h3>Outcomes</h3>
+        <h2 class="font-brand font-bold text-4xl uppercase pb-10">Impact</h2>
+
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Outcomes</h3>
           <p>
-            Since its inception, Tugo has reached the hearts and earbuds of the
-            UCLA community. From usability testing from the design team to the
-            marketing team that helped bring Tugo widespread to the UCLA campus,
-            <span class="highlight"
-              >Tugo has helped 200+ students discover and engage with new music
-              from artists they did not know.</span
-            >
-          </p>
-          <p>
-            As of May 2024, our top priority is to build Tugo with new designs
-            in consideration.
+            From usability testing from the design team to the marketing team
+            that helped bring Tugo widespread to the UCLA campus, Tugo has
+            helped 200+ students discover and engage with new music from artists
+            they did not know. As of May 2024, our top priority is to build Tugo
+            with new designs in consideration.
           </p>
         </div>
 
-        <div class="subcontainer">
-          <h3>Reflections</h3>
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-newspaper"></i>Stay proactive with the
-              latest technology.
-            </h4>
+        <div class="py-5">
+          <h3 class="text-2xl font-semibold pb-2">Reflections</h3>
+          <div class="py-3">
+            <h4 class="font-semibold"># Explore the latest technology.</h4>
             <p>
               This project stressed the importance of staying current in design
               and tech. Redesigning features was challenging, but my background
@@ -669,10 +505,9 @@
             </p>
           </div>
 
-          <div class="subsubcontainer">
-            <h4>
-              <i class="fa-solid fa-lightbulb"></i>It's okay to steer projects
-              in a different direction.
+          <div class="py-3">
+            <h4 class="font-semibold">
+              # It's okay to steer projects in a different direction.
             </h4>
             <p>
               Leading the UI/UX design and frontend development of a project
@@ -686,31 +521,34 @@
           </div>
         </div>
       </div>
+      <div class="scroll-bottom"></div>
     </section>
 
     <!-- FOOTER -->
     <section class="footer">
       <div class="container">
-        <div class="socials">
+        <div class="text-gray-500 font-brand text-center font-semibold mx-auto">
           <a
-            class="social"
+            class="text-sm hover:text-blue-600"
             id="linkedin"
             href="https://www.linkedin.com/in/jennyecho"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            Linkedin |
           </a>
-          ||
+
           <a
-            class="social"
+            class="text-sm hover:text-blue-600"
             id="github"
             href="https://github.com/jenpennen"
             target="_blank"
           >
-            <i class="fa-brands fa-github"></i>
+            Github
           </a>
+          <p class="text-center text-md text-gray-500 mx-auto">
+            Built & Designed By Jenny Cho
+          </p>
         </div>
-        <p>Made With Love, Jenny Cho</p>
       </div>
     </section>
 

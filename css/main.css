@@ -320,7 +320,7 @@ section .container {
   }
 }
 /* introduce the hamburger menu */
-@media screen and (max-width: 80em) {
+@media screen and (max-width: 60em) {
   .work .grid .container {
     width: 100%;
   }
@@ -479,9 +479,9 @@ section .container {
 }
 /* smaller devices have smaller whitespace*/
 @media screen and (max-height: 46em) {
-  /* section {
+  section {
     padding: 3.5em 0 4.5em 0;
-  } */
+  }
 
   nav {
     padding-top: 1em;

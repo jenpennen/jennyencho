@@ -160,17 +160,19 @@
             </h4>
             <p>
               Students want to socialize with other students before honing in
-              for the academic year. However, connecting with new people in a
-              large space, like UCLA, can be quite intimidating.
+              for the academic year, but
+              <span class="text-blue-600"
+                >connecting with new people in a large space, like UCLA, can be
+                intimidating.</span
+              >
             </p>
           </div>
           <div class="py-3">
             <h4 class="font-semibold"># People like to be in-the-know.</h4>
             <p>
-              Inspired by a popular tiktok trend, where influencers ask nearby
-              strollers in an area what song they were listening to, I wondered
-              if people around me were also naturally curious about other
-              peoples’
+              Students at the UCLA campus actively participated to a popular
+              tiktok trend, where influencers ask random people what song they
+              were listening to.
             </p>
           </div>
         </div>
@@ -179,7 +181,7 @@
         <div class="border-spacing-2 py-5">
           <h3 class="text-2xl font-semibold pb-3">Defining Problem</h3>
 
-          <p class="font-semibold uppercase text-xl text-blue-600">
+          <p class="font-semibold uppercase text-xl">
             How might we reimagine social connectings through an engaging music
             discovery experience?
           </p>
@@ -204,7 +206,7 @@
             share music with people nearby.
           </p>
           <img
-            class="py-3 diagram"
+            class="py-5 diagram"
             src="https://storage.googleapis.com/jennyencho-website/tugo-img/competitive-analysis.png"
             alt="competitive analysis"
           />
@@ -214,8 +216,11 @@
           <h3 class="text-2xl font-semibold pb-2">Contextual Inquiry</h3>
           <p>
             My next priority was to gather some thoughts about our concept from
-            the students around me. I reached out to the UCLA community first to
-            understand students’ music-listening behaviors and frustrations.
+            the students around me.
+            <span class="text-blue-600"
+              >I reached out to the UCLA community first to understand students’
+              music-listening behaviors and frustrations.</span
+            >
             Additionally, I reached out to students outside of UCLA, as well as
             non-students, to hear as many diverse perspectives possible.
           </p>
@@ -283,7 +288,7 @@
           <h3 class="text-2xl font-semibold pb-2">Low Fidelity Wireframes</h3>
           <p>
             To kickstart the design process, I created low-fidelity wireframes
-            to provide the engineering team(and myself) with a basic framework
+            to provide the engineering team (and myself) with a basic framework
             while the design team synthesized user insights and refined the
             visual elements.
           </p>
@@ -341,13 +346,16 @@
             <p>
               While participants appreciated the public and private viewing
               options with the close friends and public maps, I identified a
-              significant UX flaw: these options should apply to the user, not
-              the map. A striking 60% of the participants chose the close
-              friends map over the public map, and nearly half expressed no
-              preference. There was essentially no functional difference between
-              the two maps. Instead of two maps, I introduced a feature in the
-              user’s profile settings that allows users to selectively share
-              personal information with the public.
+              significant UX flaw:
+              <span class="text-blue-600"
+                >these options should apply to the user, not the map. A striking
+                60% of the participants chose the close friends map over the
+                public map, and nearly half expressed no preference.</span
+              >
+              There was essentially no functional difference between the two
+              maps. Instead of two maps, I introduced a feature in the user’s
+              profile settings that allows users to selectively share personal
+              information with the public.
             </p>
             <div class="py-3 diagram">
               <img
@@ -356,26 +364,33 @@
               />
             </div>
             <p class="text-sm text-center p-2 pb-5 text-gray-500">
-              Tugo Style Guide
+              Public and Close Friends maps are replaced with profile visibility
+              options.
             </p>
           </div>
 
           <div class="py-3">
             <h4 class="font-semibold"># Scrap the followers feature.</h4>
             <p>
-              Many participants noted that the follow button felt out of place,
-              making the app feel more like a social network than a music
-              discovery platform. Moreover, the profile view of other Tugo
-              users, along with their profile handles, made it difficult to
-              access the play button. This led me to conclude that it is better
-              to keep all users’ information hidden during the song shuffling
-              process to preserve the focus on music exploration and discovery.
+              <span class="text-blue-600"
+                >Many participants noted that the follow button felt out of
+                place, making the app feel more like a social network than a
+                music discovery platform.</span
+              >
+              Moreover, the profile view of other Tugo users, along with their
+              profile handles, made it difficult to access the play button. This
+              led me to conclude that it is better to keep all users’
+              information hidden during the song shuffling process to preserve
+              the focus on music exploration and discovery.
             </p>
             <div class="py-3 diagram">
               <img
                 src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-follower.png"
                 alt="scrap follow feature"
               />
+              <p class="text-sm text-center p-2 pb-5 text-gray-500">
+                Remove follow and profile visibility on song tabs.
+              </p>
             </div>
           </div>
 
@@ -384,17 +399,22 @@
             <p>
               One key feature my Retune team developed was the user music tab,
               which displays a user’s current song, favorite albums, and
-              artists. However, only 20% of participants fully explored it, and
-              80% found it too cluttered and hindered their discovery
-              experience. To address this, I streamlined the music tab to focus
-              on song shuffling and added a profile view for detailed music
-              activity.
+              artists. However,
+              <span class="text-blue-600"
+                >only 20% of participants fully explored the tabs, and 80% found
+                it too cluttered and hindered their discovery experience.</span
+              >
+              To address this, I streamlined the music tab to focus on song
+              shuffling and added a profile view for detailed music activity.
             </p>
             <div class="py-3 diagram">
               <img
                 src="https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-clutter.png"
                 alt="tugo style guide"
               />
+              <p class="text-sm text-center p-2 pb-5 text-gray-500">
+                Reduce users' music history to most recent songs.
+              </p>
             </div>
           </div>
         </div>
@@ -442,7 +462,7 @@
           />
         </div>
         <div class="py-5">
-          <h3 class="text-2xl font-semibold pb-2">Song Shuggle</h3>
+          <h3 class="text-2xl font-semibold pb-2">Song Shuffle</h3>
           <p>
             When a user clicks on a vinyl icon on the map, another user’s
             current song appears on the song tab, which can be expanded to show
@@ -475,11 +495,14 @@
         <div class="py-5">
           <h3 class="text-2xl font-semibold pb-2">Profile Visibility</h3>
           <p>
-            The close friends and public maps are a thing of the past! Now, all
-            users are placed on a public map, but they can choose what to share
-            with other Tugo users – profile photo, name, playlists, and song
-            history. In return, everyone must share their currently playing song
-            with the public.
+            The close friends and public maps are a thing of the past! Now,
+            <span class="text-blue-600"
+              >all users are placed on a public map, but they can choose what to
+              share with other Tugo users – profile photo, name, playlists, and
+              song history.</span
+            >
+            In return, everyone must share their currently playing song with the
+            public.
           </p>
           <img
             src="https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-visibility.png"
@@ -500,24 +523,33 @@
           <h3 class="text-2xl font-semibold pb-2">Outcomes</h3>
           <p>
             From usability testing from the design team to the marketing team
-            that helped bring Tugo widespread to the UCLA campus, Tugo has
-            helped 200+ students discover and engage with new music from artists
-            they did not know. As of May 2024, our top priority is to build Tugo
-            with new designs in consideration.
+            that helped bring Tugo widespread to the UCLA campus,
+            <span class="text-blue-600"
+              >Tugo has helped 200+ students discover and engage with new music
+              from artists they did not know.</span
+            >
+            As of May 2024, our top priority is to build Tugo with new designs
+            in consideration.
           </p>
         </div>
 
         <div class="py-5">
           <h3 class="text-2xl font-semibold pb-2">Reflections</h3>
           <div class="py-3">
-            <h4 class="font-semibold"># Explore the latest technology.</h4>
+            <h4 class="font-semibold">
+              # Don't be afraid to seek out new technologies.
+            </h4>
             <p>
-              This project stressed the importance of staying current in design
-              and tech. Redesigning features was challenging, but my background
-              in software development and design helped me quickly adapt. On the
-              design side, I incorporated Figma’s new prototyping and dev tools
-              into my design workflow. On the tech side, I discovered frameworks
-              and libraries that can enhance Tugo’s codebase.
+              After two years of using the same tools at Retune, I started
+              looking for ways to improve my workflow. I dove into Figma's new
+              features, like their prototyping tools, to make my designs even
+              better. On the tech side, I started exploring new frameworks and
+              libraries to make Tugo's code cleaner and more efficient.
+              <span class="text-blue-600"
+                >This process of trying new things helped me come up with some
+                cool new ideas for Tugo and gave me a stronger sense of
+                ownership over the project.</span
+              >
             </p>
           </div>
 
@@ -526,13 +558,15 @@
               # It's okay to steer projects in a different direction.
             </h4>
             <p>
-              Leading the UI/UX design and frontend development of a project
-              made for the UCLA community was incredibly fulfilling, and I’m
-              eager to carry this momentum forward with Tugo. In this new
-              venture, I’m ensuring design considerations are integrated into
-              every engineering decision and ultimately, foster a learning
-              environment for new technologies and workflows for myself and my
-              Tugo partner Azia.
+              Leading the design and development of a project for the UCLA
+              community was extremely rewarding, and I'm excited to bring that
+              energy to Tugo. With Tugo, I'm making sure design is a top
+              priority in every step of the process. Plus,<span
+                class="text-blue-600"
+                >I'm using this as a chance to learn new things and try out new
+                ways of working, both for myself and for my team partner,
+                Azia.</span
+              >
             </p>
           </div>
         </div>

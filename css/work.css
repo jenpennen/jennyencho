@@ -150,6 +150,9 @@ h2.shown {
   .shoutout {
     margin: 1em 0 3em 0;
   }
+  p {
+    font-size: 1rem;
+  }
 }
 /* smallest screen size on computer */
 @media screen and (max-width: 50em) {
@@ -185,7 +188,7 @@ h2.shown {
   }
 
   section .container {
-    width: 85%;
+    width: 100%;
     font-size: 0.75em;
   }
 }
@@ -215,6 +218,9 @@ h2.shown {
 @media screen and (max-height: 46em) {
   .headline {
     margin-top: 3.5em;
+  }
+  section {
+    padding: 0 0 0 0;
   }
 
   .headline img {
